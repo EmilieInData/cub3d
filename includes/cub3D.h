@@ -6,7 +6,7 @@
 /*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/07 11:49:26 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/01/07 13:26:49 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@
 # include <stdlib.h>
 # include <X11/X.h>
 # include <fcntl.h>
+# include <X11/keysym.h>
 # include <math.h>
+# include "./struct.h"
 
 int		main(int argc, char **argv);
 int		is_cub(char *argv);
