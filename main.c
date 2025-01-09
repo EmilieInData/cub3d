@@ -3,20 +3,25 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/07 11:51:08 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/01/09 19:56:34 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "includes/cub3D.h"
 
-int main(int argc, char **argv)
+#include <cub3D.h>
+
+int	main(int argc, char **argv)
 {
+	t_data	*data;
+
+	data = NULL;
 	if (argc != 2)
 		ft_exit(1, "Error, wrong number of arguments\n");
 	if (argc == 2 && (is_cub(argv[1]) == 0))
 		ft_printf("Good job\n");
+	//initialize(data);
 	return (0);
 }
 
@@ -26,7 +31,7 @@ void	ft_exit(int ex_stat, char *message)
 	exit(ex_stat);
 }
 
-int is_cub(char *argv)
+int	is_cub(char *argv)
 {
 	int		i;
 
