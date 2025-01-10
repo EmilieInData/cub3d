@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/09 19:56:07 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/10 19:18:07 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,11 @@ int		is_cub(char *argv);
 void	ft_exit(int ex_stat, char *message);
 
 //parsing
+void	*clean_line(char *str, t_data *data);
 
 //utils
 void	*error_msg(char *str);
 void	*initialize(t_data *data);
+void	free_data(t_data *data);
 
 #endif

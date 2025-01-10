@@ -6,20 +6,20 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/09 19:59:33 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/10 18:20:05 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 X//struct of map 
 X//struct of player or have everything in one struct.
-//we basically need *mlx
-//*mlx_win
+X//we basically need *mlx
+X//*mlx_win
 //*player - for connecting with img
 //*wall -same
 X//size_t of position of player in x and y 
-//**matrix of game to save map inside of our game
+X//**matrix of game to save map inside of our game
 X//we would also need height, length of the map. 
-//and i think we woulld have to use flood_fill function to check if the map is valid to play and the player is not stuck. lets see how we are handeling this 
+//and i think we would have to use flood_fill function to check if the map is valid to play and the player is not stuck. lets see how we are handeling this 
 
 typedef struct s_map
 {
@@ -33,10 +33,19 @@ typedef struct s_map
 	int				c_r;
 	int				c_g;
 	int				c_b;
-	char			**array;
+	char			**matrix;
 	unsigned int	s_height; // to_define ?
 	unsigned int	s_length; // to_define ?
 }			   t_map;
+
+/*typedef struct s_img //if it's in pixels we will need that structure
+{
+	void			*img_add;
+	char			*pix_add;
+	int				bit_pix;
+	int				length_line;
+	int				endian;
+}				t_img;*/
 
 typedef struct s_player
 {
@@ -46,8 +55,11 @@ typedef struct s_player
 
 typedef struct s_data
 {
-	t_map		map;
-	t_player	player;
+	void			*mlx_init;
+	void			*mlx_window;
+	t_map			map;
+	t_player		player;
+	//t_img			*image;
 }			   t_data;
 
 

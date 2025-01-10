@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/09 19:56:34 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/10 19:33:37 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int	is_cub(char *argv)
 	i = ft_strlen(argv) - 1;
 	if (!(argv[i - 3] == '.' && argv[i - 2] == 'c' && argv[i - 1] == 'u'
 			&& argv[i] == 'b'))
-		ft_exit(1, "Map format is incorrect\n");
+		ft_exit(1, "Map format is incorrect\n"); // i think we need to put "error" + this message as indicated in the subject
 	else
 		return (0);
 }
