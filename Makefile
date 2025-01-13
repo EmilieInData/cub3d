@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/07 11:45:28 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/01/13 17:50:27 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,10 @@ PRINTF_A = $(addprefix $(PRINTF), libft_printf.a)
 GNL_A = $(addprefix $(GNL), libgnl.a)
 LIBFT_A = $(addprefix $(LIBFT), libft.a)
 
-SRC = main.c
+SRC = main.c \
+	  parsing.c \
+	  map_parsing.c \
+	  utils.c
 
 OBJ = $(SRC:.c=.o)
 
