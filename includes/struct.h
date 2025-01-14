@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/13 14:46:54 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/14 16:35:34 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,26 @@ typedef struct s_map
 	char			*ea;
 	t_color			floor;
 	t_color			ceiling;
-	int				height; // to_define ?
-	int				length; // to_define ?
 	char			**matrix;
+	int				flag;
 }			   t_map;
+
+typedef struct s_player
+{
+	char			news;
+	int				orientation;
+	int				position_x;
+	int				position_y;
+}              t_player;
+
+typedef struct s_data
+{
+	void			*mlx;
+	void			*mlx_window;
+	t_map			*map;
+	t_player		player;
+	//t_img			*image;
+}			   t_data;
 
 /*typedef struct s_img //if it's in pixels we will need that structure
 {
@@ -50,44 +66,8 @@ typedef struct s_map
 	int				endian;
 }				t_img;*/
 
-typedef struct s_player
-{
-	int				position_x;
-	int				position_y;
-}              t_player;
-
-typedef struct s_data
-{
-	void			*mlx_init;
-	void			*mlx_window;
-	t_map			*map;
-	t_player		*player;
-	//t_img			*image;
-}			   t_data;
-
-
-
 my fractol structs : 
 /*
-# define WIDTH	800
-# define HEIGHT	800
-# define ITERATIONS	40
-
-typedef struct s_num
-{
-	double	x; //real
-	double	y; // imaginary
-}				t_num;
-
-typedef struct s_img
-{
-	void	*img_add;
-	char	*pix_add;
-	int		bit_pix;
-	int		length_line;
-	int		endian;
-}				t_img;
-
 typedef struct s_data
 {
 	char	*name;

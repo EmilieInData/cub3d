@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/13 20:12:11 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/14 18:20:38 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,28 +27,37 @@
 # include <fcntl.h>
 # include <X11/keysym.h>
 # include <math.h>
-# include "./struct.h"
-# include <X11/Xlib.h> // I had it in Fractol I don't know for the moment if we need it
+# include <X11/Xlib.h>
 
-//main
-void	initialize(t_data *data);
-int		main(int argc, char **argv);
-int		is_cub(char *argv);
-void	ft_exit(int ex_stat, char *message);
+# define TILE 64
+# define HEIGHT 800
+# define LENGTH 1280
 
-//parsing
-void	fc_color_struc(t_data *data, t_color *fc, int *color, char *tmp);
-char	*fc_quite_space(char *str, t_data *data, char *tmp);
-char	*fc_clean_line(char *str, t_data *data);
-void	fc_control_args(char *str, t_data *data);
+//parsing_map
+
+//parsing_colors
+char	*fc_clean_args(char *str, t_data *data);
+void	fc_check_args(char *str, t_data *data, t_color *fc, int *color);
 char	**fc_check(char *str, t_data *data, t_color *fc);
+
+//parsing_textures
 char	*news_args_check(char *str, t_data *data, char *news);
 int		news_check(char *str, t_data *data);
-void	*check_line(char *str, t_data *data);
+
+//parsing
+void	check_line(char *str, t_data *data);
+void	check_map_info(t_data *data, t_map *map, char *str);
+void	copy_line(t_data *data, char *str, char **matrix);
+void	check_cub_file(t_data *data, char *file);
 
 //utils
 void	error_msg(char *str);
 void	free_array(char **array);
 void	free_data(t_data *data);
+
+//main
+void	initialize(t_data *data);
+int		main(int argc, char **argv);
+int		is_cub(char *argv);
 
 #endif

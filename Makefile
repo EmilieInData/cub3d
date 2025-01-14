@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/13 17:50:27 by esellier         ###   ########.fr        #
+#    Updated: 2025/01/14 18:35:10 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ LIBFT_A = $(addprefix $(LIBFT), libft.a)
 
 SRC = main.c \
 	  parsing.c \
-	  map_parsing.c \
+	  parsing_colors.c \
+	  parsing_textures.c \
 	  utils.c
 
 OBJ = $(SRC:.c=.o)
@@ -62,3 +63,4 @@ re:	fclean all
 
 .PHONY: all clean fclean re
 
+//ajouter les points.H de nos structures mais ou ?
