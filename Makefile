@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/14 18:35:10 by esellier         ###   ########.fr        #
+#    Updated: 2025/01/14 19:07:42 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,5 +62,3 @@ fclean:		clean
 re:	fclean all
 
 .PHONY: all clean fclean re
-
-//ajouter les points.H de nos structures mais ou ?
