@@ -6,19 +6,19 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/14 16:35:34 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/15 15:08:54 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-X//struct of map 
-X//struct of player or have everything in one struct.
-X//we basically need *mlx
-X//*mlx_win
-X//*player - for connecting with img
+//struct of map 
+//struct of player or have everything in one struct.
+//we basically need *mlx
+//*mlx_win
+//*player - for connecting with img
 //*wall -same
-X//size_t of position of player in x and y 
-X//**matrix of game to save map inside of our game
-X//we would also need height, length of the map. 
+//size_t of position of player in x and y 
+//**matrix of game to save map inside of our game
+//we would also need height, length of the map. 
 //and i think we would have to use flood_fill function to check if the map is valid to play and the player is not stuck. lets see how we are handeling this 
 
 typedef struct s_color
@@ -66,7 +66,7 @@ typedef struct s_data
 	int				endian;
 }				t_img;*/
 
-my fractol structs : 
+//my fractol structs : 
 /*
 typedef struct s_data
 {

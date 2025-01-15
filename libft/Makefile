@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ineimatu <ineimatu@student.42barcel>       +#+  +:+       +#+         #
+#    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/17 15:42:44 by ineimatu          #+#    #+#              #
-#    Updated: 2024/06/07 11:19:18 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/01/15 15:58:32 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,6 +25,7 @@ SRCS = ft_atoi.c \
 	   ft_memmove.c \
 	   ft_memset.c \
 	   ft_strchr.c \
+	   ft_strcpy.c \
 	   ft_strlcpy.c \
 	   ft_strlen.c \
 	   ft_strncmp.c \
@@ -45,8 +46,7 @@ SRCS = ft_atoi.c \
 	   ft_strmapi.c \
 	   ft_striteri.c \
 	   ft_itoa.c \
-	   ft_split.c \
-	   ft_strcpy.c \
+	   ft_split.c 
 
 OBJ = $(SRCS:.c=.o)
 

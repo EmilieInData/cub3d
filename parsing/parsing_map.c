@@ -6,11 +6,11 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/14 19:03:00 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/15 15:33:39 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <cub3D.h>
+#include "cub3D.h"
 
 char	*map_check(t_data *data, char **matrix)
 {
