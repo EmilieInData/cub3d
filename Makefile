@@ -6,7 +6,7 @@
 #    By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/07 11:45:28 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/01/14 11:41:33 by ineimatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,9 @@ PRINTF_A = $(addprefix $(PRINTF), libft_printf.a)
 GNL_A = $(addprefix $(GNL), libgnl.a)
 LIBFT_A = $(addprefix $(LIBFT), libft.a)
 
-SRC = main.c
+SRC = main.c \
+	  mlx_utils.c \
+	  ray_cast.c \
 
 OBJ = $(SRC:.c=.o)
 
@@ -58,4 +60,3 @@ fclean:		clean
 re:	fclean all
 
 .PHONY: all clean fclean re
-
