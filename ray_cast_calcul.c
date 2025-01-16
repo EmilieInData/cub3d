@@ -6,7 +6,7 @@
 /*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/15 16:08:17 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/01/16 12:13:18 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,13 @@ int find_distance_v(t_player player, int x, int y)
 	return (dist)
 }
 
-int
+int find_distance_h(t_player player, int x, int y)
+{
+	int dist;
+
+	y *= y;
+	x *= x;
+	dist = x + y;
+	dist *= dist;
+	return(dist)
+}

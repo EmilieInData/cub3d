@@ -6,12 +6,14 @@
 /*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/15 16:08:21 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/01/16 13:01:09 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/struct.h"
 #include "includes/cub3D.h"
+
+//here I created functions which are checking where the ray casted bzy our plyer first interact with the wall on the horizontal and vertical plane
 
 void next_vertical(t_data * data, int x_a, int b_y, int b_x)
 {
@@ -22,10 +24,10 @@ void next_vertical(t_data * data, int x_a, int b_y, int b_x)
 	while (1)
 	{
 		if (data.player.angle >= 0 && data.player.angle <= 180)
-			a_y += (b_y * 64);
+			a_y += b_y;
 		else
-			a_y -= (b_y * 64);
-		a_x = b_x * 64 + TILE;
+			a_y -= b_y;
+		a_x = b_x + TILE;
 		b_x = a_x;
 		b_y = a_y;
 		a_x = a_x / 64;
@@ -107,6 +109,7 @@ void horizontal_check(t_data *data)
 {
 	int a_y;
 	int a_x;
+	int adj_side;
 
 	a_y = data.player.player_y / TILE;
 	a_y *= TILE;
@@ -114,15 +117,10 @@ void horizontal_check(t_data *data)
 		a_y--;
 	if (data.player.angle >= 181 && data.player.angle <= 359)
 		a_y += 64;
-	a_x = data.player.player_x + (data.player.player_y - a_y) / tan(data.player.player_angle);
-	a_x = a_x / TILE;
-	a_y = a_y / TILE;
-	if (data.map->matrix[a_x, a_y] == 1)
-	{
-		data.player.wall_h_x = a_x;
-		data.player.wall_h_y = a_y;
-		find_disance();
-	}
+	adj_side = (data.player.player_y - a_y) / tan(data.player.player_angle);
+	a_x = data.player.player_x + adj_side;
+	if (data.map->matrix[a_x / TILE, a_y / TILE] == 1)
+		data.ray.dist_h = find_distance_h(data.player, adj_side, TILE/2);
 	else
 		next_checks(data, a_x, a_y)
 }	
