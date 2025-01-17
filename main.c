@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/15 19:19:40 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/17 19:33:14 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	print_data(t_data *data)
 {
+	int i;
+
+	i = 0;
 	if (data->map->no)
 		printf("NO = %s\n", data->map->no);
 	if (data->map->so)
@@ -22,20 +25,13 @@ void	print_data(t_data *data)
 		printf("WE = %s\n", data->map->we);
 	if (data->map->ea)
 		printf("EA = %s\n", data->map->ea);
-	if (data->map->floor.red)
-		printf("Floor.red = %d\n", data->map->floor.red);
-	if (data->map->floor.green)
-		printf("Floor.green = %d\n", data->map->floor.green);
-	if (data->map->floor.blue)
-		printf("Floor.blue = %d\n", data->map->floor.blue);
-	if (data->map->ceiling.red)
-		printf("Ceiling.red = %d\n", data->map->ceiling.red);
-	if (data->map->ceiling.green)
-		printf("Ceiling.green = %d\n", data->map->ceiling.green);
-	if (data->map->ceiling.blue)
-		printf("Ceiling.blue = %d\n", data->map->ceiling.blue);
-	if (data->map->flag)
-		printf("Flag = %d\n", data->map->flag);
+	printf("Floor.red = %d\n", data->map->floor.red);
+	printf("Floor.green = %d\n", data->map->floor.green);
+	printf("Floor.blue = %d\n", data->map->floor.blue);
+	printf("Ceiling.red = %d\n", data->map->ceiling.red);
+	printf("Ceiling.green = %d\n", data->map->ceiling.green);
+	printf("Ceiling.blue = %d\n", data->map->ceiling.blue);
+	printf("Flag = %d\n", data->map->flag);
 	if (data->player.news)
 		printf("Player_news = %c\n", data->player.news);
 	if (data->player.position_x)
@@ -44,7 +40,15 @@ void	print_data(t_data *data)
 		printf("Player_Y = %d\n", data->player.position_y);
 	if (data->player.orientation)
 		printf("Player_orientation = %d\n", data->player.orientation);
+	if (data->map->matrix)
+	{
+		while (data->map->matrix[i])
+		{
+			printf("%s\n", data->map->matrix[i]);
+			i++;
+		}
 	}
+}
 
 void	*initialize(t_data *data)
 {
@@ -85,12 +89,12 @@ int	main(int argc, char **argv)
 	data = NULL;
 	if (argc != 2)
 		exit (error_msg("wrong number of arguments", NULL));
-	if (argc == 2 && (is_cub(argv[1]) == 0))
+	if (argc == 2 && (is_cub(argv[1]) == 0)) //verifier que le fichier existe et qu'on a les droits
 		printf("Good job\n"); // need to erase before evaluation
 	data = initialize(data);
-	//print_data(data);
 	check_cub_file(data, argv[1]);
-	printf("TESTTTTTTTTTTTTTTTTTTTTTTT\n");
+	map_check(data, data->map->matrix);
+	print_data(data);
 	free_data(data);
 	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/14 14:33:08 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/17 17:31:19 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char	*fc_clean_line(char *str, t_data *data)
 	}
 	if (space == 0)
 		return (str);
-	tmp = malloc (i + 1 * sizeof (char));
+	tmp = malloc ((i + 1) * sizeof (char));
 	if (!tmp)
 		exit (error_msg("malloc didn't work correctly", data), 1);
 	return (fc_quite_space(str, data, tmp));
@@ -78,7 +78,7 @@ void	fc_control_args(char *str, t_data *data)
 		i++;
 	if (i == 0 || i > 3)
 		exit (error_msg("colors informations are not appropriate", data), 1);
-	tmp = malloc (i + 1 * sizeof (char));
+	tmp = malloc ((i + 1) * sizeof (char));
 	if (!tmp)
 		exit (error_msg("malloc didn't work correctly", data), 1);
 	ft_strlcpy(tmp, str, i); // A FAIRE: verifier la taille

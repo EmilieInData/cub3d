@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/15 19:34:10 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/17 17:32:08 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*fc_clean_args(char *str, t_data *data)
 	return (&str[i]);
 }
 
-char	*fc_check_args(char *str, t_data *data, int color)
+char	*fc_check_args(char *str, t_data *data, int *color)
 {
 	int		i;
 	char	*tmp;
@@ -42,31 +42,28 @@ char	*fc_check_args(char *str, t_data *data, int color)
 	i = 0;
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 		i++;
-	//printf("char2 = %c\n", str[i]);//
-	//printf("i = %d\n", i);//
-	//printf("str[0] = %c\n", str[0]);//
-	if (i == 0 || i > 3 || (str[i] && (str[i] != ',' && str[i] != ' ' && str[i] != '	')))
+	if (i == 0 || i > 3 || (str[i] && (str[i] != ','
+				&& str[i] != ' ' && str[i] != '	')))
 		exit (error_msg("colors informations are not appropriate", data));
-	tmp = malloc (i + 1 * sizeof (char));
+	tmp = malloc ((i + 1) * sizeof (char));
 	if (!tmp)
 		exit (error_msg("malloc didn't work correctly", data));
 	ft_strlcpy(tmp, str, i + 1);
-	//printf("tmp = %s\n", tmp);
-	color = atoi(tmp);
+	*color = atoi(tmp);
 	free (tmp);
-	if (color < 0 || color > 255)
+	if (*color < 0 || *color > 255)
 		exit (error_msg("incorrect color number", data));
 	if (!str[i])
 		return (NULL);
 	return (&str[i]);
 }
 
-void	*fc_check(char *str, t_data *data, t_color fc)
+void	*fc_check(char *str, t_data *data, t_color *fc)
 {
 	int		i;
 
 	i = 0;
-	if (fc.red != -1) // checker si pas doublons
+	if (fc->red != -1) // checker si pas doublons
 		exit (error_msg("duplicate colors element", data));
 	if (str[1] != ' ' && str[1] != '	')
 		exit (error_msg("identifier argument is not appropriate", data));
@@ -75,15 +72,15 @@ void	*fc_check(char *str, t_data *data, t_color fc)
 		i++;
 	if (!str[i])
 		exit (error_msg("colors informations are missing", data));
-	str = fc_check_args(&str[i], data, fc.red);
+	str = fc_check_args(&str[i], data, &fc->red);
 	str = fc_clean_args(str, data);
-	str = fc_check_args(str, data, fc.green);
+	str = fc_check_args(str, data, &fc->green);
 	str = fc_clean_args(str, data);
-	str = fc_check_args(str, data, fc.blue);
-	print_data(data);
-	if (!str)
-		return (0);
-	while (str[i])
+	str = fc_check_args(str, data, &fc->blue);
+	//if (!str)
+	//	return (0);
+	i = 0;
+	while (str && str[i])
 	{
 		if (str[i] == ' ' || str[i] == '	')
 			i++;
@@ -92,4 +89,3 @@ void	*fc_check(char *str, t_data *data, t_color fc)
 	}
 	return (0);
 }
-//ne change pas la data car je dois mal passer la structure (pour couleurs et textures)
