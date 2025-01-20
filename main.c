@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/17 19:33:14 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/20 18:30:05 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,8 @@ void	print_data(t_data *data)
 		printf("Player_X = %d\n", data->player.position_x);
 	if (data->player.position_y)
 		printf("Player_Y = %d\n", data->player.position_y);
-	if (data->player.orientation)
-		printf("Player_orientation = %d\n", data->player.orientation);
+	if (data->player.angle)
+		printf("Player_angle = %d\n", data->player.angle);
 	if (data->map->matrix)
 	{
 		while (data->map->matrix[i])
@@ -78,7 +78,7 @@ void	*initialize(t_data *data)
 	data->player.news = '0';
 	data->player.position_x = -1;
 	data->player.position_y = -1;
-	data->player.orientation = -1;
+	data->player.angle = -1;
 	return (data);
 }
 
@@ -94,7 +94,7 @@ int	main(int argc, char **argv)
 	data = initialize(data);
 	check_cub_file(data, argv[1]);
 	map_check(data, data->map->matrix);
-	print_data(data);
+	//print_data(data);
 	free_data(data);
 	return (0);
 }

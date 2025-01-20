@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/15 15:08:54 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/20 16:20:50 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ typedef struct s_map
 typedef struct s_player
 {
 	char			news;
-	int				orientation;
+	int				angle;
 	int				position_x;
 	int				position_y;
 }              t_player;

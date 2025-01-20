@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/15 17:59:32 by esellier         ###   ########.fr        #
+#    Updated: 2025/01/20 18:03:49 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRC = main.c \
 	  parsing/parsing.c \
 	  parsing/parsing_colors.c \
 	  parsing/parsing_textures.c \
+	  parsing/parsing_map.c \
 	  utils.c
 
 OBJ = $(SRC:.c=.o)
@@ -57,3 +58,5 @@ fclean:		clean
 re:	fclean all
 
 .PHONY: all clean fclean re
+
+#reglas bonus

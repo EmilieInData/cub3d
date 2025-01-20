@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/17 17:27:47 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/20 18:42:17 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*check_line(char *str, t_data *data)
 	if (!str[i] && data->map->flag == -1)
 		return (NULL);
 	if (!str[i] && data->map->flag == 1)
-		exit (error_msg("map element is not appropriate", data));
+		exit (error_msg("map cannot have empty line", data));
 	if (str[i] == 'F' && data->map->flag == -1)
 		return (fc_check(&str[i], data, &data->map->floor));
 	if (str[i] == 'C' && data->map->flag == -1)
