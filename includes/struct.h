@@ -6,7 +6,7 @@
 /*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/15 15:54:25 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/01/20 14:13:14 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ typedef struct s_ray
 {
 	int dist_h;
 	int dist_v;
-}
+}				t_ray;
 
 typedef struct s_data
 {

@@ -6,10 +6,9 @@
 #    By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/14 11:41:33 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/01/20 14:18:49 by ineimatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
 NAME = cub3D
 MLX = mlx_linux/
 PRINTF = ft_printf/
@@ -21,8 +20,9 @@ GNL_A = $(addprefix $(GNL), libgnl.a)
 LIBFT_A = $(addprefix $(LIBFT), libft.a)
 
 SRC = main.c \
-	  mlx_utils.c \
 	  ray_cast.c \
+	  test.c \
+	  ray_cast_calcul.c \
 
 OBJ = $(SRC:.c=.o)
 

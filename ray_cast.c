@@ -6,14 +6,14 @@
 /*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/16 13:01:09 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/01/20 14:07:10 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/struct.h"
 #include "includes/cub3D.h"
 
-//here I created functions which are checking where the ray casted bzy our plyer first interact with the wall on the horizontal and vertical plane
+//here I created functions which are checking where the ray casted by our plyer first interact with the wall on the horizontal and vertical plane
 
 void next_vertical(t_data * data, int x_a, int b_y, int b_x)
 {
@@ -83,25 +83,23 @@ void	next_checks(t_data *data, int a_x, int a_y)
 	int c_y;
 
 	if (data.player.angle >= 0 && data.player.angle <= 180)
-		y_a -= TILE;
+		y_a = TILE * -1;
 	if (data.player.angle >= 181 && data.player.angle <= 359)
 		y_a = TILE;
 	x_a = TILE/tan(60);
 	while (1)
-		{
+	{
 		c_x = a_x + x_a;
 		c_y = a_y + y_a;
-		c_x = c_x / TILE;
-		c_y = c_y / TILE;
-		if (data.map->matrix[c_x, c_y] == 1)
+		if (data.map->matrix[c_x / TILE, c_y / TILE] == 1)
 		{
-			data.player.wall_h_x = c_x;
-			data.player.wall_h_y = c_y;
-			find_distance();
+			if (data.player.angle >= 0 && data.player.angle <= 180)
+				c_y += a_y;
+			data.ray.dist_h = find_distance(c_x, c_y) 
 			break;
 		}
-		a_x = c_x;
-		a_y = c_y;
+		x_a = c_x;
+		y_a = c_y;
 	}
 }
 
@@ -120,7 +118,7 @@ void horizontal_check(t_data *data)
 	adj_side = (data.player.player_y - a_y) / tan(data.player.player_angle);
 	a_x = data.player.player_x + adj_side;
 	if (data.map->matrix[a_x / TILE, a_y / TILE] == 1)
-		data.ray.dist_h = find_distance_h(data.player, adj_side, TILE/2);
+		data.ray.dist_h = find_distance_h(adj_side, TILE/2);
 	else
 		next_checks(data, a_x, a_y)
 }	
@@ -129,6 +127,7 @@ void	find_wall(t_data *data)
 { 
 	horizontal_check(data);
 	vertical_check(data);
-	find_distance();
+	printf(data.ray.dist_h);
+	printf(data.ray.dist_v);
 }
 	
