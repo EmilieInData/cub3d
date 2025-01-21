@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/20 18:30:05 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/21 15:32:35 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,8 +89,7 @@ int	main(int argc, char **argv)
 	data = NULL;
 	if (argc != 2)
 		exit (error_msg("wrong number of arguments", NULL));
-	if (argc == 2 && (is_cub(argv[1]) == 0)) //verifier que le fichier existe et qu'on a les droits
-		printf("Good job\n"); // need to erase before evaluation
+	is_cub(argv[1]);
 	data = initialize(data);
 	check_cub_file(data, argv[1]);
 	map_check(data, data->map->matrix);
@@ -101,12 +100,20 @@ int	main(int argc, char **argv)
 
 int	is_cub(char *argv)
 {
-	int		i;
+	int	i;
+	int	fd;
 
+	fd = -1;
 	i = ft_strlen(argv) - 1;
 	if (!(argv[i - 3] == '.' && argv[i - 2] == 'c' && argv[i - 1] == 'u'
 			&& argv[i] == 'b'))
-		exit (error_msg("map format is incorrect", NULL));
+		exit (error_msg("map file is incorrect", NULL));
 	else
-		return (0);
+	{
+		if (access(argv, F_OK) == 0 && access(argv, R_OK) == 0)
+			fd = open(argv, O_RDONLY);
+		if (fd == -1 || access(argv, F_OK) != 0 || access(argv, R_OK) != 0)
+			exit (error_msg("map file is not open", NULL));
+	}
+	return (0);
 }

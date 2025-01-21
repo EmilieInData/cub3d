@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/20 18:03:49 by esellier         ###   ########.fr        #
+#    Updated: 2025/01/21 14:53:20 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ SRC = main.c \
 	  parsing/parsing_colors.c \
 	  parsing/parsing_textures.c \
 	  parsing/parsing_map.c \
+	  parsing/parsing_player.c \
 	  utils.c
 
 OBJ = $(SRC:.c=.o)

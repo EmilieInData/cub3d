@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/20 17:49:57 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/21 14:52:22 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,16 @@
 # define HEIGHT 800
 # define LENGTH 1280
 
+//parsing_player
+void	map_check_player(t_data *data, char c, int i, int j);
+
+
 //parsing_map
 void    map_check(t_data *data, char **matrix);
-void	map_check_player(t_data *data, char c, int i, int j);
 void	map_check_door(t_data *data, int i, int j); //bonus
 void	map_check_first_last_line(t_data *data, int i, int j);
 void	map_check_middle_line(t_data *data, int i, int j);
+void	map_check_border(t_data *data, char **matrix);
 
 //parsing_colors
 char	*fc_clean_args(char *str, t_data *data);

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/20 19:00:32 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/21 14:56:08 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,31 +24,7 @@ void	map_check(t_data *data, char **matrix)
 		j++;
 	}
 	map_check_first_last_line(data, 0, j);
-}
-
-void	map_check_player(t_data *data, char c, int i, int j)
-{
-	char	*m;
-
-	m = "player is bad positioned, can't be on a border or surrounded by walls";
-	if (data->player.news != '0')
-		exit (error_msg("there is more than one player", data)); //without 'D' for no bonus part
-	if (data->map->matrix[j + 1][i] != '0' && data->map->matrix[j - 1][i] != '0'
-		&& data->map->matrix[j][i + 1] != '0' && data->map->matrix[j][i - 1] != '0'
-		&& data->map->matrix[j + 1][i] != 'D' && data->map->matrix[j - 1][i] != 'D'
-		&& data->map->matrix[j][i + 1] != 'D' && data->map->matrix[j][i - 1] != 'D')
-		exit (error_msg(m, data));
-	data->player.news = c;
-	data->player.position_x = i;
-	data->player.position_y = j;
-	if (c == 'E')
-		data->player.angle = 0;
-	else if (c == 'N')
-		data->player.angle = 90;
-	else if (c == 'W')
-		data->player.angle = 180;
-	else if (c == 'S')
-		data->player.angle = 270;
+	map_check_border(data, data->map->matrix);
 }
 
 void	map_check_door(t_data *data, int i, int j) //bonus
@@ -101,29 +77,45 @@ void	map_check_middle_line(t_data *data, int i, int j)
 			map_check_door(data, i, j);
 		else if (data->map->matrix[j][i] != ' ' && data->map->matrix[j][i] != '1'
 			&& data->map->matrix[j][i] != '0')
-			exit (error_msg("map incorrect, not filled correctly", data));
+			exit (error_msg("map is incorrect, unrecognized character", data));
 		i++;
 	}
-	while (data->map->matrix[j][i--] == ' ') //checker pk ne fonctionne pas avec un espace
+	i--;
+	while (data->map->matrix[j][i] == ' ')
 		i--;
-	printf("char = %c & i = %d\n", data->map->matrix[j][i], i);
 	if (data->map->matrix[j][i] != '1')
 		exit (error_msg("map border is incorrect", data));
+}
+
+void	map_check_border(t_data *data, char **matrix)
+{
+	int	j;
+	int	i;
+
+	j = 0;
+	while (matrix[j])
+	{
+		i = 0;
+		while (matrix[j][i])
+		{
+			if (matrix[j][i] == '0')
+			{
+				if (!matrix[j + 1][i] || matrix[j + 1][i] == ' '
+				|| !matrix[j - 1][i] || matrix[j - 1][i] == ' '
+				|| !matrix[j][i + 1] || matrix[j][i + 1] == ' '
+				|| !matrix[j][i + 1] || matrix[j][i - 1] == ' ')
+					exit (error_msg("border not well closed", data));
+			}
+			i++;
+		}
+		j++;
+	}
 }
 
 //quoi faire des espaces dans la map, erreur ou 
 //convertit en zero ou un effet special?
 
-//checker que murs sont bien fermes par leur position dans l'array
-//floodfill pour checker la position du player? pas enferme quelque part
-
-//checker la position du player, lui mettre un objectif a atteindre comme
-//une porte de sortie pour checker si la carte est ok ou un truc a recuperer
-
-//checker si ok parsing color et texture, peut etre doit on pouvoir mettre des 
-//couleurs a la place des textures et inversement, ce serait galere dans la structure
+//checker si ok parsing color&texture, peut etre doit on pouvoir mettre des 
+//couleurs a la place des textures et inversement, ce serait galere dans la struc
 
 //printf("char = %c & i = %d\n", data->map->matrix[j][i], i);
-
-//quand seulement une ligne vide apres la map l'erreur ne fonctionne pas
-//si pas vide ou deuxieme ligne et plus fonctionne
