@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/21 14:56:08 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/21 17:49:38 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ void	map_check_middle_line(t_data *data, int i, int j)
 	{
 		if (data->map->matrix[j][i] == 'N' || data->map->matrix[j][i] == 'E'
 		|| data->map->matrix[j][i] == 'W' || data->map->matrix[j][i] == 'S')
-			map_check_player(data, data->map->matrix[j][i], i, j);
+			map_check_player(data, data->map->matrix, i, j);
 		else if (data->map->matrix[j][i] == 'D')
 			map_check_door(data, i, j);
 		else if (data->map->matrix[j][i] != ' ' && data->map->matrix[j][i] != '1'
