@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/21 14:52:34 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/23 19:29:51 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ void	*check_line(char *str, t_data *data)
 			return (check_map_info(data, data->map, str));
 		return (data->map->matrix = ft_realloc(data->map->matrix, str, data));
 	}
+	if (data->map->flag == 1)
+		exit (error_msg("map border is incorrect", data));
 	exit (error_msg("scene element is not appropriate", data));
 }
 
@@ -56,7 +58,7 @@ void	*check_map_info(t_data *data, t_map *map, char *str)
 		map->matrix[1] = NULL;
 	}
 	else
-		exit (error_msg("identifier arguments are missing", data));
+		exit (error_msg("it miss identifier arguments before the map", data));
 	return (NULL);
 }
 

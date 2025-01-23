@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/21 17:49:14 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/23 19:20:09 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,11 +38,11 @@ void	init_events(t_data *data);
 int		close_escape(t_data *data);
 
 //parsing_player
-void	map_check_player(t_data *data, char **matrix, int i, int j);
+void	map_check_player(t_data *data, int i, int j, char **matrix);
 
 //parsing_map
 void	map_check(t_data *data, char **matrix);
-void	map_check_door(t_data *data, int i, int j); //bonus
+void	map_check_door(t_data *data, int i, int j, char **matrix); //bonus
 void	map_check_first_last_line(t_data *data, int i, int j);
 void	map_check_middle_line(t_data *data, int i, int j);
 void	map_check_border(t_data *data, char **matrix);
