@@ -29,7 +29,7 @@ int main(int argc, char **argv)
 
 void	ft_exit(int ex_stat, char *message)
 {
-	ft_printf(message);
+	printf("%s\n", message);
 	exit(ex_stat);
 }
 
@@ -40,7 +40,10 @@ int is_cub(char *argv)
 	i = ft_strlen(argv) - 1;
 	if (!(argv[i - 3] == '.' && argv[i - 2] == 'c' && argv[i - 1] == 'u'
 			&& argv[i] == 'b'))
-		ft_exit(1, "Map format is incorrect\n");
+		{
+			ft_exit(1, "error");
+			return(1);
+		}
 	else
 		return (0);
 }

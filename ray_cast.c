@@ -49,7 +49,7 @@ void vertical_check(t_data *data)
 
 	b_x = data->player.position_x / 64;
 	b_x *= 64;
-	if (data->player.angle >= 270 && data->player.angle <=90)
+	if ((data->player.angle >= 270 && data->player.angle <= 360 ) || (data->player.angle > 0 && data->player.angle <=90))
 	{
 		b_x += 64;
 		x_a = TILE;

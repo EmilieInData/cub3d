@@ -15,7 +15,6 @@
 
 # include "../gnl/get_next_line.h"
 # include "../mlx_linux/mlx.h"
-# include "../ft_printf/ft_printf.h"
 # include "../libft/libft.h"
 # include <unistd.h>
 # include <stdio.h>
@@ -24,9 +23,13 @@
 # include <fcntl.h>
 # include <X11/keysym.h>
 # include <math.h>
-# include "./struct.h"
+# include <X11/Xlib.h>
+# include "struct.h"
 
 
+# define TILE 64
+# define HEIGHT 800
+# define LENGTH 1280
 
 int		main(int argc, char **argv);
 int		is_cub(char *argv);

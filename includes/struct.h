@@ -21,8 +21,9 @@
 //we would also need height, length of the map. 
 //and i think we woulld have to use flood_fill function to check if the map is valid to play and the player is not stuck. lets see how we are handeling this 
 
+#ifndef STRUCT_H
+#define STRUCT_H
 
-# define TILE 64
 
 typedef struct s_color
 {
@@ -70,9 +71,10 @@ typedef struct s_data
 {
 	void			*mlx_init;
 	void			*mlx_window;
-	t_map			map;
+	t_map			*map;
 	t_player		player;
 	t_ray			ray;
 	//t_img			*image;
 }			   t_data;
 
+#endif

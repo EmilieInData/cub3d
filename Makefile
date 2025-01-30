@@ -11,11 +11,9 @@
 # **************************************************************************** #
 NAME = cub3D
 MLX = mlx_linux/
-PRINTF = ft_printf/
 GNL = gnl/
 LIBFT = libft/
 MLX_A = $(addprefix $(MLX), libmlx.a)
-PRINTF_A = $(addprefix $(PRINTF), libft_printf.a)
 GNL_A = $(addprefix $(GNL), libgnl.a)
 LIBFT_A = $(addprefix $(LIBFT), libft.a)
 
@@ -28,32 +26,29 @@ OBJ = $(SRC:.c=.o)
 
 CC = cc
 
-INCLUDES = -I includes -I $(LIBFT)libft.h -I $(PRINTF)ft_printf.h -I $(GNL)get_next_line.h
+INCLUDES = -I includes -I $(LIBFT)libft.h -I $(GNL)get_next_line.h
 
-CCFLAGS = -Wextra -Werror -Wall $(INCLUDES)
+CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) -fsanitize=address -fsanitize=leak
 
 all:
 	@$(MAKE) -C $(LIBFT)
-	@$(MAKE) -C $(PRINTF)
 	@$(MAKE) -C $(GNL)
 	@$(MAKE) -C $(MLX)
 	@$(MAKE) $(NAME)
 
 $(NAME): $(OBJ)
-	$(CC) $(CCFLAGS) $(OBJ) -L$(LIBFT) -lft -L$(PRINTF) -lft_printf -L$(GNL) -lgnl -L$(MLX) -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
+	$(CC) $(CCFLAGS) $(OBJ) -L$(LIBFT) -lft -L$(GNL) -lgnl -L$(MLX) -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
 
-%.o:		%.c Makefile includes/so_long.h includes/so_l_utils.h $(LIBFT_A) $(PRINTF_A) $(GNL_A) $(MLX_A)
+%.o:		%.c Makefile includes/cub3D.h includes/struct.h $(LIBFT_A) $(GNL_A) $(MLX_A)
 			$(CC) $(CCFLAGS) -Imlx_linux -O3 -c $< -o $(<:.c=.o)
 clean:
 			rm -f $(OBJ)
-			$(MAKE) clean -s -C $(PRINTF)
 			$(MAKE) clean -s -C $(GNL)
 			$(MAKE) clean -s -C $(LIBFT)
 
 fclean:		clean
 			$(MAKE) clean -s -C $(MLX)
 			$(MAKE) fclean -s -C $(GNL)
-			$(MAKE) fclean -s -C $(PRINTF)
 			$(MAKE) fclean -s -C $(LIBFT)
 			rm -f $(NAME)
 
