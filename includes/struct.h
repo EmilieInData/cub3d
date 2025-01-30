@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/30 13:28:50 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/30 16:26:01 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,23 +37,23 @@ typedef struct s_player
 	int				position_y;
 }              t_player;
 
-typedef struct s_data
-{
-	void			*mlx;
-	void			*mlx_window;
-	t_map			*map;
-	t_player		player;
-	//t_img			*image;
-}			   t_data;
-
-/*typedef struct s_img //if it's in pixels we will need that structure
+typedef struct s_image
 {
 	void			*img_add;
 	char			*pix_add;
 	int				bit_pix;
 	int				length_line;
 	int				endian;
-}				t_img;*/
+}			   t_image;
+
+typedef struct s_data
+{
+	void			*mlx;
+	void			*mlx_window;
+	t_map			*map;
+	t_player		player;
+	t_image			*image;
+}			   t_data;
 
 //my fractol structs : 
 /*

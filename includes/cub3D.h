@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/30 12:23:44 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/30 19:25:33 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,21 @@
 # include <math.h>
 # include <X11/Xlib.h>
 
-# define TILE 64
-# define HEIGHT 800
-# define LENGTH 1280
+# define TILE 			64
+# define HEIGHT 		800
+# define LENGTH 		1280
+
+//# define WHITE			0xFFFFFF
+//# define BLACK			0x0000
+# define PASTEL_PURPLE  0xC3B1E1
+# define DARK_PURPLE	0x4B2C58
+# define DARK_PINK		0x9B1B30
+# define BRIGHT_BLUE	0x1ABC9C
+
+//mini_map
+void	do_mini_map(t_data *data, char **matrix);
+//void	put_pixel_image(t_image *image, int x, int y, int color);
+void	put_scaled_image(t_image *image, int x, int y, int color);
 
 //events
 int		do_key(int keysym, t_data *data);
@@ -64,12 +76,14 @@ void	check_cub_file(t_data *data, char *file);
 //utils
 int		error_msg(char *str, t_data *data);
 void	free_array(char **array);
+void	free_image(t_image *image, t_data *data);
 void	free_data(t_data *data);
 
 //main
-void	print_data(t_data *data);
+void	print_data(t_data *data); //to borrow
+int		is_cub(char *argv);
+void	implementation_struct(t_data *data, char *name);
 void	*initialize(t_data *data);
 int		main(int argc, char **argv);
-int		is_cub(char *argv);
 
 #endif

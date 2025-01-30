@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/21 17:51:41 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/30 19:01:18 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,16 +50,57 @@ void	print_data(t_data *data)
 	}
 }
 
+int	is_cub(char *argv)
+{
+	int	i;
+	int	fd;
+
+	fd = -1;
+	i = ft_strlen(argv) - 1;
+	if (!(argv[i - 3] == '.' && argv[i - 2] == 'c' && argv[i - 1] == 'u'
+			&& argv[i] == 'b'))
+		exit (error_msg("map file is incorrect", NULL));
+	else
+	{
+		if (access(argv, F_OK) == 0 && access(argv, R_OK) == 0)
+			fd = open(argv, O_RDONLY);
+		if (fd == -1 || access(argv, F_OK) != 0 || access(argv, R_OK) != 0)
+			exit (error_msg("map file is not open", NULL));
+	}
+	return (0);
+}
+
+void	implementation_struct(t_data *data, char *name)
+{
+	data->image = malloc (sizeof (t_image));
+	if (!data->image)
+		exit (error_msg("malloc didn't work correctly", data));
+	data->mlx = mlx_init();
+	if (!data->mlx)
+		exit (error_msg("mlx_init didn't works properly", data));
+	data->mlx_window = mlx_new_window(data->mlx, LENGTH, HEIGHT, name);
+	if (!data->mlx_window)
+		exit (error_msg("mlx_new_window didn't works properly", data));
+	data->image->img_add = mlx_new_image(data->mlx, LENGTH, HEIGHT);
+	if (!data->image->img_add)
+		exit (error_msg("mlx_new_image didn't works properly", data));
+	data->image->pix_add = mlx_get_data_addr(data->image->img_add,
+			&data->image->bit_pix, &data->image->length_line,
+			&data->image->endian);
+	//rempli les ints de la struc IMG et renvoie l'adr memoire du pixel en cours
+	//init_events(data);
+}
+
 void	*initialize(t_data *data)
 {
 	data = malloc (sizeof (t_data));
 	if (!data)
 		exit (error_msg("malloc didn't work correctly", NULL));
+	data->mlx = NULL;
+	data->mlx_window = NULL;
 	data->map = malloc (sizeof (t_map));
 	if (!data->map)
 		exit (error_msg("malloc didn't work correctly", data));
-	//mlx
-	//mlx_window
 	data->map->no = NULL;
 	data->map->so = NULL;
 	data->map->we = NULL;
@@ -79,6 +120,7 @@ void	*initialize(t_data *data)
 	data->player.position_x = -1;
 	data->player.position_y = -1;
 	data->player.angle = -1;
+	data->image = NULL;
 	return (data);
 }
 
@@ -93,27 +135,10 @@ int	main(int argc, char **argv)
 	data = initialize(data);
 	check_cub_file(data, argv[1]);
 	map_check(data, data->map->matrix);
+	implementation_struct(data, "cub3D_map");
+	do_mini_map(data, data->map->matrix);
 	//print_data(data);
+	mlx_loop(data->mlx);
 	free_data(data);
-	return (0);
-}
-
-int	is_cub(char *argv)
-{
-	int	i;
-	int	fd;
-
-	fd = -1;
-	i = ft_strlen(argv) - 1;
-	if (!(argv[i - 3] == '.' && argv[i - 2] == 'c' && argv[i - 1] == 'u'
-			&& argv[i] == 'b'))
-		exit (error_msg("map file is incorrect", NULL));
-	else
-	{
-		if (access(argv, F_OK) == 0 && access(argv, R_OK) == 0)
-			fd = open(argv, O_RDONLY);
-		if (fd == -1 || access(argv, F_OK) != 0 || access(argv, R_OK) != 0)
-			exit (error_msg("map file is not open", NULL));
-	}
 	return (0);
 }
