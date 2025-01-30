@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/17 17:32:08 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/23 19:57:05 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,15 +77,13 @@ void	*fc_check(char *str, t_data *data, t_color *fc)
 	str = fc_check_args(str, data, &fc->green);
 	str = fc_clean_args(str, data);
 	str = fc_check_args(str, data, &fc->blue);
-	//if (!str)
-	//	return (0);
 	i = 0;
 	while (str && str[i])
 	{
-		if (str[i] == ' ' || str[i] == '	')
+		if (str[i] == ' ' || str[i] == '	')//gagner une ligne ici
 			i++;
 		else
 			exit (error_msg("too much colors informations", data));
 	}
-	return (0);
+	return (0);// ou ici en changeant le type de la fonction
 }

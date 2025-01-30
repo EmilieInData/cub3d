@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/17 17:34:13 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/23 19:57:21 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	*news_args_check(char *str, t_data *data, char **news)
 		i = 0;
 		while (str[i] && str[i] != ' ' && str[i] != '	')
 			i++;
-		if (str[i])//checker si plusieurs arg ou finit par autre chose qu'un caractere(pas ok espace apres)
+		if (str[i]) //checker si plusieurs arg ou finit par autre chose qu'un caractere(pas ok espace apres)
 			exit (error_msg("texture argument is not appropriate", data));
 		tmp = malloc((i + 1) * sizeof(char));
 		if (!tmp)

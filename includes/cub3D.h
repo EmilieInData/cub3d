@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/23 19:20:09 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/30 12:23:44 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 
 //Libraries
 # include "struct.h"
-
 # include "../gnl/get_next_line.h"
 # include "../mlx_linux/mlx.h"
 # include "../libft/libft.h"

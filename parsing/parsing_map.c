@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/23 19:49:26 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/23 19:54:01 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ void	map_check(t_data *data, char **matrix)
 	map_check_border(data, data->map->matrix);
 	if (data->player.news == '0')
 		exit (error_msg("map is incorrect, miss a player", data));
-
 }
 
 void	map_check_door(t_data *data, int i, int j, char **matrix) //bonus

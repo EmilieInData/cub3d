@@ -6,20 +6,9 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/21 15:40:23 by esellier         ###   ########.fr       */
+/*   Updated: 2025/01/30 13:28:50 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-//struct of map 
-//struct of player or have everything in one struct.
-//we basically need *mlx
-//*mlx_win
-//*player - for connecting with img
-//*wall -same
-//size_t of position of player in x and y 
-//**matrix of game to save map inside of our game
-//we would also need height, length of the map. 
-//and i think we would have to use flood_fill function to check if the map is valid to play and the player is not stuck. lets see how we are handeling this 
 
 typedef struct s_color
 {
