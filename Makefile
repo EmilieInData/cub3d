@@ -3,12 +3,13 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/20 14:18:49 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/01/21 14:53:20 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
+
 NAME = cub3D
 MLX = mlx_linux/
 GNL = gnl/
@@ -19,8 +20,13 @@ LIBFT_A = $(addprefix $(LIBFT), libft.a)
 
 SRC = main.c \
 	  ray_cast.c \
-	  test.c \
 	  ray_cast_calcul.c \
+	  parsing/parsing.c \
+	  parsing/parsing_colors.c \
+	  parsing/parsing_textures.c \
+	  parsing/parsing_map.c \
+	  parsing/parsing_player.c \
+	  utils.c
 
 OBJ = $(SRC:.c=.o)
 
@@ -28,7 +34,7 @@ CC = cc
 
 INCLUDES = -I includes -I $(LIBFT)libft.h -I $(GNL)get_next_line.h
 
-CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) -fsanitize=address -fsanitize=leak
+CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) #-fsanitize=address -fsanitize=leak
 
 all:
 	@$(MAKE) -C $(LIBFT)
@@ -55,3 +61,5 @@ fclean:		clean
 re:	fclean all
 
 .PHONY: all clean fclean re
+
+#reglas bonus

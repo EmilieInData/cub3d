@@ -110,24 +110,35 @@ void horizontal_check(t_data *data)
 	int adj_side;
 
 	a_y = data->player.position_y / TILE;
+	printf("%i\n", TILE);
+	printf("%i\n", data->player.position_y);
+	printf("%i\n", a_y);
 	a_y *= TILE;
+	printf("%i\n", a_y);
 	if (data->player.angle >= 0 && data->player.angle <= 180)
 		a_y--;
 	if (data->player.angle >= 181 && data->player.angle <= 359)
 		a_y += 64;
 	adj_side = (data->player.position_y - a_y) / tan(data->player.angle);
+	printf("%i\n", adj_side);
 	a_x = data->player.position_x + adj_side;
-	if (data->map->matrix[a_x / TILE][a_y / TILE] == '1')
+	printf("%i\n", a_x);
+	/*if (data->map->matrix[a_x / TILE][a_y / TILE] == '1')
 		data->ray.dist_h = find_distance_h(adj_side, TILE/2);
 	else
-		next_checks(data, a_x, a_y);
+		next_checks(data, a_x, a_y);*/
 }	
 
 void	find_wall(t_data *data)
 { 
+	data->player.position_y *= 64;
+	data->player.position_y += 32;
+	data->player.position_x *= 64;
+	data->player.position_x += 32;
+
 	horizontal_check(data);
-	vertical_check(data);
+	/*vertical_check(data);
 	printf("%i", data->ray.dist_h);
-	printf("%i", data->ray.dist_v);
+	printf("%i", data->ray.dist_v);*/
 }
 	

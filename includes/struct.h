@@ -40,9 +40,8 @@ typedef struct s_map
 	char			*ea;
 	t_color			floor;
 	t_color			ceiling;
-	int				height; // to_define ?
-	int				length; // to_define ?
 	char			**matrix;
+	int				flag;
 }			   t_map;
 
 /*typedef struct s_img //if it's in pixels we will need that structure
@@ -59,6 +58,7 @@ typedef struct s_player
 	int				position_x;
 	int				position_y;
 	int				angle;
+	char			news;
 }              t_player;
 
 typedef struct s_ray
@@ -69,7 +69,7 @@ typedef struct s_ray
 
 typedef struct s_data
 {
-	void			*mlx_init;
+	void			*mlx;
 	void			*mlx_window;
 	t_map			*map;
 	t_player		player;

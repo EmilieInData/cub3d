@@ -10,21 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/cub3d.h"
+#include "includes/cub3D.h"
 
 int find_distance_v(t_player player, int x, int y)
 {
 	int dist;
 
-	if (player.angle >= 270 && player.agle <= 90)
-		x = player.player_x - x;
+	if ((player.angle >= 270 && player.angle <= 360) || (player.angle > 0 && player.angle <= 90))
+		x = player.position_x - x;
 	else
-		x = x - player.player_x;
+		x = x - player.position_x;
 	y *= y;
 	x *= x;
 	dist = x + y;
 	dist *= dist;
-	return (dist)
+	printf("%i\n", dist);
+	return (dist);
 }
 
 int find_distance_h(int x, int y)
@@ -35,5 +36,6 @@ int find_distance_h(int x, int y)
 	x *= x;
 	dist = x + y;
 	dist *= dist;
-	return(dist)
+
+	return(dist);
 }
