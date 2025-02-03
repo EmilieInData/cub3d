@@ -29,7 +29,7 @@
 
 # define TILE 64
 # define HEIGHT 800
-# define LENGTH 1280
+# define LENGTH 1200
 
 //events
 int		do_key(int keysym, t_data *data);
@@ -72,13 +72,16 @@ void	*initialize(t_data *data);
 int		main(int argc, char **argv);
 int		is_cub(char *argv);
 
-void next_vertical(t_data *data, int x_a, int b_y, int b_x);
-void vertical_check(t_data *data);
-void	next_checks(t_data *data, int a_x, int a_y);
-void horizontal_check(t_data *data);
+//ray cast
+void	init_ray(t_data *data);
+void    next_vertical(t_data *data, int x_a, int b_y, int b_x, double radians);
+void    vertical_check(t_data *data, double radians);
+void	next_checks(t_data *data, int a_x, int a_y, double radians);
+void    horizontal_check(t_data *data, double radians);
 void	find_wall(t_data *data);
-int find_distance_v(t_player player, int x, int y);
-int find_distance_h(int x, int y);
-
+int     find_distance_v(t_data *data, int x, int y);
+int     find_distance_h(int x, int y);
+void	find_shortest_distance(t_ray ray, int i);
+void	print_ray(t_ray ray);
 
 #endif

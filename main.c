@@ -17,7 +17,7 @@ void	print_data(t_data *data)
 	int i;
 
 	i = 0;
-	if (data->map->no)
+	/*if (data->map->no)
 		printf("NO = %s\n", data->map->no);
 	if (data->map->so)
 		printf("SO = %s\n", data->map->so);
@@ -39,7 +39,7 @@ void	print_data(t_data *data)
 	if (data->player.position_y)
 		printf("Player_Y = %d\n", data->player.position_y);
 	if (data->player.angle)
-		printf("Player_angle = %d\n", data->player.angle);
+		printf("Player_angle = %d\n", data->player.angle);*/
 	if (data->map->matrix)
 	{
 		while (data->map->matrix[i])
@@ -48,6 +48,7 @@ void	print_data(t_data *data)
 			i++;
 		}
 	}
+	printf("Value at matrix[%d][%d]: %c\n", 7, 8, data->map->matrix[7][8]);
 }
 
 void	*initialize(t_data *data)

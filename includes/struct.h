@@ -63,8 +63,14 @@ typedef struct s_player
 
 typedef struct s_ray
 {
-	int dist_h;
-	int dist_v;
+	double	player_x;
+	double	player_y;
+	double	angle_start;
+	double	angle_end;
+	int FOV;
+	double dist_h;
+	double dist_v;
+	double dist_t_wall[1200];
 }				t_ray;
 
 typedef struct s_data
