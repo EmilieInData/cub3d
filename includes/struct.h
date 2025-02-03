@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/30 16:26:01 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/03 19:50:42 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ typedef struct s_map
 	t_color			ceiling;
 	char			**matrix;
 	int				flag;
+	int 			door;
 }			   t_map;
 
 typedef struct s_player
@@ -53,21 +54,5 @@ typedef struct s_data
 	t_map			*map;
 	t_player		player;
 	t_image			*image;
+	struct timeval	timer;
 }			   t_data;
-
-//my fractol structs : 
-/*
-typedef struct s_data
-{
-	char	*name;
-	int		range;
-	void	*init;
-	void	*window;
-	t_img	*image;
-	double	move_x;
-	double	move_y;
-	double	zoom;
-	double	julia_x;
-	double	julia_y;
-}				t_data;
-*/

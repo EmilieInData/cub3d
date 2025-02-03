@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/30 19:25:33 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/03 19:50:38 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define CUB3D_H
 
 //Libraries
-# include "struct.h"
 # include "../gnl/get_next_line.h"
 # include "../mlx_linux/mlx.h"
 # include "../libft/libft.h"
@@ -26,6 +25,8 @@
 # include <X11/keysym.h>
 # include <math.h>
 # include <X11/Xlib.h>
+# include <sys/time.h>
+# include "struct.h"
 
 # define TILE 			64
 # define HEIGHT 		800
@@ -38,15 +39,20 @@
 # define DARK_PINK		0x9B1B30
 # define BRIGHT_BLUE	0x1ABC9C
 
+//door
+void	do_door(t_data *data, int x, int y);
+void	close_door(t_data *data);
+
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);
-//void	put_pixel_image(t_image *image, int x, int y, int color);
 void	put_scaled_image(t_image *image, int x, int y, int color);
 
 //events
 int		do_key(int keysym, t_data *data);
 void	init_events(t_data *data);
 int		close_escape(t_data *data);
+void	do_view(t_data *data, int keysym);
+void	do_move(t_data *data, int x, int y, int keysym);
 
 //parsing_player
 void	map_check_player(t_data *data, int i, int j, char **matrix);

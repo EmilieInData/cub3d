@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:54:16 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/30 16:28:19 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/03 18:08:20 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,3 +73,11 @@ void	free_data(t_data *data)
 		free_image(data->image, data); // destroy_windows and mlx too
 	free (data);
 }
+
+/*void    put_pixel_image(t_image *image, int x, int y, int color)
+{
+	int	tmp;
+
+	tmp = (y * image->length_line) + (x * (image->bit_pix / 8));
+	*(unsigned int *)(image->pix_add + tmp) = color;
+}*/

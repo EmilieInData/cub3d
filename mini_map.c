@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:14:45 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/30 19:25:25 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/03 18:30:36 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,10 +64,7 @@ void	put_scaled_image(t_image *image, int x, int y, int color)
 	}
 }
 
-/*void    put_pixel_image(t_image *image, int x, int y, int color)
-{
-	int	tmp;
-
-	tmp = (y * image->length_line) + (x * (image->bit_pix / 8));
-	*(unsigned int *)(image->pix_add + tmp) = color;
-}*/
+//scale la mini-map em fonction de la taille de la map (pb si map super grande)
+//ou devrait faire toujours a peu pres la mm taille, mettre un cadre max de taille ?
+//mais tester sans scale le joueur
+// faire avec un pourcentage plutot ?

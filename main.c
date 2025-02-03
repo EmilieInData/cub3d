@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/30 19:01:18 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/03 19:07:13 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,6 +113,7 @@ void	*initialize(t_data *data)
 	data->map->ceiling.blue = -1;
 	data->map->matrix = NULL;
 	data->map->flag = -1;
+	data->map->door = -1;
 	/*data->player = malloc (sizeof (t_player));
 	if (!data->player)
 		exit (error_msg("malloc didn't work correctly", data), 1);*/ //pas besoin d'alloquer de la memoire si seulement int 
@@ -121,6 +122,8 @@ void	*initialize(t_data *data)
 	data->player.position_y = -1;
 	data->player.angle = -1;
 	data->image = NULL;
+	data->timer.tv_sec = 0;
+	data->timer.tv_usec = 0;
 	return (data);
 }
 
@@ -138,7 +141,8 @@ int	main(int argc, char **argv)
 	implementation_struct(data, "cub3D_map");
 	do_mini_map(data, data->map->matrix);
 	//print_data(data);
+	close_door(data);
 	mlx_loop(data->mlx);
 	free_data(data);
-	return (0);
+	exit (EXIT_SUCCESS);
 }
