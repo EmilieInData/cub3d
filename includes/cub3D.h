@@ -6,12 +6,17 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/03 19:50:38 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/04 19:13:42 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CUB3D_H
 # define CUB3D_H
+
+# define TILE 			64
+# define HEIGHT 		800
+# define LENGTH 		1280
+# define PICS			10
 
 //Libraries
 # include "../gnl/get_next_line.h"
@@ -28,10 +33,6 @@
 # include <sys/time.h>
 # include "struct.h"
 
-# define TILE 			64
-# define HEIGHT 		800
-# define LENGTH 		1280
-
 //# define WHITE			0xFFFFFF
 //# define BLACK			0x0000
 # define PASTEL_PURPLE  0xC3B1E1
@@ -46,6 +47,8 @@ void	close_door(t_data *data);
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);
 void	put_scaled_image(t_image *image, int x, int y, int color);
+void	init_sprite_neon(t_data *data);
+
 
 //events
 int		do_key(int keysym, t_data *data);
@@ -72,6 +75,8 @@ void	*fc_check(char *str, t_data *data, t_color *fc);
 //parsing_textures
 void	*news_args_check(char *str, t_data *data, char **news);
 void	*news_check(char *str, t_data *data);
+t_files	create_struct_files(t_data *data, char *news);
+void	create_struct_texture(t_data *data);
 
 //parsing
 void	*check_line(char *str, t_data *data);
@@ -83,12 +88,13 @@ void	check_cub_file(t_data *data, char *file);
 int		error_msg(char *str, t_data *data);
 void	free_array(char **array);
 void	free_image(t_image *image, t_data *data);
+void	free_data_texture(t_data *data);
 void	free_data(t_data *data);
 
 //main
 void	print_data(t_data *data); //to borrow
 int		is_cub(char *argv);
-void	implementation_struct(t_data *data, char *name);
+void	implementation_mlx(t_data *data, char *name);
 void	*initialize(t_data *data);
 int		main(int argc, char **argv);
 

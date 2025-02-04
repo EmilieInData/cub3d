@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/02/03 19:49:00 by esellier         ###   ########.fr        #
+#    Updated: 2025/02/04 15:52:54 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SRC = main.c \
 	  parsing/parsing_player.c \
 	  utils.c \
 	  mini_map.c \
+	  events.c \
 	  door.c
 
 OBJ = $(SRC:.c=.o)

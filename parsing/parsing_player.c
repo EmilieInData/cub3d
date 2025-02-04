@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/23 19:20:29 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/04 15:37:26 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,12 +35,9 @@ void	map_check_player(t_data *data, int i, int j, char **matrix)
 		data->player.angle = 180;
 	else if (matrix[j][i] == 'S')
 		data->player.angle = 270;
+	matrix[j][i] = '0';
 }
 
-//floodfill pour checker la position du player? pas enferme quelque part
-//checker la position du player, lui mettre un objectif a atteindre comme
-//une porte de sortie pour checker si la carte est ok ou un truc a recuperer
 
 //format texture xpm ou png
-
 //faire les signaux (terminal) ctrl c etc

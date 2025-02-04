@@ -6,9 +6,24 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/03 19:50:42 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/04 19:01:42 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+typedef struct s_files
+{
+	void			*img;
+	int				width;
+	int				height;
+}			   t_files;
+
+/*typedef struct s_texture
+{
+	t_files			no;
+	t_files			so;
+	t_files			we;
+	t_files			ea;
+}			   t_texture;*/
 
 typedef struct s_color
 {
@@ -55,4 +70,7 @@ typedef struct s_data
 	t_player		player;
 	t_image			*image;
 	struct timeval	timer;
+	t_files			texture[4];
+	t_files			sprite[PICS];
+	char			**array_sprite;
 }			   t_data;

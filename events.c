@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/03 19:26:23 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/04 16:02:22 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	do_key(int keysym, t_data *data)
 	if (keysym == XK_w || keysym == XK_a || keysym == XK_s || keysym == XK_d)
 		do_move(data, data->player.position_x, data->player.position_y, keysym);
 	if (keysym == XK_space)
-		//open the door, if in front of door, se referme apres 3 sec si le joueur n'est pas dessus
+		do_door(data, data->player.position_x, data->player.position_y);
 	return (0);
 }
 
@@ -43,7 +43,7 @@ void	do_view(t_data *data, int keysym)
 	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
 }
 
-void	do_move(t_data *data, int x, int y, int keysym) //rajouter la porte et si elle est ouverte (on avance de + 2 pour pas rester sur la porte, doit se fermer que quand le player l'a franchit)
+void	do_move(t_data *data, int x, int y, int keysym)
 {
 	if (keysym == XK_w && data->map->matrix[y - 1][x] == '0')
 		data->player.position_y = y - 1;
@@ -57,8 +57,8 @@ void	do_move(t_data *data, int x, int y, int keysym) //rajouter la porte et si e
 	else if (keysym == XK_d && data->map->matrix[y][x + 1] == '0')
 		data->player.position_x = x + 1;
 	else
-		//return (wall collisions)
-	//raycasting
+		return ;
+	//raycasting + position player sur minimap
 	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
 	//ou a la fin de la fonction de raycasting.
 }
@@ -67,14 +67,11 @@ void	init_events(t_data *data)
 {
 	mlx_key_hook(data->mlx_window, do_key, data);
 	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
-	mlx_mouse_hook(data->mlx_window, do_mouse, data);
+	//mlx_mouse_hook(data->mlx_window, do_mouse, data);
 }
 
 int	close_escape(t_data *data)
 {
-	mlx_destroy_image(data->mlx, data->image->img_add);
-	mlx_destroy_window(data->mlx, data->mlx_window);
-	mlx_destroy_display(data->mlx);
 	free_data(data);
 	exit (EXIT_SUCCESS);
 }

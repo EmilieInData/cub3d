@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:54:16 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/03 18:08:20 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/04 19:04:47 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,19 @@ void	free_image(t_image *image, t_data *data)
 		free (image);
 }
 
+/*void	free_data_texture(t_data *data)
+{
+	if (data->texture->no)
+		free (data->texture->no);
+	if (data->texture->so)
+		free (data->texture->so);
+	if (data->texture->we)
+		free (data->texture->we);
+	if (data->texture->ea)
+		free (data->texture->ea);
+	free (data->texture);
+}*/
+
 void	free_data(t_data *data)
 {
 	if (data->map)
@@ -64,13 +77,14 @@ void	free_data(t_data *data)
 			free_array(data->map->matrix);
 		free(data->map);
 	}
-	//if (data->player)
-	//{
-		//all lines to free
-	//	free(data->player);
-	//}
 	if (data->image) //image general, I use minimap for my test
 		free_image(data->image, data); // destroy_windows and mlx too
+	//if (data->texture)
+	//	free_data_texture(data);
+	if (data->mlx)
+		free (data->mlx);
+	//if (data->sprite)
+	//	free_array(data->sprite);
 	free (data);
 }
 

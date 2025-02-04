@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/03 19:07:13 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/04 19:04:14 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	print_data(t_data *data)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	if (data->map->no)
@@ -70,7 +70,7 @@ int	is_cub(char *argv)
 	return (0);
 }
 
-void	implementation_struct(t_data *data, char *name)
+void	implementation_mlx(t_data *data, char *name)
 {
 	data->image = malloc (sizeof (t_image));
 	if (!data->image)
@@ -88,7 +88,7 @@ void	implementation_struct(t_data *data, char *name)
 			&data->image->bit_pix, &data->image->length_line,
 			&data->image->endian);
 	//rempli les ints de la struc IMG et renvoie l'adr memoire du pixel en cours
-	//init_events(data);
+	init_events(data);
 }
 
 void	*initialize(t_data *data)
@@ -114,9 +114,6 @@ void	*initialize(t_data *data)
 	data->map->matrix = NULL;
 	data->map->flag = -1;
 	data->map->door = -1;
-	/*data->player = malloc (sizeof (t_player));
-	if (!data->player)
-		exit (error_msg("malloc didn't work correctly", data), 1);*/ //pas besoin d'alloquer de la memoire si seulement int 
 	data->player.news = '0';
 	data->player.position_x = -1;
 	data->player.position_y = -1;
@@ -124,6 +121,8 @@ void	*initialize(t_data *data)
 	data->image = NULL;
 	data->timer.tv_sec = 0;
 	data->timer.tv_usec = 0;
+	//data->texture = NULL;
+	//data->sprite = NULL;
 	return (data);
 }
 
@@ -138,8 +137,9 @@ int	main(int argc, char **argv)
 	data = initialize(data);
 	check_cub_file(data, argv[1]);
 	map_check(data, data->map->matrix);
-	implementation_struct(data, "cub3D_map");
-	do_mini_map(data, data->map->matrix);
+	implementation_mlx(data, "cub3D_map");
+	do_mini_map(data, data->map->matrix); //a utiliser en updatant seulement le player
+	create_struct_texture(data);
 	//print_data(data);
 	close_door(data);
 	mlx_loop(data->mlx);
