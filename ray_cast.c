@@ -21,17 +21,18 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 	int i;
 
 	i = 2;
-	a_y = x_a * tan(radians);
+	//a_y = x_a * tan(radians);
 	//printf("a_y %f\n", a_y);
 	//if (data->player.angle >= 0 && data->player.angle <= 180)
 	//	a_y += b_y;
 	//else
 	//	a_y -= b_y;
+	a_y = x_a * tan(radians);
+	a_x = b_x + TILE;
 	while (1)
 	{
-		a_x = b_x + TILE;
 		b_x = a_x;
-		b_y = a_y;
+		b_y += a_y;
 		a_x = (int)a_x / TILE;
 		a_y = (int)a_y / TILE;
 		printf("%i hit x = %f\n", i, b_x);
@@ -199,6 +200,7 @@ void horizontal_check(t_data *data, double radians)
 
 void	init_ray(t_data *data)
 {
+	data->player.angle = 30;
 	data->ray.player_x = ((double)data->player.position_x * 64) + 32;
 	data->ray.player_y = ((double)data->player.position_y * 64) + 32;
 	data->ray.angle_start = (double)data->player.angle + 30;
@@ -208,6 +210,7 @@ void	init_ray(t_data *data)
 	if (data->ray.angle_end < 0)
 		data->ray.angle_end = 360 - data->ray.angle_end;
 	data->ray.FOV = 60;
+	
 }
 
 void	print_ray(t_ray ray)

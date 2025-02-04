@@ -28,8 +28,8 @@
 # include <X11/Xlib.h>
 
 # define TILE 64
-# define HEIGHT 800
-# define LENGTH 1200
+# define HEIGHT 200
+# define LENGTH 320
 
 //events
 int		do_key(int keysym, t_data *data);

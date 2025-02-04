@@ -1,0 +1,9852 @@
+map width 6, map height 5
+160.000000
+224.000000
+60.000000
+0.000000
+60
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 178.475786
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 215.426203
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 252.376620
+3 hit y = 63.999000
+Coordinates [0], [3]
+
+On the 3 times it hit the wall
+distance : 184.753241
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 168.574374
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 279.425626
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 280.425626
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 60.000000
+distance : 165.891082
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 178.615681
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 215.845881
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 253.076081
+3 hit y = 63.999000
+Coordinates [0], [3]
+
+On the 3 times it hit the wall
+distance : 185.103962
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 168.990894
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 279.009106
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 280.009106
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 59.812500
+distance : 165.749872
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 178.756111
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 216.267160
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 253.778209
+3 hit y = 63.999000
+Coordinates [0], [3]
+
+On the 3 times it hit the wall
+distance : 185.458007
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 169.402753
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 278.597247
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 279.597247
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 59.625000
+distance : 165.611153
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 178.897080
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 216.690058
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 254.483036
+3 hit y = 63.999000
+Coordinates [0], [3]
+
+On the 3 times it hit the wall
+distance : 185.815403
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 169.810039
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 278.189961
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 279.189961
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 59.437500
+distance : 165.474867
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 179.038594
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 217.114593
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 255.190592
+3 hit y = 63.999000
+Coordinates [0], [3]
+
+On the 3 times it hit the wall
+distance : 186.176177
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 170.212836
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 277.787164
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 278.787164
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 59.250000
+distance : 165.340961
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 179.180661
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 217.540785
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 255.900909
+3 hit y = 63.999000
+Coordinates [0], [3]
+
+On the 3 times it hit the wall
+distance : 186.540356
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 170.611225
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 277.388775
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 278.388775
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 59.062500
+distance : 165.209379
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 179.323287
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 217.968652
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 256.614018
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 186.907968
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 171.005288
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 276.994712
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 277.994712
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 58.875000
+distance : 165.080068
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 179.466477
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 218.398213
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 257.329950
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 187.279041
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 171.395103
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 276.604897
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 277.604897
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 58.687500
+distance : 164.952978
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 179.610238
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 218.829488
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 258.048739
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 187.653604
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 171.780746
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 276.219254
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 277.219254
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 58.500000
+distance : 164.828059
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 179.754577
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 219.262497
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 258.770416
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 188.031687
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 172.162292
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 275.837708
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 276.837708
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 58.312500
+distance : 164.705262
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 179.899501
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 219.697258
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 259.495015
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 188.413317
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 172.539814
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 275.460186
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 276.460186
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 58.125000
+distance : 164.584541
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 180.045015
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 220.133792
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 260.222570
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 188.798526
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 172.913383
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 275.086617
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 276.086617
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 57.937500
+distance : 164.465849
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 180.191127
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 220.572120
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 260.953113
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 189.187344
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 173.283070
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 274.716930
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 275.716930
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 57.750000
+distance : 164.349143
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 180.337844
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 221.012262
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 261.686679
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 189.579800
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 173.648941
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 274.351059
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 275.351059
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 57.562500
+distance : 164.234379
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 180.485173
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 221.454238
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 262.423303
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 189.975927
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 174.011063
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 273.988937
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 274.988937
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 57.375000
+distance : 164.121515
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 180.633120
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 221.898070
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 263.163019
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 190.375756
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 174.369502
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 273.630498
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 274.630498
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 57.187500
+distance : 164.010510
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 180.781692
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 222.343778
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 263.905864
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 190.779319
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 174.724321
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 273.275679
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 274.275679
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 57.000000
+distance : 163.901324
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 180.930898
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 222.791386
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 264.651873
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 191.186649
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 175.075582
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 272.924418
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 273.924418
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 56.812500
+distance : 163.793918
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 181.080744
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 223.240913
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 265.401083
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 191.597777
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 175.423345
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 272.576655
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 273.576655
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 56.625000
+distance : 163.688255
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 181.231237
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 223.692383
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 266.153529
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 192.012739
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 175.767670
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 272.232330
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 273.232330
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 56.437500
+distance : 163.584297
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 181.382385
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 224.145817
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 266.909250
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 192.431567
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 176.108616
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 271.891384
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 272.891384
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 56.250000
+distance : 163.482010
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 181.534195
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 224.601239
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 267.668283
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 192.854295
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 176.446237
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 271.553763
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 272.553763
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 56.062500
+distance : 163.381357
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 181.686676
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 225.058671
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 268.430667
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 193.280960
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 176.780591
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 271.219409
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 272.219409
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 55.875000
+distance : 163.282306
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 181.839834
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 225.518137
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 269.196440
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 193.711596
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 177.111731
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 270.888269
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 271.888269
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 55.687500
+distance : 163.184822
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 181.993678
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 225.979659
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 269.965641
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 194.146239
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 177.439711
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 270.560289
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 271.560289
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 55.500000
+distance : 163.088875
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 182.148216
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 226.443262
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 270.738309
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 194.584925
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 177.764582
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 270.235418
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 271.235418
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 55.312500
+distance : 162.994431
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 182.303455
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 226.908970
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 271.514486
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 195.027692
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 178.086396
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 269.913604
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 270.913604
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 55.125000
+distance : 162.901462
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 182.459404
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 227.376808
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 272.294212
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 195.474576
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 178.405201
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 269.594799
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 270.594799
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 54.937500
+distance : 162.809936
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 182.616071
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 227.846799
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 273.077527
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 195.925616
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 178.721047
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 269.278953
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 270.278953
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 54.750000
+distance : 162.719825
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 182.773464
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 228.318969
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 273.864474
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 196.380851
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 179.033982
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 268.966018
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 269.966018
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 54.562500
+distance : 162.631100
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 182.931592
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 228.793344
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 274.655095
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 196.840318
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 179.344052
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 268.655948
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 269.655948
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 54.375000
+distance : 162.543734
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 183.090464
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 229.269948
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 275.449433
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 197.304059
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 179.651302
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 268.348698
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 269.348698
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 54.187500
+distance : 162.457700
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 183.250087
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 229.748809
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 276.247531
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 197.772112
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 179.955779
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 268.044221
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 269.044221
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 54.000000
+distance : 162.372972
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 183.410472
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 230.229953
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 277.049433
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 198.244520
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 180.257524
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 267.742476
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 268.742476
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 53.812500
+distance : 162.289523
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 183.571626
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 230.713405
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 277.855184
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 198.721324
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 180.556582
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 267.443418
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 268.443418
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 53.625000
+distance : 162.207328
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 183.733559
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 231.199194
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 278.664829
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 199.202564
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 180.852995
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 267.147005
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 268.147005
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 53.437500
+distance : 162.126365
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 183.896280
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 231.687347
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 279.478414
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 199.688285
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 181.146803
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 266.853197
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 267.853197
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 53.250000
+distance : 162.046607
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 184.059798
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 232.177891
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 280.295984
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 200.178530
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 181.438047
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 266.561953
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 267.561953
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 53.062500
+distance : 161.968033
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 184.224123
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 232.670855
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 281.117588
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 200.673342
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 181.726767
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 266.273233
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 267.273233
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 52.875000
+distance : 161.890620
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 184.389264
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 233.166268
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 281.943272
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 201.172766
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 182.013001
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 265.986999
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 266.986999
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 52.687500
+distance : 161.814344
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 184.555231
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 233.664158
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 282.773085
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 201.676847
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 182.296788
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 265.703212
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 266.703212
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 52.500000
+distance : 161.739186
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 184.722033
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 234.164555
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 283.607077
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 202.185631
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 182.578164
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 265.421836
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 266.421836
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 52.312500
+distance : 161.665123
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 184.889681
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 234.667488
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 284.445295
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 202.699165
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 182.857167
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 265.142833
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 266.142833
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 52.125000
+distance : 161.592136
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 185.058185
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 235.172989
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 285.287792
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 203.217496
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 183.133832
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 264.866168
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 265.866168
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 51.937500
+distance : 161.520203
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 185.227554
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 235.681086
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 286.134618
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 203.740673
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 183.408194
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 264.591806
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 265.591806
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 51.750000
+distance : 161.449306
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 185.397800
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 236.191812
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 286.985824
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 204.268743
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 183.680287
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 264.319713
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 265.319713
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 51.562500
+distance : 161.379425
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 185.568932
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 236.705198
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 287.841464
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 204.801757
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 183.950146
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 264.049854
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 265.049854
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 51.375000
+distance : 161.310541
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 185.740961
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 237.221275
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 288.701589
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 205.339765
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 184.217803
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 263.782197
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 264.782197
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 51.187500
+distance : 161.242636
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 185.913899
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 237.740077
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 289.566255
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 205.882817
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 184.483291
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 263.516709
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 264.516709
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 51.000000
+distance : 161.175692
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 186.087755
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 238.261636
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 290.435516
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 206.430966
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 184.746642
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 263.253358
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 264.253358
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 50.812500
+distance : 161.109692
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 186.262542
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 238.785985
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 291.309427
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 206.984264
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 185.007887
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 262.992113
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 263.992113
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 50.625000
+distance : 161.044618
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 186.438270
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 239.313158
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 292.188045
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 207.542765
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 185.267057
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 262.732943
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 263.732943
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 50.437500
+distance : 160.980455
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 186.614951
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 239.843189
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 293.071427
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 208.106522
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 185.524182
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 262.475818
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 263.475818
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 50.250000
+distance : 160.917184
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 186.792596
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 240.376113
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 293.959631
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 208.675592
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 185.779291
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 262.220709
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 263.220709
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 50.062500
+distance : 160.854792
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 186.971217
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 240.911966
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 294.852715
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 209.250029
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 186.032414
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 261.967586
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 262.967586
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 49.875000
+distance : 160.793261
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 187.150827
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 241.450783
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 295.750739
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 209.829891
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 186.283579
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 261.716421
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 262.716421
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 49.687500
+distance : 160.732577
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 187.331436
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 241.992600
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 296.653764
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 210.415235
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 186.532814
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 261.467186
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 262.467186
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 49.500000
+distance : 160.672725
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 187.513058
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 242.537454
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 297.561851
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 211.006120
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 186.780146
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 261.219854
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 262.219854
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 49.312500
+distance : 160.613689
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 187.695705
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 243.085383
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 298.475062
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 211.602606
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 187.025602
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 260.974398
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 261.974398
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 49.125000
+distance : 160.555457
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 187.879389
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 243.636425
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 299.393461
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 212.204752
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 187.269209
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 260.730791
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 261.730791
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 48.937500
+distance : 160.498014
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 188.064124
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 244.190617
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 300.317111
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 212.812621
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 187.510993
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 260.489007
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 261.489007
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 48.750000
+distance : 160.441346
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 188.249922
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 244.748000
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 301.246078
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 213.426275
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 187.750979
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 260.249021
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 261.249021
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 48.562500
+distance : 160.385441
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 188.436797
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 245.308613
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 302.180429
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 214.045776
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 187.989193
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 260.010807
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 261.010807
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 48.375000
+distance : 160.330284
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 188.624761
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 245.872495
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 303.120229
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 214.671190
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 188.225658
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 259.774342
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 260.774342
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 48.187500
+distance : 160.275863
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 188.813830
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 246.439689
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 304.065547
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 215.302582
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 188.460400
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 259.539600
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 260.539600
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 48.000000
+distance : 160.222166
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 189.004016
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 247.010235
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 305.016453
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 215.940019
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 188.693441
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 259.306559
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 260.306559
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 47.812500
+distance : 160.169180
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 189.195333
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 247.584175
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 305.973017
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 216.583567
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 188.924805
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 259.075195
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 260.075195
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 47.625000
+distance : 160.116894
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 189.387797
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 248.161553
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 306.935309
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 217.233297
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 189.154516
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 258.845484
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 259.845484
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 47.437500
+distance : 160.065295
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 189.581420
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 248.742412
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 307.903403
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 217.889276
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 189.382595
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 258.617405
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 259.617405
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 47.250000
+distance : 160.014373
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 189.776219
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 249.326795
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 308.877372
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 218.551577
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 189.609065
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 258.390935
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 259.390935
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 47.062500
+distance : 159.964116
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 189.972207
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 249.914749
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 309.857290
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 219.220271
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 189.833948
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 258.166052
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 259.166052
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 46.875000
+distance : 159.914512
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 190.169401
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 250.506317
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 310.843234
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 219.895432
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 190.057264
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 257.942736
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 258.942736
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 46.687500
+distance : 159.865552
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 190.367815
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 251.101547
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 311.835280
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 220.577134
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 190.279036
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 257.720964
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 258.720964
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 46.500000
+distance : 159.817225
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 190.567465
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 251.700486
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 312.833507
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 221.265453
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 190.499283
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 257.500717
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 258.500717
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 46.312500
+distance : 159.769520
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 190.768368
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 252.303181
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 313.837994
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 221.960466
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 190.718027
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 257.281973
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 258.281973
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 46.125000
+distance : 159.722427
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 190.970539
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 252.909680
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 314.848822
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 222.662250
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 190.935286
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 257.064714
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 258.064714
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 45.937500
+distance : 159.675937
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 191.173994
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 253.520034
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 315.866074
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 223.370886
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 191.151081
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 256.848919
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 257.848919
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 45.750000
+distance : 159.630039
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 191.378751
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 254.134291
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 316.889832
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 224.086455
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 191.365431
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 256.634569
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 257.634569
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 45.562500
+distance : 159.584724
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 191.584826
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 254.752503
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 317.920181
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 224.809038
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 191.578355
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 256.421645
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 257.421645
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 45.375000
+distance : 159.539983
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 191.792236
+First hit y = 191.999000
+Coordinates [2], [2]
+2 hit x = 255.374722
+2 hit y = 127.999000
+Coordinates [1], [3]
+3 hit x = 318.957208
+3 hit y = 63.999000
+Coordinates [0], [4]
+
+On the 3 times it hit the wall
+distance : 225.538719
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 191.789872
+Coordinates [2], [3]
+2 hit x = 256.000000
+2 hit y = 256.210128
+Coordinates [4], [1]
+3 hit x = 4.000000
+3 hit y = 257.210128
+Coordinates [0], [0]
+
+On the 3 times it hit the wall
+angle 45.187500
+distance : 159.495807
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 192.001000
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 256.001000
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 320.001000
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 226.275584
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 192.000000
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 256.000000
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 45.000000
+distance : 101.192885
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 192.211134
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 256.631390
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 321.051646
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 227.019719
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 192.208757
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 255.791243
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 44.812500
+distance : 101.127064
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 192.422658
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 257.265947
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 322.109237
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 227.771211
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 192.416161
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 255.583839
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 44.625000
+distance : 101.062055
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 192.635589
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 257.904726
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 323.173864
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 228.530151
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 192.622230
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 255.377770
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 44.437500
+distance : 100.997844
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 192.849945
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 258.547783
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 324.245621
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 229.296629
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 192.826980
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 255.173020
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 44.250000
+distance : 100.934420
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 193.065747
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 259.195175
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 325.324603
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 230.070738
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 193.030429
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 254.969571
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 44.062500
+distance : 100.871772
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 193.283013
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 259.846960
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 326.410907
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 230.852572
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 193.232594
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 254.767406
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 43.875000
+distance : 100.809887
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 193.501764
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 260.503197
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 327.504630
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 231.642227
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 193.433490
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 254.566510
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 43.687500
+distance : 100.748755
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 193.722018
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 261.163946
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 328.605874
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 232.439800
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 193.633134
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 254.366866
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 43.500000
+distance : 100.688364
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 193.943796
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 261.829268
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 329.714739
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 233.245391
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 193.831542
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 254.168458
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 43.312500
+distance : 100.628703
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 194.167120
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 262.499225
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 330.831329
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 234.059101
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 194.028729
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 253.971271
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 43.125000
+distance : 100.569762
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 194.392010
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 263.173879
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 331.955749
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 234.881033
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 194.224712
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 253.775288
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 42.937500
+distance : 100.511531
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 194.618487
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 263.853297
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 333.088107
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 235.711291
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 194.419504
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 253.580496
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 42.750000
+distance : 100.453998
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 194.846573
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 264.537542
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 334.228510
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 236.549981
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 194.613122
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 253.386878
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 42.562500
+distance : 100.397154
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 195.076291
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 265.226680
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 335.377070
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 237.397213
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 194.805579
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 253.194421
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 42.375000
+distance : 100.340990
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 195.307663
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 265.920781
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 336.533899
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 238.253096
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 194.996891
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 253.003109
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 42.187500
+distance : 100.285494
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 195.540711
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 266.619912
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 337.699113
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 239.117742
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 195.187071
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 252.812929
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 42.000000
+distance : 100.230658
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 195.775460
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 267.324144
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 338.872827
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 239.991267
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 195.376133
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 252.623867
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 41.812500
+distance : 100.176473
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 196.011933
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 268.033547
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 340.055161
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 240.873787
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 195.564092
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 252.435908
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 41.625000
+distance : 100.122929
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 196.250153
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 268.748194
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 341.246236
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 241.765419
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 195.750961
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 252.249039
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 41.437500
+distance : 100.070017
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 196.490147
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 269.468160
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 342.446174
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 242.666286
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 195.936753
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 252.063247
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 41.250000
+distance : 100.017728
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 196.731938
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 270.193519
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 343.655100
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 243.576509
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 196.121482
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 251.878518
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 41.062500
+distance : 99.966053
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 196.975553
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 270.924348
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 344.873144
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 244.496215
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 196.305161
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 251.694839
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 40.875000
+distance : 99.914984
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 197.221017
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 271.660725
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 346.100433
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 245.425531
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 196.487802
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 251.512198
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 40.687500
+distance : 99.864513
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 197.468357
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 272.402729
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 347.337101
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 246.364587
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 196.669418
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 251.330582
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 40.500000
+distance : 99.814632
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 197.717599
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 273.150441
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 348.583283
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 247.313515
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 196.850022
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 251.149978
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 40.312500
+distance : 99.765331
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 197.968772
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 273.903944
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 349.839115
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 248.272450
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 197.029626
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 250.970374
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 40.125000
+distance : 99.716604
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 198.221903
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 274.663320
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 351.104737
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 249.241531
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 197.208241
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 250.791759
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 39.937500
+distance : 99.668442
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 198.477020
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 275.428656
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 352.380292
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 250.220896
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 197.385881
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 250.614119
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 39.750000
+distance : 99.620838
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 198.734153
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 276.200039
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 353.665925
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 251.210689
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 197.562556
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 250.437444
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 39.562500
+distance : 99.573784
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 198.993331
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 276.977557
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 354.961783
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 252.211056
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 197.738279
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 250.261721
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 39.375000
+distance : 99.527273
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 199.254585
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 277.761301
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 356.268017
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 253.222144
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 197.913060
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 250.086940
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 39.187500
+distance : 99.481297
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 199.517944
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 278.551362
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 357.584780
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 254.244106
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 198.086911
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 249.913089
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 39.000000
+distance : 99.435850
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 199.783440
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 279.347835
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 358.912229
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 255.277094
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 198.259843
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 249.740157
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 38.812500
+distance : 99.390924
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 200.051106
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 280.150815
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 360.250524
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 256.321268
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 198.431867
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 249.568133
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 38.625000
+distance : 99.346512
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 200.320973
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 280.960399
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 361.599826
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 257.376785
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 198.602994
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 249.397006
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 38.437500
+distance : 99.302608
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 200.593075
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 281.776688
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 362.960301
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 258.443812
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 198.773234
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 249.226766
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 38.250000
+distance : 99.259205
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 200.867445
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 282.599782
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 364.332118
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 259.522513
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 198.942598
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 249.057402
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 38.062500
+distance : 99.216296
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 201.144119
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 283.429784
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 365.715450
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 260.613059
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 199.111096
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 248.888904
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 37.875000
+distance : 99.173875
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 201.423130
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 284.266801
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 367.110472
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 261.715624
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 199.278739
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 248.721261
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 37.687500
+distance : 99.131936
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 201.704515
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 285.110939
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 368.517363
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 262.830384
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 199.445536
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 248.554464
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 37.500000
+distance : 99.090472
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 201.988311
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 285.962308
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 369.936305
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 263.957520
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 199.611498
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 248.388502
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 37.312500
+distance : 99.049478
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 202.274554
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 286.821020
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 371.367486
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 265.097216
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 199.776634
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 248.223366
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 37.125000
+distance : 99.008946
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 202.563283
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 287.687188
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 372.811094
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 266.249661
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 199.940954
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 248.059046
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 36.937500
+distance : 98.968872
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 202.854536
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 288.560930
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 374.267324
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 267.415045
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 200.104467
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 247.895533
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 36.750000
+distance : 98.929250
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 203.148354
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 289.442364
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 375.736375
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 268.593565
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 200.267183
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 247.732817
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 36.562500
+distance : 98.890073
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 203.444775
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 290.331611
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 377.218446
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 269.785421
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 200.429110
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 247.570890
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 36.375000
+distance : 98.851337
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 203.743843
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 291.228794
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 378.713746
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 270.990817
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 200.590260
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 247.409740
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 36.187500
+distance : 98.813035
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 204.045598
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 292.134041
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 380.222484
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 272.209960
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 200.750639
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 247.249361
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 36.000000
+distance : 98.775163
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 204.350084
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 293.047479
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 381.744874
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 273.443064
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 200.910258
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 247.089742
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 35.812500
+distance : 98.737714
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 204.657344
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 293.969240
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 383.281137
+3 hit y = 63.999000
+Coordinates [0], [5]
+
+On the 3 times it hit the wall
+distance : 274.690346
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 201.069124
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 246.930876
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 35.625000
+distance : 98.700684
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 204.967423
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 294.899459
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 384.831495
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 201.227248
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 246.772752
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 35.437500
+distance : 98.664068
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 205.280368
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 295.838273
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 386.396179
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 201.384636
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 246.615364
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 35.250000
+distance : 98.627860
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 205.596224
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 296.785822
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 387.975419
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 201.541298
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 246.458702
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 35.062500
+distance : 98.592055
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 205.915039
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 297.742248
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 389.569457
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 201.697242
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 246.302758
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 34.875000
+distance : 98.556649
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 206.236863
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 298.707698
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 391.178534
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 201.852477
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 246.147523
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 34.687500
+distance : 98.521636
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 206.561744
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 299.682322
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 392.802900
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 202.007009
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 245.992991
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 34.500000
+distance : 98.487013
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 206.889734
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 300.666271
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 394.442808
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 202.160849
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 245.839151
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 34.312500
+distance : 98.452773
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 207.220884
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 301.659702
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 396.098520
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 202.314002
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 245.685998
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 34.125000
+distance : 98.418913
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 207.555249
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 302.662774
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 397.770299
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 202.466478
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 245.533522
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 33.937500
+distance : 98.385429
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 207.892881
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 303.675650
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 399.458419
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 202.618284
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 245.381716
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 33.750000
+distance : 98.352315
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 208.233837
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 304.698496
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 401.163155
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 202.769427
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 245.230573
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 33.562500
+distance : 98.319567
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 208.578173
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 305.731482
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 402.884792
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 202.919915
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 245.080085
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 33.375000
+distance : 98.287181
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 208.925947
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 306.774783
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 404.623619
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 203.069756
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 244.930244
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 33.187500
+distance : 98.255153
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 209.277219
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 307.828576
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 406.379934
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 203.218957
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 244.781043
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 33.000000
+distance : 98.223479
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 209.632049
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 308.893044
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 408.154039
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 203.367525
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 244.632475
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 32.812500
+distance : 98.192154
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 209.990499
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 309.968372
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 409.946245
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 203.515467
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 244.484533
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 32.625000
+distance : 98.161174
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 210.352633
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 311.054751
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 411.756870
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 203.662791
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 244.337209
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 32.437500
+distance : 98.130536
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 210.718515
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 312.152376
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 413.586237
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 203.809504
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 244.190496
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 32.250000
+distance : 98.100235
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 211.088213
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 313.261447
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 415.434680
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 203.955611
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 244.044389
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 32.062500
+distance : 98.070268
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 211.461794
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 314.382166
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 417.302538
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 204.101121
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 243.898879
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 31.875000
+distance : 98.040631
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 211.839328
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 315.514744
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 419.190160
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 204.246040
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 243.753960
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 31.687500
+distance : 98.011320
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 212.220886
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 316.659394
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 421.097902
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 204.390375
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 243.609625
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 31.500000
+distance : 97.982332
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 212.606541
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 317.816335
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 423.026129
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 204.534132
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 243.465868
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 31.312500
+distance : 97.953663
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 212.996368
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 318.985791
+2 hit y = 127.999000
+Coordinates [1], [4]
+3 hit x = 424.975214
+3 hit y = 63.999000
+Coordinates [0], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 204.677317
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 243.322683
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 31.125000
+distance : 97.925309
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 213.390443
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 320.167992
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 186.735047
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 204.819938
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 243.180062
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 30.937500
+distance : 97.897266
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 213.788845
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 321.363173
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 187.761193
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 204.962001
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 243.037999
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 30.750000
+distance : 97.869533
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 214.191654
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 322.571576
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 188.800713
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 205.103511
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 242.896489
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 30.562500
+distance : 97.842104
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 214.598953
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 323.793446
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 189.853852
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 205.244475
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 242.755525
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 30.375000
+distance : 97.814977
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 215.010825
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 325.029038
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 190.920861
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 205.384900
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 242.615100
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 30.187500
+distance : 97.788148
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 215.427358
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 326.278610
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 192.002000
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 205.524791
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 242.475209
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 30.000000
+distance : 97.761615
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 215.848639
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 327.542428
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 193.097533
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 205.664155
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 242.335845
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 29.812500
+distance : 97.735373
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 216.274761
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 328.820765
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 194.207731
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 205.802997
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 242.197003
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 29.625000
+distance : 97.709421
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 216.705815
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 330.113900
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 195.332872
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 205.941323
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 242.058677
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 29.437500
+distance : 97.683754
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 217.141897
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 331.422120
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 196.473243
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 206.079139
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 241.920861
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 29.250000
+distance : 97.658370
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 217.583106
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 332.745719
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 197.629136
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 206.216451
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 241.783549
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 29.062500
+distance : 97.633266
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 218.029542
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 334.084999
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 198.800852
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 206.353264
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 241.646736
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 28.875000
+distance : 97.608439
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 218.481308
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 335.440269
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 199.988700
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 206.489585
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 241.510415
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 28.687500
+distance : 97.583885
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 218.938510
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 336.811847
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 201.192995
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 206.625418
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 241.374582
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 28.500000
+distance : 97.559603
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 219.401257
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 338.200058
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 202.414063
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 206.760769
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 241.239231
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 28.312500
+distance : 97.535589
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 219.869660
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 339.605238
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 203.652237
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 206.895644
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 241.104356
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 28.125000
+distance : 97.511840
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 220.343834
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 341.027731
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 204.907860
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 207.030047
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 240.969953
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 27.937500
+distance : 97.488355
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 220.823896
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 342.467888
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 206.181285
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 207.163986
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 240.836014
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 27.750000
+distance : 97.465129
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 221.309968
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 343.926073
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 207.472872
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 207.297463
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 240.702537
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 27.562500
+distance : 97.442161
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 221.802174
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 345.402659
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 208.782992
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 207.430486
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 240.569514
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 27.375000
+distance : 97.419448
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 222.300640
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 346.898027
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 210.112028
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 207.563058
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 240.436942
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 27.187500
+distance : 97.396987
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 222.805499
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 348.412571
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 211.460372
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 207.695186
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 240.304814
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 27.000000
+distance : 97.374776
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 223.316884
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 349.946696
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 212.828427
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 207.826873
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 240.173127
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 26.812500
+distance : 97.352812
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 223.834936
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 351.500817
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 214.216608
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 207.958126
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 240.041874
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 26.625000
+distance : 97.331093
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 224.359795
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 353.075362
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 215.625341
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 208.088949
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 239.911051
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 26.437500
+distance : 97.309617
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 224.891609
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 354.670770
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 217.055064
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 208.219346
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 239.780654
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 26.250000
+distance : 97.288381
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 225.430528
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 356.287494
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 218.506230
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 208.349324
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 239.650676
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 26.062500
+distance : 97.267382
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 225.976708
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 357.925999
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 219.979302
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 208.478886
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 239.521114
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 25.875000
+distance : 97.246619
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 226.530307
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 359.586764
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 221.474758
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 208.608037
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 239.391963
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 25.687500
+distance : 97.226090
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 227.091492
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 361.270282
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 222.993091
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 208.736783
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 239.263217
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 25.500000
+distance : 97.205791
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 227.660430
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 362.977061
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 224.534806
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 208.865127
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 239.134873
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 25.312500
+distance : 97.185721
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 228.237296
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 364.707623
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 226.100426
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 208.993075
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 239.006925
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 25.125000
+distance : 97.165878
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 228.822269
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 366.462506
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 227.690489
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 209.120630
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 238.879370
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 24.937500
+distance : 97.146259
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 229.415535
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 368.242267
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 229.305547
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 209.247798
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 238.752202
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 24.750000
+distance : 97.126863
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 230.017284
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 370.047476
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 230.946171
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 209.374583
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 238.625417
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 24.562500
+distance : 97.107687
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 230.627712
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 371.878722
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 232.612951
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 209.500989
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 238.499011
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 24.375000
+distance : 97.088729
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 231.247022
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 373.736613
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 234.306491
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 209.627020
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 238.372980
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 24.187500
+distance : 97.069988
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 231.875423
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 375.621776
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 236.027419
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 209.752682
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 238.247318
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 24.000000
+distance : 97.051461
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 232.513130
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 377.534857
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 237.776378
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 209.877978
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 238.122022
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 23.812500
+distance : 97.033146
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 233.160365
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 379.476522
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 239.554035
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.002913
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.997087
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 23.625000
+distance : 97.015042
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 233.817358
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 381.447459
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 241.361077
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.127490
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.872510
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 23.437500
+distance : 96.997147
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 234.484345
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 383.448379
+2 hit y = 127.999000
+Coordinates [1], [5]
+
+On the 2 times it hit the wall
+distance : 243.198212
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.251715
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.748285
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 23.250000
+distance : 96.979458
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 235.161571
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 385.480015
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.375591
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.624409
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 23.062500
+distance : 96.961975
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 235.849288
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 387.543124
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.499122
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.500878
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 22.875000
+distance : 96.944694
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 236.547757
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 389.638488
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.622312
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.377688
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 22.687500
+distance : 96.927615
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 237.257248
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 391.766916
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.745166
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.254834
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 22.500000
+distance : 96.910735
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 237.978039
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 393.929243
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.867687
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.132313
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 22.312500
+distance : 96.894054
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 238.710418
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 396.126334
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 210.989880
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 237.010120
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 22.125000
+distance : 96.877568
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 239.454682
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 398.359080
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 211.111748
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 236.888252
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 21.937500
+distance : 96.861277
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 240.211140
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 400.628407
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 211.233295
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 236.766705
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 21.750000
+distance : 96.845179
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 240.980111
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 402.935271
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 211.354525
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 236.645475
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 21.562500
+distance : 96.829273
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 241.761923
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 405.280661
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 211.475441
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 236.524559
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 21.375000
+distance : 96.813556
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 242.556920
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 407.665602
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 211.596049
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 236.403951
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 21.187500
+distance : 96.798027
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 243.365455
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 410.091155
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 211.716351
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 236.283649
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 21.000000
+distance : 96.782685
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 244.187894
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 412.558421
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 211.836351
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 236.163649
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 20.812500
+distance : 96.767527
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 245.024617
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 415.068538
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 211.956053
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 236.043947
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 20.625000
+distance : 96.752554
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 245.876019
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 417.622689
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 212.075460
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 235.924540
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 20.437500
+distance : 96.737762
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 246.742506
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 420.222097
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 212.194577
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 235.805423
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 20.250000
+distance : 96.723151
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 247.624504
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 422.868034
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 212.313406
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 235.686594
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 20.062500
+distance : 96.708720
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 248.522451
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 425.561819
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 212.431952
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 235.568048
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 19.875000
+distance : 96.694466
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 249.436804
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 428.304821
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 212.550217
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 235.449783
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 19.687500
+distance : 96.680389
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 250.368036
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 431.098461
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 212.668206
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 235.331794
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 19.500000
+distance : 96.666486
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 251.316641
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 433.944216
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 212.785921
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 235.214079
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 19.312500
+distance : 96.652758
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 252.283130
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 436.843621
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 212.903367
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 235.096633
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 19.125000
+distance : 96.639201
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 253.268033
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 439.798271
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.020547
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.979453
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 18.937500
+distance : 96.625816
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 254.271906
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 442.809826
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.137464
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.862536
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 18.750000
+distance : 96.612601
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 255.295323
+First hit y = 191.999000
+Coordinates [2], [3]
+2 hit x = 445.880012
+2 hit y = 127.999000
+Coordinates [1], [6]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.254121
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.745879
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 18.562500
+distance : 96.599554
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 256.338882
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 449.010626
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.370522
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.629478
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 18.375000
+distance : 96.586675
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 257.403208
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 452.203538
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.486671
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.513329
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 18.187500
+distance : 96.573962
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 258.488951
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 455.460697
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.602570
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.397430
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 18.000000
+distance : 96.561413
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 259.596786
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 458.784135
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.718222
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.281778
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 17.812500
+distance : 96.549029
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 260.727421
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 462.175967
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.833632
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.166368
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 17.625000
+distance : 96.536807
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 261.881590
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 465.638403
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 213.948802
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 234.051198
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 17.437500
+distance : 96.524746
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 263.060062
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 469.173746
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.063736
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.936264
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 17.250000
+distance : 96.512845
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 264.263640
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 472.784403
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.178436
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.821564
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 17.062500
+distance : 96.501104
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 265.493159
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 476.472885
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.292906
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.707094
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 16.875000
+distance : 96.489521
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 266.749496
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 480.241817
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.407149
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.592851
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 16.687500
+distance : 96.478095
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 268.033565
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 484.093945
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.521168
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.478832
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 16.500000
+distance : 96.466825
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 269.346324
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 488.032138
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.634966
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.365034
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 16.312500
+distance : 96.455709
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 270.688773
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 492.059401
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.748547
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.251453
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 16.125000
+distance : 96.444748
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 272.061961
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 496.178880
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.861913
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.138087
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 15.937500
+distance : 96.433939
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 273.466987
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 500.393870
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 214.975067
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 233.024933
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 15.750000
+distance : 96.423283
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 274.905002
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 504.707825
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.088012
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.911988
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 15.562500
+distance : 96.412777
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 276.377213
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 509.124367
+2 hit y = 127.999000
+Coordinates [1], [7]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.200752
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.799248
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 15.375000
+distance : 96.402421
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 277.884889
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 513.647298
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.313289
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.686711
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 15.187500
+distance : 96.392214
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 279.429358
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 518.280610
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.425626
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.574374
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 15.000000
+distance : 96.382155
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 281.012019
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 523.028495
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.537766
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.462234
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 14.812500
+distance : 96.372244
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 282.634343
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 527.895363
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.649713
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.350287
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 14.625000
+distance : 96.362479
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 284.297873
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 532.885852
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.761468
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.238532
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 14.437500
+distance : 96.352859
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 286.004239
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 538.004842
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.873035
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.126965
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 14.250000
+distance : 96.343384
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 287.755153
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 543.257475
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 215.984417
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 232.015583
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 14.062500
+distance : 96.334052
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 289.552423
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 548.649173
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.095617
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.904383
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 13.875000
+distance : 96.324863
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 291.397954
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 554.185651
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.206637
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.793363
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 13.687500
+distance : 96.315817
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 293.293758
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 559.872943
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.317480
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.682520
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 13.500000
+distance : 96.306911
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 295.241959
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 565.717425
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.428149
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.571851
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 13.312500
+distance : 96.298146
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 297.244804
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 571.725834
+2 hit y = 127.999000
+Coordinates [1], [8]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.538646
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.461354
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 13.125000
+distance : 96.289521
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 299.304669
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 577.905301
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.648976
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.351024
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 12.937500
+distance : 96.281034
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 301.424070
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 584.263373
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.759139
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.240861
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 12.750000
+distance : 96.272686
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 303.605675
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 590.808049
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.869140
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.130860
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 12.562500
+distance : 96.264475
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 305.852310
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 597.547814
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 216.978980
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 231.021020
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 12.375000
+distance : 96.256401
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 308.166978
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 604.491673
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.088662
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.911338
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 12.187500
+distance : 96.248463
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 310.552868
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 611.649195
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.198190
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.801810
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 12.000000
+distance : 96.240660
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 313.013373
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 619.030557
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.307565
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.692435
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 11.812500
+distance : 96.232992
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 315.552104
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 626.646591
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.416791
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.583209
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 11.625000
+distance : 96.225457
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 318.172909
+First hit y = 191.999000
+Coordinates [2], [4]
+2 hit x = 634.508841
+2 hit y = 127.999000
+Coordinates [1], [9]
+Error next_check
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.525870
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.474130
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 11.437500
+distance : 96.218056
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 320.879891
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 250.492194
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.634804
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.365196
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 11.250000
+distance : 96.210788
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 323.677434
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 252.298043
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.743597
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.256403
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 11.062500
+distance : 96.203652
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 326.570222
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 254.184261
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.852250
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.147750
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 10.875000
+distance : 96.196647
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 329.563268
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 256.155621
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 217.960768
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 230.039232
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 10.687500
+distance : 96.189772
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 332.661945
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 258.217248
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.069151
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.930849
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 10.500000
+distance : 96.183029
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 335.872015
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 260.374664
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.177402
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.822598
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 10.312500
+distance : 96.176414
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 339.199666
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 262.633814
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.285525
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.714475
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 10.125000
+distance : 96.169929
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 342.651555
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 265.001114
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.393522
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.606478
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 9.937500
+distance : 96.163572
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 346.234850
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 267.483494
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.501394
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.498606
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 9.750000
+distance : 96.157343
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 349.957282
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 270.088446
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.609146
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.390854
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 9.562500
+distance : 96.151242
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 353.827199
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 272.824088
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.716779
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.283221
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 9.375000
+distance : 96.145267
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 357.853631
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 275.699219
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.824295
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.175705
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 9.187500
+distance : 96.139419
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 362.046362
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 278.723398
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 218.931698
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 229.068302
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 9.000000
+distance : 96.133697
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 366.416007
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 281.907020
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.038989
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.961011
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 8.812500
+distance : 96.128100
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 370.974105
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 285.261411
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.146172
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.853828
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 8.625000
+distance : 96.122628
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 375.733218
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 288.798929
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.253248
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.746752
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 8.437500
+distance : 96.117281
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 380.707055
+First hit y = 191.999000
+Coordinates [2], [5]
+
+ Find wall on firt hit 
+distance : 292.533082
+
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.360221
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.639779
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 8.250000
+distance : 96.112057
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 385.910596
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.467092
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.532908
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 8.062500
+distance : 96.106957
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 391.360249
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.573864
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.426136
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 7.875000
+distance : 96.101981
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 397.074023
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.680539
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.319461
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 7.687500
+distance : 96.097127
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 403.071727
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.787120
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.212880
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 7.500000
+distance : 96.092395
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 409.375204
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 219.893609
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 228.106391
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 7.312500
+distance : 96.087785
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 416.008594
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.000009
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.999991
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 7.125000
+distance : 96.083297
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 422.998646
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.106322
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.893678
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 6.937500
+distance : 96.078930
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 430.375084
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.212550
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.787450
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 6.750000
+distance : 96.074683
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 438.171027
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.318696
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.681304
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 6.562500
+distance : 96.070557
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 446.423490
+First hit y = 191.999000
+Coordinates [2], [6]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.424763
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.575237
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 6.375000
+distance : 96.066552
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 455.173977
+First hit y = 191.999000
+Coordinates [2], [7]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.530751
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.469249
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 6.187500
+distance : 96.062665
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 464.469177
+First hit y = 191.999000
+Coordinates [2], [7]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.636664
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.363336
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 6.000000
+distance : 96.058899
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 474.361805
+First hit y = 191.999000
+Coordinates [2], [7]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.742505
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.257495
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 5.812500
+distance : 96.055251
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 484.911606
+First hit y = 191.999000
+Coordinates [2], [7]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.848275
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.151725
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 5.625000
+distance : 96.051722
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 496.186561
+First hit y = 191.999000
+Coordinates [2], [7]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 220.953977
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 227.046023
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 5.437500
+distance : 96.048312
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 508.264369
+First hit y = 191.999000
+Coordinates [2], [7]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.059613
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.940387
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 5.250000
+distance : 96.045020
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 521.234234
+First hit y = 191.999000
+Coordinates [2], [8]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.165186
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.834814
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 5.062500
+distance : 96.041846
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 535.199088
+First hit y = 191.999000
+Coordinates [2], [8]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.270697
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.729303
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 4.875000
+distance : 96.038790
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 550.278330
+First hit y = 191.999000
+Coordinates [2], [8]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.376149
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.623851
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 4.687500
+distance : 96.035851
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 566.611258
+First hit y = 191.999000
+Coordinates [2], [8]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.481545
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.518455
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 4.500000
+distance : 96.033029
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 584.361397
+First hit y = 191.999000
+Coordinates [2], [9]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.586887
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.413113
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 4.312500
+distance : 96.030324
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 603.722006
+First hit y = 191.999000
+Coordinates [2], [9]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.692177
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.307823
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 4.125000
+distance : 96.027736
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 624.923150
+First hit y = 191.999000
+Coordinates [2], [9]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.797417
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.202583
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 3.937500
+distance : 96.025264
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 648.240911
+First hit y = 191.999000
+Coordinates [2], [10]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 221.902609
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 226.097391
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 3.750000
+distance : 96.022909
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 674.009493
+First hit y = 191.999000
+Coordinates [2], [10]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.007757
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.992243
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 3.562500
+distance : 96.020670
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 702.637365
+First hit y = 191.999000
+Coordinates [2], [10]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.112861
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.887139
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 3.375000
+distance : 96.018547
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 734.629111
+First hit y = 191.999000
+Coordinates [2], [11]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.217925
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.782075
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 3.187500
+distance : 96.016539
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 770.615455
+First hit y = 191.999000
+Coordinates [2], [12]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.322951
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.677049
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 3.000000
+distance : 96.014647
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 811.395319
+First hit y = 191.999000
+Coordinates [2], [12]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.427941
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.572059
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 2.812500
+distance : 96.012871
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 857.995887
+First hit y = 191.999000
+Coordinates [2], [13]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.532897
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.467103
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 2.625000
+distance : 96.011210
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 911.760398
+First hit y = 191.999000
+Coordinates [2], [14]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.637821
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.362179
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 2.437500
+distance : 96.009664
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 974.479838
+First hit y = 191.999000
+Coordinates [2], [15]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.742717
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.257283
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 2.250000
+distance : 96.008233
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 1048.596462
+First hit y = 191.999000
+Coordinates [2], [16]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.847585
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.152415
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 2.062500
+distance : 96.006917
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 1137.529426
+First hit y = 191.999000
+Coordinates [2], [17]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 222.952428
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 225.047572
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 1.875000
+distance : 96.005715
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 1246.217511
+First hit y = 191.999000
+Coordinates [2], [19]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.057250
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.942750
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 1.687500
+distance : 96.004629
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 1382.068886
+First hit y = 191.999000
+Coordinates [2], [21]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.162051
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.837949
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 1.500000
+distance : 96.003657
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 1556.724964
+First hit y = 191.999000
+Coordinates [2], [24]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.266833
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.733167
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 1.312500
+distance : 96.002800
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 1789.588095
+First hit y = 191.999000
+Coordinates [2], [27]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.371601
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.628399
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 1.125000
+distance : 96.002057
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 2115.582515
+First hit y = 191.999000
+Coordinates [2], [33]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.476354
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.523646
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 0.937500
+distance : 96.001428
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 2604.556688
+First hit y = 191.999000
+Coordinates [2], [40]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.581097
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.418903
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 0.750000
+distance : 96.000914
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 3419.490370
+First hit y = 191.999000
+Coordinates [2], [53]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.685831
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.314169
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 0.562500
+distance : 96.000514
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 5049.322825
+First hit y = 191.999000
+Coordinates [2], [78]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.790557
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.209443
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 0.375000
+distance : 96.000228
+
+
+HORIZONTAL CHECK
+
+
+First hit x = 9938.750373
+First hit y = 191.999000
+Coordinates [2], [155]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 192.000000
+First hit y = 223.895280
+Coordinates [3], [3]
+2 hit x = 256.000000
+2 hit y = 224.104720
+Coordinates [4], [0]
+
+On the 2 times it hit the wall
+angle 0.187500
+distance : 96.000057
+
+
+HORIZONTAL CHECK
+
+
+First hit x = inf
+First hit y = 191.999000
+Coordinates [2], [-33554432]
+Out of map
+
+
+VERTICAL CHECK
+
+
+First hit x = 127.999000
+First hit y = 224.000000
+Coordinates [3], [1]
+2 hit x = 191.999000
+2 hit y = 224.000000
+Coordinates [2], [0]
+
+On the 2 times it hit the wall
+angle 0.000000
+distance : 31.999000
