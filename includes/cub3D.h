@@ -74,14 +74,15 @@ int		is_cub(char *argv);
 
 //ray cast
 void	init_ray(t_data *data);
-void    next_vertical(t_data *data, int x_a, int b_y, int b_x, double radians);
+void    next_vertical(t_data *data, double x_a, double b_y, double b_x, double radians);
 void    vertical_check(t_data *data, double radians);
-void	next_checks(t_data *data, int a_x, int a_y, double radians);
+void	next_checks(t_data *data, double a_x, double a_y, double radians);
 void    horizontal_check(t_data *data, double radians);
 void	find_wall(t_data *data);
-int     find_distance_v(t_data *data, int x, int y);
-int     find_distance_h(int x, int y);
+int     find_distance_v(t_data *data, double x, double y);
+int     find_distance_h(t_data *data, double x, double y);
 void	find_shortest_distance(t_ray ray, int i);
 void	print_ray(t_ray ray);
+void map_size(t_data *data);
 
 #endif

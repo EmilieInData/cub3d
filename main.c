@@ -15,8 +15,14 @@
 void	print_data(t_data *data)
 {
 	int i;
+	int counter;
+	int j;
+	int a;
 
 	i = 0;
+	j = 0;
+	a = 0;
+	counter = 0;
 	/*if (data->map->no)
 		printf("NO = %s\n", data->map->no);
 	if (data->map->so)
@@ -44,8 +50,16 @@ void	print_data(t_data *data)
 	{
 		while (data->map->matrix[i])
 		{
+			//printf("%i   ", counter);
+			//while (data->map->matrix[0][a])
+			//{
+				//printf("%i", j);
+				//j++;
+				//a++;
+			//}
 			printf("%s\n", data->map->matrix[i]);
 			i++;
+			counter++;
 		}
 	}
 	printf("Value at matrix[%d][%d]: %c\n", 7, 8, data->map->matrix[7][8]);
@@ -94,6 +108,8 @@ int	main(int argc, char **argv)
 	data = initialize(data);
 	check_cub_file(data, argv[1]);
 	map_check(data, data->map->matrix);
+	map_size(data);
+	printf("map width %i, map height %i\n", data->ray.map_x, data->ray.map_y);
 	find_wall(data);
 	//print_data(data);
 	free_data(data);

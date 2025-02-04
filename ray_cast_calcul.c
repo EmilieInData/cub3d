@@ -12,37 +12,43 @@
 
 #include "includes/cub3D.h"
 
-int find_distance_v(t_data *data, int x, int y)
+int find_distance_v(t_data *data, double x, double y)
 {
-	int dist;
+	double dist;
 
-	if ((data->ray.angle_start >= 270 && data->ray.angle_start <= 360) || (data->ray.angle_start > 0 && data->ray.angle_start <= 90))
-		x = data->ray.player_x - x;
-	else
-		x = x - data->ray.player_x;
+	printf("angle %f\n", data->ray.angle_start);
+	//printf("rad %f\n", 94.35 * (M_PI / 180.0));
+	//printf("x %f, y %f\n", x, y);
+	x = data->ray.player_x - x;
+	y = data->ray.player_y - y;
 	y *= y;
 	x *= x;
 	dist = x + y;
-	dist *= dist;
+	dist = sqrt(dist);
+	printf("distance : %f\n", dist);
 	return (dist);
 }
 
-int find_distance_h(int x, int y)
+int find_distance_h(t_data *data, double x, double y)
 {
-	int dist;
+	double dist;
 
+	y = data->ray.player_y - y;
 	y *= y;
+	x = data->ray.player_x - x;
 	x *= x;
 	dist = x + y;
-	dist *= dist;
-
+	dist = sqrt(dist);
+	printf("distance : %f\n", dist);
 	return(dist);
 }
 
 void	find_shortest_distance(t_ray ray, int i)
 {
+	i++;
 	if (ray.dist_h > ray.dist_v)
-		ray.dist_t_wall[i] = ray.dist_v;
+		ray.dist_t_wall = ray.dist_v;
 	else
-		ray.dist_t_wall[i] = ray.dist_h;
+		ray.dist_t_wall = ray.dist_h;
+	printf("shortest distance %f\n", ray.dist_t_wall);
 }

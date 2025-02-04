@@ -14,135 +14,185 @@
 
 //here I created functions which are checking where the ray casted by our plyer first interact with the wall on the horizontal and vertical plane
 
-void next_vertical(t_data * data, int x_a, int b_y, int b_x, double radians)
+void next_vertical(t_data * data, double x_a, double b_y, double b_x, double radians)
 {
-	int a_y;
-	int a_x;
+	double a_y;
+	double a_x;
+	int i;
 
-	a_y = x_a * tan(radians); 
+	i = 2;
+	a_y = x_a * tan(radians);
+	//printf("a_y %f\n", a_y);
+	//if (data->player.angle >= 0 && data->player.angle <= 180)
+	//	a_y += b_y;
+	//else
+	//	a_y -= b_y;
 	while (1)
 	{
-		if (data->player.angle >= 0 && data->player.angle <= 180)
-			a_y += b_y;
-		else
-			a_y -= b_y;
 		a_x = b_x + TILE;
 		b_x = a_x;
 		b_y = a_y;
-		a_x = a_x / 64;
-		a_y = a_y / 64;
-		if (data->map->matrix[a_x][a_y] == '1')
+		a_x = (int)a_x / TILE;
+		a_y = (int)a_y / TILE;
+		printf("%i hit x = %f\n", i, b_x);
+		printf("%i hit y = %f\n", i,  b_y);
+		printf("Coordinates [%i], [%i]\n", (int)a_x, (int)a_y);
+		if ((int)a_y >= 0 && (int)a_x >= 0 && data->ray.map_x > (int)a_x && data->ray.map_y > (int)a_y && data->map->matrix[(int)a_y][(int)a_x])
 		{
-			data->ray.dist_v = find_distance_v(data, b_x, b_y);
+			if (data->map->matrix[(int)a_y][(int)a_x] == '1')
+			{
+				printf("\nOn the %i times it hit the wall\n", i);
+				data->ray.dist_v = find_distance_v(data, b_x, b_y);
+				break;
+			}
+		}
+		else
+		{
+			printf("Error in next_vertical\n");
 			break;
 		}
+		i++;
 	}
 }
 
 void vertical_check(t_data *data, double radians)
 {
-	int b_x;
-	int b_y;
-	int x_a;
+	double b_x;
+	double b_y;
+	double x_a;
 	int x;
 	int y;
 
-	b_x = data->player.position_x * 64;
+	b_x = data->player.position_x * TILE;
+	//printf("%f\n", b_x);
 	if ((data->ray.angle_start >= 270 && data->ray.angle_start <= 360 ) || (data->ray.angle_start > 0 && data->ray.angle_start <=90))
 	{
-		b_x += 64;
+		b_x += TILE;
 		x_a = TILE;
 	}
 	else
 	{
-		b_x--;
+		b_x -= 0.001;
 		x_a = TILE * -1;
 	}
-	b_y = 32 * tan(radians);
-	if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
-		b_y = data->ray.player_y - b_y;
-	else
-		b_y = data->ray.player_y + b_y;
-	y = b_y / 64;
-	x = b_x / 64;	
-	if (data->map->matrix[x][y] == '1')
-	{	
-		data->ray.dist_v = find_distance_v(data, b_x, b_y);
+	b_y = data->ray.player_y + (data->ray.player_x - b_x)  * tan(radians);
+	//printf("Its b_y %f\n", b_y);
+	//if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
+	//	if (b_y < 0)
+	//		b_y = data->ray.player_y + b_y;
+	//	else
+	//		b_y = data->ray.player_y - b_y;
+	//else
+	//	b_y = data->ray.player_y + b_y;
+	y = (int)b_y / TILE;
+	//printf("b_y - %i\n and b_x - %f\n", y, b_x);
+	x = (int)b_x / TILE;
+	//printf("y - %i\n and x - %i\n", y, x);
+	//printf("inside %c\n", data->map->matrix[y][x]);
+	printf("\n\n\nVERTICAL CHECK\n\n\n");
+	printf("First hit x = %f\n", b_x);
+	printf("First hit y = %f\n", b_y);
+	printf("Coordinates [%i], [%i]\n", y, x);
+	if (y >= 0 && x >= 0 && data->ray.map_x > (int)x && data->ray.map_y > (int)y && data->map->matrix[y][x])
+	{
+		if (data->map->matrix[y][x] == '1')
+		{	
+			printf("\n Find wall on firt hit \n");
+			data->ray.dist_v = find_distance_v(data, b_x, b_y);
+		}
+		else
+			next_vertical(data, x_a, b_y, b_x, radians);
 	}
 	else
-		next_vertical(data, x_a, b_y, b_x, radians);
+	{
+		printf("Error in vertical check\n");
+	}
 }
 
 
-void	next_checks(t_data *data, int a_x, int a_y, double radians)
+void	next_checks(t_data *data, double a_x, double a_y, double radians)
 {
-	int y_a;
-	int x_a;
-	int c_x;
-	int c_y;
+	double y_a;
+	double x_a;
+	double c_x;
+	double c_y;
+	int i;
 
+	i = 2;
+	y_a = TILE;
 	if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
-		y_a = TILE * -1;
-	if (data->ray.angle_start >= 181 && data->ray.angle_start <= 359)
-		y_a = TILE;
-	printf("%i\n", y_a);
+		y_a *= -1;
 	x_a = TILE/tan(radians);
-	printf("%i\n", x_a);
 	while (1)
 	{
 		c_x = a_x + x_a;
+		//printf("%f\n", c_x);
 		c_y = a_y + y_a;
-		if (data->map->matrix[(int)c_x / TILE][(int)c_y / TILE])
-			if (data->map->matrix[(int)c_x / TILE][(int)c_y / TILE] == '1')
+		//printf("%f\n", c_y);
+		//printf("%c\n", data->map->matrix[(int)c_y / TILE][(int)c_x / TILE]);
+			//if (data->map->matrix[(int)c_y / TILE][(int)c_x / TILE])
+		printf("%i hit x = %f\n", i, c_x);
+		printf("%i hit y = %f\n", i,  c_y);
+		printf("Coordinates [%i], [%i]\n", (int)c_y / TILE, (int)c_x / TILE);
+		if ((int)c_y / TILE >= 0 && (int)c_x / TILE >= 0 && data->ray.map_x > (int)c_x / TILE && data->ray.map_y > (int)c_y / TILE && data->map->matrix[(int)c_y / TILE][(int)c_x / TILE])
+		{
+			if (data->map->matrix[(int)c_y / TILE][(int)c_x / TILE] == '1')
 			{
-				if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
-					c_y += a_y;
-				data->ray.dist_h = find_distance_h(c_x, c_y);
+				//if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
+				//	c_y += a_y;
+				printf("\nOn the %i times it hit the wall\n", i);
+				data->ray.dist_h = find_distance_h(data, c_x, c_y);
 				break;
 			}
-			x_a = c_x;
-			y_a = c_y;
+			//if (x_a < 0)
+			a_x = c_x;
+			a_y = c_y;
+		}
 		else
-			printf("Error next_check\n")
+		{
+			printf("Error next_check\n");
+			break;
+		}
+		i++;
 	}
 }
 
 void horizontal_check(t_data *data, double radians)
 {
+	int a;
+	int b;
 	double a_y;
 	double a_x;
-	double adj_side;
 
 	a_y = data->player.position_y * TILE;
-	//printf("%i\n", TILE);
-	//printf("%i\n", data->player.position_y);
-	//printf("%i\n", a_y);
-	//a_y *= TILE;
-	//printf("%i\n", a_y);
 	if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
-		a_y -= 0.001
+		a_y -= 0.001;
 	if (data->ray.angle_start >= 181 && data->ray.angle_start <= 359)
-		a_y += 64;
-	printf("%i\n", data->ray.player_y);
-	printf("%i\n", a_y);
-	printf("%i\n", data->ray.angle_start);
-	printf("%f\n", tan(data->ray.angle_start));
-	adj_side = (data->ray.player_y - a_y) / tan(radians);
-	if (adj_side < 0)
-		adj_side *= -1;
-	printf("%i\n", adj_side);
-	a_x = data->ray.player_x + adj_side;
-	printf("%i\n", a_x);
-	printf("%i\n", TILE);
-
-	if (data->map->matrix[(int)a_x / TILE][(int)a_y / TILE])
-		if (data->map->matrix[(int)a_x / TILE][(int)a_y / TILE] == '1')
+		a_y += TILE;
+	//printf("%f\n", a_y);
+	a_x = data->ray.player_x + (data->ray.player_y - a_y) / tan(radians);
+	//if (adj_side < 0)
+	//	adj_side *= -1;
+	//printf("%f\n", adj_side);
+	//a_x = data->ray.player_x + adj_side;
+	//printf("%f\n", a_x);
+	a = (int)a_x / TILE;
+	//printf("%i\n", a);
+	b = (int)a_y / TILE;
+	printf("\n\nHORIZONTAL CHECK\n\n\n");
+	printf("First hit x = %f\n", a_x);
+	printf("First hit y = %f\n", a_y);
+	printf("Coordinates [%i], [%i]\n", b, a);
+	if (b >= 0 && a >= 0 && data->ray.map_x > a && data->ray.map_y > b && data->map->matrix[b][a])
+	{
+		if (data->map->matrix[b][a] == '1')
 			{
-				printf("Check");
-				data->ray.dist_h = find_distance_h(adj_side, TILE/2);
+				printf("\n Find wall on firt hit \n");
+				data->ray.dist_h = find_distance_h(data, a_x, (double)TILE/2);
 			}
 		else
 			next_checks(data, a_x, a_y, radians);
+	}
 	else
 		printf("Out of map");
 }
@@ -162,10 +212,10 @@ void	init_ray(t_data *data)
 
 void	print_ray(t_ray ray)
 {
-	printf("%i\n", ray.player_x);
-	printf("%i\n", ray.player_y);
-	printf("%i\n", ray.angle_start);
-	printf("%i\n", ray.angle_end);
+	printf("%f\n", ray.player_x);
+	printf("%f\n", ray.player_y);
+	printf("%f\n", ray.angle_start);
+	printf("%f\n", ray.angle_end);
 	printf("%i\n", ray.FOV);
 }
 
@@ -186,14 +236,34 @@ void	find_wall(t_data *data)
 		vertical_check(data, radians);
 		//printf("%i", data->ray.dist_h);
 		//printf("%i", data->ray.dist_v);
-		find_shortest_distance(data->ray, i);
+		//find_shortest_distance(data->ray, i);
 		increment = (double)data->ray.FOV / LENGTH;
 		data->ray.angle_start -= increment;
 		i++;
 	}
-	while (i > 0)
+	/*while (i > 0)
 	{
-		printf("%i ,", data->ray.dist_t_wall[i]);
+		printf("%f\n ,", data->ray.dist_t_wall[i]);
+	}*/
+}
+
+void map_size(t_data *data)
+{
+	int i;
+	int a;
+
+	i = 0;
+	if (data->map->matrix)
+	{
+		while (data->map->matrix[i])
+		{
+			a = 0;
+			while (data->map->matrix[0][a])
+				a++;
+			i++;
+		}
+		data->ray.map_x = a;
+		data->ray.map_y = i;
 	}
 }
 	

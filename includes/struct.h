@@ -70,7 +70,9 @@ typedef struct s_ray
 	int FOV;
 	double dist_h;
 	double dist_v;
-	double dist_t_wall[1200];
+	double dist_t_wall;
+	int		map_x;
+	int		map_y;
 }				t_ray;
 
 typedef struct s_data
