@@ -43,12 +43,50 @@ int find_distance_h(t_data *data, double x, double y)
 	return(dist);
 }
 
-void	find_shortest_distance(t_ray ray, int i)
+void	find_shortest_distance(t_data *data)
 {
-	i++;
-	if (ray.dist_h > ray.dist_v)
-		ray.dist_t_wall = ray.dist_v;
+	if (data->ray.dist_h > data->ray.dist_v)
+		data->ray.dist_t_wall = data->ray.dist_v;
 	else
-		ray.dist_t_wall = ray.dist_h;
-	printf("shortest distance %f\n", ray.dist_t_wall);
+		data->ray.dist_t_wall = data->ray.dist_h;
+	printf("shortest distance %f\n", data->ray.dist_t_wall);
+}
+
+void wall_height(t_data *data, int x)
+{
+	double dist_t_proj_plane;
+	int middle_of_screen;
+	int middle_of_wall;
+	int i;
+	int y;
+	double	angle;
+
+	i = HEIGHT;
+	y = 0;
+	
+	angle = tan(30.0 * (M_PI / 180.0));
+	//printf("angle = %f\n", angle);
+	dist_t_proj_plane = (LENGTH / 2) / angle;
+	printf("Distance to projection plane = %d\n", (int)dist_t_proj_plane);
+	data->ray.wall_height  = (TILE / data->ray.dist_t_wall) * dist_t_proj_plane;
+	printf("Wall height = %f\n", data->ray.wall_height);
+	middle_of_screen = HEIGHT / 2;
+	middle_of_wall = data->ray.wall_height / 2;
+	printf("middle of the wall = %i\n", middle_of_wall);
+	data->ray.ceiling_floor = middle_of_screen - middle_of_wall;
+	printf("ceiling  = %i\n", data->ray.ceiling_floor);
+	printf("ceiling height = %i\n", data->ray.ceiling_floor + (int)data->ray.wall_height);
+	printf("wall height = %i\n", (int)data->ray.wall_height);
+	printf("floor height = %d\n", data->ray.ceiling_floor);
+	while(y <= HEIGHT)
+	{
+		if(i >= (HEIGHT - ((int)data->ray.wall_height + (int)data->ray.ceiling_floor)))
+			mlx_pixel_put(data->mlx, data->mlx_window, x, y,  0x36fef1);
+		if (i >= (int)data->ray.ceiling_floor && i <= ((int)data->ray.wall_height + (int)data->ray.ceiling_floor))
+			mlx_pixel_put(data->mlx, data->mlx_window, x, y, 0xd92121);	
+		if(i <= (int)data->ray.ceiling_floor && i >= 0)
+			mlx_pixel_put(data->mlx, data->mlx_window, x, y, 0x73d545);
+		i--;
+		y++;
+	}
 }

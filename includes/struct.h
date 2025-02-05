@@ -44,14 +44,14 @@ typedef struct s_map
 	int				flag;
 }			   t_map;
 
-/*typedef struct s_img //if it's in pixels we will need that structure
+typedef struct s_image 
 {
 	void			*img_add;
 	char			*pix_add;
 	int				bit_pix;
 	int				length_line;
 	int				endian;
-}				t_img;*/
+}				t_image;
 
 typedef struct s_player
 {
@@ -73,6 +73,8 @@ typedef struct s_ray
 	double dist_t_wall;
 	int		map_x;
 	int		map_y;
+	double	wall_height;
+	int		ceiling_floor;
 }				t_ray;
 
 typedef struct s_data
@@ -82,7 +84,7 @@ typedef struct s_data
 	t_map			*map;
 	t_player		player;
 	t_ray			ray;
-	//t_img			*image;
+	t_image			*image;
 }			   t_data;
 
 #endif

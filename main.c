@@ -97,6 +97,27 @@ void	*initialize(t_data *data)
 	return (data);
 }
 
+void	implementation_mlx(t_data *data, char *name)
+{
+	data->image = malloc(sizeof(t_image));
+	if (!data->image)
+		exit (error_msg("malloc didn't work correctly", data));
+	data->mlx = mlx_init();
+	if (!data->mlx)
+		exit (error_msg("mlx_init didn't works properly", data));
+	data->mlx_window = mlx_new_window(data->mlx, LENGTH, HEIGHT, name);
+	if (!data->mlx_window)
+		exit (error_msg("mlx_new_window didn't works properly", data));
+	data->image->img_add = mlx_new_image(data->mlx, LENGTH, HEIGHT);
+	if (!data->image->img_add)
+		exit (error_msg("mlx_new_image didn't works properly", data));
+	data->image->pix_add = mlx_get_data_addr(data->image->img_add,
+			&data->image->bit_pix, &data->image->length_line,
+			&data->image->endian);
+	//rempli les ints de la struc IMG et renvoie l'adr memoire du pixel en cours
+	//init_events(data);
+}
+
 int	main(int argc, char **argv)
 {
 	t_data	*data;
@@ -110,7 +131,9 @@ int	main(int argc, char **argv)
 	map_check(data, data->map->matrix);
 	map_size(data);
 	printf("map width %i, map height %i\n", data->ray.map_x, data->ray.map_y);
+	implementation_mlx(data, "cub3D_map");
 	find_wall(data);
+	mlx_loop(data->mlx);
 	//print_data(data);
 	free_data(data);
 	return (0);

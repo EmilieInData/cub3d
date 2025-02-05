@@ -26,10 +26,12 @@
 # include <X11/keysym.h>
 # include <math.h>
 # include <X11/Xlib.h>
+# include <limits.h>
+# include <float.h>
 
 # define TILE 64
-# define HEIGHT 200
-# define LENGTH 320
+# define HEIGHT 800
+# define LENGTH 1000
 
 //events
 int		do_key(int keysym, t_data *data);
@@ -81,8 +83,11 @@ void    horizontal_check(t_data *data, double radians);
 void	find_wall(t_data *data);
 int     find_distance_v(t_data *data, double x, double y);
 int     find_distance_h(t_data *data, double x, double y);
-void	find_shortest_distance(t_ray ray, int i);
+void	find_shortest_distance(t_data *data);
 void	print_ray(t_ray ray);
-void map_size(t_data *data);
+void    map_size(t_data *data);
+void    wall_height(t_data *data, int x);
 
+//mlx
+void	implementation_mlx(t_data *data, char *name);
 #endif
