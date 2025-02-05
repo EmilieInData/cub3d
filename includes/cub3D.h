@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/04 19:13:42 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/05 16:19:46 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 # define HEIGHT 		800
 # define LENGTH 		1280
 # define PICS			10
+# define SPRITE_TIME    10
 
 //Libraries
 # include "../gnl/get_next_line.h"
@@ -41,6 +42,8 @@
 # define BRIGHT_BLUE	0x1ABC9C
 
 //door
+void	init_sprite_door(t_data *data);
+void	do_sprite_door(t_data *data);
 void	do_door(t_data *data, int x, int y);
 void	close_door(t_data *data);
 

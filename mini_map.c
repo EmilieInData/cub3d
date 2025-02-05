@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:14:45 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/04 19:14:03 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/05 16:19:07 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,24 +88,5 @@ void	init_sprite_neon(t_data *data)
 
 void	do_sprite_neon(t_data *data)
 {
-	
-}
-
-void	init_sprite_door(t_data *data)
-{
-	data->sprite[0] = create_struct_files(data, FILES_NAME);
-	data->sprite[1] = create_struct_files(data, FILES_NAME);
-	data->sprite[2] = create_struct_files(data, FILES_NAME);
-	data->sprite[3] = create_struct_files(data, FILES_NAME);
-	data->sprite[4] = create_struct_files(data, FILES_NAME);
-	data->sprite[5] = create_struct_files(data, FILES_NAME);
-	data->sprite[6] = create_struct_files(data, FILES_NAME);
-	data->sprite[7] = create_struct_files(data, FILES_NAME);
-	data->sprite[8] = create_struct_files(data, FILES_NAME);
-	data->sprite[9] = create_struct_files(data, FILES_NAME);
-}
-
-void	do_sprite_door(t_data *data)
-{
-	
+	//une boucle
 }

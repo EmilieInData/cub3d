@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/04 19:01:42 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/05 17:22:23 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,5 +72,5 @@ typedef struct s_data
 	struct timeval	timer;
 	t_files			texture[4];
 	t_files			sprite[PICS];
-	char			**array_sprite;
+	int				count;
 }			   t_data;

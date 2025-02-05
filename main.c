@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/04 19:04:14 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/05 17:37:51 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,7 @@ void	implementation_mlx(t_data *data, char *name)
 			&data->image->bit_pix, &data->image->length_line,
 			&data->image->endian);
 	//rempli les ints de la struc IMG et renvoie l'adr memoire du pixel en cours
+	init_sprite_door(data);
 	init_events(data);
 }
 
@@ -123,6 +124,7 @@ void	*initialize(t_data *data)
 	data->timer.tv_usec = 0;
 	//data->texture = NULL;
 	//data->sprite = NULL;
+	data->count = 0;
 	return (data);
 }
 
@@ -146,3 +148,9 @@ int	main(int argc, char **argv)
 	free_data(data);
 	exit (EXIT_SUCCESS);
 }
+//on peut mettre une image l'une sur l'autre, donc le mieu est d'imprimer
+//le sprite de la porte sur le reste de la map avec le mouvement, ca se
+//fera en transparence
+//   mlx_loop_hook(data.mlx, (void *)render_game, &data);
+//c'est la fonction qui permet de faire une boucle de visualisation du jeu
+//qui permet d'imprimer les sprites
