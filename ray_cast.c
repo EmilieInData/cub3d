@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ray_cast.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/21 17:08:23 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/06 14:55:22 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 	i = 2;
 	a_x = 0.0;
 	//printf("a_y %f\n", a_y);
-	if (data->player.angle >= 0 && data->player.angle <= 180)
+	if (data->ray.angle_start >= 0 && data->ray.angle_starts <= 180)
 		a_y = -fabs(TILE * tan(radians));
 	else
 		a_y = fabs(TILE * tan(radians));
