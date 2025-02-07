@@ -45,10 +45,14 @@ int find_distance_h(t_data *data, double x, double y)
 
 void	find_shortest_distance(t_data *data)
 {
+	double radians;
+
+	radians = (data->ray.angle_start - data->player.angle) * (M_PI / 180.0);
 	if (data->ray.dist_h > data->ray.dist_v)
 		data->ray.dist_t_wall = data->ray.dist_v;
 	else
 		data->ray.dist_t_wall = data->ray.dist_h;
+	data->ray.dist_t_wall *= cos(radians);
 	printf("shortest distance %f\n", data->ray.dist_t_wall);
 }
 

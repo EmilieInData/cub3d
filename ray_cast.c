@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/06 14:55:22 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/07 14:17:28 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -160,7 +160,8 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 		else
 		{
 			printf("Error next_check\n");
-			data->ray.dist_v = DBL_MAX;
+			data->ray.dist_h = DBL_MAX;
+			printf("distance %f\n", data->ray.dist_v);
 			break;
 		}
 		i++;
@@ -209,7 +210,7 @@ void horizontal_check(t_data *data, double radians)
 
 void	init_ray(t_data *data)
 {
-	data->player.angle = 0;
+	//data->player.angle = 0;
 	data->ray.player_x = ((double)data->player.position_x * 64) + 32;
 	data->ray.player_y = ((double)data->player.position_y * 64) + 32;
 	data->ray.angle_start = (double)data->player.angle + 30;
