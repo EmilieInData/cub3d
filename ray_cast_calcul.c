@@ -32,9 +32,7 @@ int find_distance_v(t_data *data, double x, double y)
 int find_distance_h(t_data *data, double x, double y)
 {
 	double dist;
-
-
-
+	
 	y = data->ray.player_y - y;
 	y *= y;
 	x = data->ray.player_x - x;
