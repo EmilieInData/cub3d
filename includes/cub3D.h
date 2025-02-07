@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/05 16:19:46 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:45:50 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@
 # include <math.h>
 # include <X11/Xlib.h>
 # include <sys/time.h>
+# include <math.h>
 # include "struct.h"
 
 //# define WHITE			0xFFFFFF
@@ -43,15 +44,14 @@
 
 //door
 void	init_sprite_door(t_data *data);
-void	do_sprite_door(t_data *data);
 void	do_door(t_data *data, int x, int y);
 void	close_door(t_data *data);
 
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);
-void	put_scaled_image(t_image *image, int x, int y, int color);
-void	init_sprite_neon(t_data *data);
-
+void	put_scaled_image(t_data *data, int x, int y, int color);
+int		height_map(char **matrix);
+int		width_map(char **matrix);
 
 //events
 int		do_key(int keysym, t_data *data);

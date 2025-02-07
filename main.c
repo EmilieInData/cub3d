@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/05 17:37:51 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:37:52 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,6 @@ void	*initialize(t_data *data)
 	data->map->ceiling.blue = -1;
 	data->map->matrix = NULL;
 	data->map->flag = -1;
-	data->map->door = -1;
 	data->player.news = '0';
 	data->player.position_x = -1;
 	data->player.position_y = -1;
@@ -123,8 +122,10 @@ void	*initialize(t_data *data)
 	data->timer.tv_sec = 0;
 	data->timer.tv_usec = 0;
 	//data->texture = NULL;
-	//data->sprite = NULL;
-	data->count = 0;
+	data->doors.x = -1;
+	data->doors.y = -1;
+	data->doors.flag = -1;
+	data->doors.count = 0;
 	return (data);
 }
 
@@ -154,3 +155,5 @@ int	main(int argc, char **argv)
 //   mlx_loop_hook(data.mlx, (void *)render_game, &data);
 //c'est la fonction qui permet de faire une boucle de visualisation du jeu
 //qui permet d'imprimer les sprites
+
+//bloquer avec une taille max de maps pour eviter les segfault ou un projet trop lent

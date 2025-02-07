@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/05 17:22:23 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/07 19:09:37 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,14 @@ typedef struct s_files
 	int				height;
 }			   t_files;
 
-/*typedef struct s_texture
+typedef	struct s_door
 {
-	t_files			no;
-	t_files			so;
-	t_files			we;
-	t_files			ea;
-}			   t_texture;*/
+	int				x;
+	int				y;
+	int				flag;
+	int				count;
+	t_files			sprite[PICS];
+}			   t_door;
 
 typedef struct s_color
 {
@@ -42,7 +43,6 @@ typedef struct s_map
 	t_color			ceiling;
 	char			**matrix;
 	int				flag;
-	int 			door;
 }			   t_map;
 
 typedef struct s_player
@@ -71,6 +71,5 @@ typedef struct s_data
 	t_image			*image;
 	struct timeval	timer;
 	t_files			texture[4];
-	t_files			sprite[PICS];
-	int				count;
+	t_door			doors;
 }			   t_data;

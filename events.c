@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/04 16:02:22 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:48:44 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ void	do_move(t_data *data, int x, int y, int keysym)
 	if (keysym == XK_w && data->map->matrix[y - 1][x] == '0')
 		data->player.position_y = y - 1;
 	else if (keysym == XK_w && data->map->matrix[y - 1][x] == 'D'
-		&& data->map->door != -1)
+		&& data->doors.flag == 0)
 		data->player.position_y = y - 2;
 	else if (keysym == XK_s && data->map->matrix[y + 1][x] == '0')
 		data->player.position_y = y + 1;
