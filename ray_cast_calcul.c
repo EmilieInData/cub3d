@@ -33,6 +33,8 @@ int find_distance_h(t_data *data, double x, double y)
 {
 	double dist;
 
+
+
 	y = data->ray.player_y - y;
 	y *= y;
 	x = data->ray.player_x - x;
@@ -81,11 +83,11 @@ void wall_height(t_data *data, int x)
 	while(y <= HEIGHT)
 	{
 		if(i >= (HEIGHT - ((int)data->ray.wall_height + (int)data->ray.ceiling_floor)))
-			mlx_pixel_put(data->mlx, data->mlx_window, x, y,  0x36fef1);
+			mlx_pixel_put(data->mlx, data->mlx_window, x, y,  0x87d3f8);
 		if (i >= (int)data->ray.ceiling_floor && i <= ((int)data->ray.wall_height + (int)data->ray.ceiling_floor))
-			mlx_pixel_put(data->mlx, data->mlx_window, x, y, 0xd92121);	
+			mlx_pixel_put(data->mlx, data->mlx_window, x, y, 0xc8509b);	
 		if(i <= (int)data->ray.ceiling_floor && i >= 0)
-			mlx_pixel_put(data->mlx, data->mlx_window, x, y, 0x73d545);
+			mlx_pixel_put(data->mlx, data->mlx_window, x, y, 0x1e434e);
 		i--;
 		y++;
 	}

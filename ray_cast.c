@@ -22,9 +22,9 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 	int y;
 
 	i = 2;
-	a_x = 0.0;
+	//a_x = 0.0;
 	//printf("a_y %f\n", a_y);
-	if (data->player.angle >= 0 && data->player.angle <= 180)
+	if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
 		a_y = -fabs(TILE * tan(radians));
 	else
 		a_y = fabs(TILE * tan(radians));
@@ -40,7 +40,7 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 		y = (int)b_y / TILE;
 		printf("%i hit x = %f\n", i, b_x);
 		printf("%i hit y = %f\n", i,  b_y);
-		printf("Coordinates [%i], [%i]\n", (int)a_x, (int)y);
+		printf("Coordinates [%i], [%i]\n", (int)y, (int)a_x);
 		if ((int)y >= 0 && (int)a_x >= 0 && data->ray.map_x > (int)a_x && data->ray.map_y > (int)y && data->map->matrix[(int)y][(int)a_x])
 		{
 			if (data->map->matrix[(int)y][(int)a_x] == '1')
@@ -69,7 +69,7 @@ void vertical_check(t_data *data, double radians)
 	int y;
 
 	b_x = data->player.position_x * TILE;
-	//printf("%f\n", b_x);
+	//printf("%i\n", data->player.position_x);
 	if ((data->ray.angle_start >= 270 && data->ray.angle_start <= 360 ) || (data->ray.angle_start > 0 && data->ray.angle_start <=90))
 	{
 		b_x += TILE;
@@ -81,7 +81,7 @@ void vertical_check(t_data *data, double radians)
 		x_a = TILE * -1;
 	}
 	b_y = data->ray.player_y + (data->ray.player_x - b_x)  * tan(radians);
-	//printf("Its b_y %f\n", b_y);
+	printf("Its b_y %f = player_y %f + player_x %f - b_x %f and tan(210) = %f\n", b_y, data->ray.player_y, data->ray.player_x, b_x, tan(radians));
 	//if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
 	//	
 	//else
@@ -198,7 +198,7 @@ void horizontal_check(t_data *data, double radians)
 		if (data->map->matrix[b][a] == '1')
 			{
 				printf("\n Find wall on firt hit \n");
-				data->ray.dist_h = find_distance_h(data, a_x, (double)TILE/2);
+				data->ray.dist_h = find_distance_h(data, a_x, a_y);
 			}
 		else
 			next_checks(data, a_x, a_y, radians);
@@ -209,7 +209,7 @@ void horizontal_check(t_data *data, double radians)
 
 void	init_ray(t_data *data)
 {
-	data->player.angle = 70;
+	data->player.angle = 0;
 	data->ray.player_x = ((double)data->player.position_x * 64) + 32;
 	data->ray.player_y = ((double)data->player.position_y * 64) + 32;
 	data->ray.angle_start = (double)data->player.angle + 30;
@@ -245,6 +245,7 @@ void	find_wall(t_data *data)
 		while (data->ray.angle_start >= 0)
 		{	
 			radians = data->ray.angle_start * (M_PI / 180.0);
+			printf("Radians %f\n", radians);
 			horizontal_check(data, radians);
 			vertical_check(data, radians);
 			find_shortest_distance(data);
@@ -260,6 +261,7 @@ void	find_wall(t_data *data)
 	while ((data->ray.angle_start >= data->ray.angle_end))
 	{	
 		radians = data->ray.angle_start * (M_PI / 180.0);
+		printf("Radians %f\n", radians);
 		horizontal_check(data, radians);
 		vertical_check(data, radians);
 		find_shortest_distance(data);
