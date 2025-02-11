@@ -130,7 +130,6 @@ int	main(int argc, char **argv)
 	check_cub_file(data, argv[1]);
 	map_check(data, data->map->matrix);
 	map_size(data);
-	printf("map width %i, map height %i\n", data->ray.map_x, data->ray.map_y);
 	implementation_mlx(data, "cub3D_map");
 	find_wall(data);
 	mlx_loop(data->mlx);
