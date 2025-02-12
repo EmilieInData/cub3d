@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/07 14:17:28 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/12 15:18:01 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 	double a_y;
 
 	a_y = fabs(TILE * tan(radians));
-	if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
+	if (ray_projected_up(data->ray.angle_start) == 1)
 		a_y *= -1;
 	while (1)
 	{
@@ -49,25 +49,28 @@ void vertical_check(t_data *data, double radians)
 
 	b_x = data->player.position_x * TILE;
 	x_a = TILE;
-	if ((data->ray.angle_start >= 270 && data->ray.angle_start <= 360 ) || (data->ray.angle_start > 0 && data->ray.angle_start <=90))
+	if (ray_projected_right(data->ray.angle_start) == 0)
 		b_x += TILE;
 	else
 	{
-		b_x -= 0.001;
-		x_a = TILE * -1;
+		b_x -= 0.000000000001;
+		x_a *= -1;
 	}
 	b_y = data->ray.player_y + (data->ray.player_x - b_x)  * tan(radians);
-	if (b_y / TILE >= 0 && b_x / TILE >= 0 && data->ray.map_x > (int)b_x / TILE / TILE && data->ray.map_y > (int)b_y / TILE && data->map->matrix[(int)b_y / TILE][(int)b_x / TILE])
+	if ((int)b_y / TILE >= 0 && (int)b_x / TILE >= 0)
 	{
-		if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1')
-		{	
-			data->ray.dist_v = find_distance_v(data, b_x, b_y);
+		if (data->ray.map_x > (int)b_x / TILE && data->ray.map_y > (int)b_y / TILE && data->map->matrix[(int)b_y / TILE][(int)b_x / TILE])
+		{
+			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1')
+			{	
+				data->ray.dist_v = find_distance_v(data, b_x, b_y);
+			}
+			else
+				next_vertical(data, x_a, b_y, b_x, radians);
 		}
 		else
-			next_vertical(data, x_a, b_y, b_x, radians);
+			data->ray.dist_v = DBL_MAX;
 	}
-	else
-		data->ray.dist_v = DBL_MAX;
 }
 
 
@@ -79,10 +82,10 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 	double c_y;
 
 	y_a = TILE;
-	if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
+	if (ray_projected_up(data->ray.angle_start) == 1)
 		y_a *= -1;
 	x_a = fabs(TILE/tan(radians));
-	if (data->ray.angle_start > 90 && data->ray.angle_start < 270)
+	if (ray_projected_right(data->ray.angle_start) == 1)
 		x_a *= -1;
 	while (1)
 	{
@@ -114,9 +117,9 @@ void horizontal_check(t_data *data, double radians)
 	double a_x;
 
 	a_y = data->player.position_y * TILE;
-	if (data->ray.angle_start >= 0 && data->ray.angle_start <= 180)
-		a_y -= 0.001;
-	if (data->ray.angle_start >= 181 && data->ray.angle_start <= 359)
+	if (ray_projected_up(data->ray.angle_start) == 1)
+		a_y -= 0.000000000001;
+	else
 		a_y += TILE;
 	a_x = data->ray.player_x + (data->ray.player_y - a_y) / tan(radians);
 	a = (int)a_x / TILE;
@@ -189,6 +192,7 @@ void	find_wall(t_data *data)
 		data->ray.angle_start -= increment;
 		x++;
 	}
+	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
 }
 
 

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
+#    By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/01/21 14:53:20 by esellier         ###   ########.fr        #
+#    Updated: 2025/02/12 13:50:08 by ineimatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,14 +19,18 @@ GNL_A = $(addprefix $(GNL), libgnl.a)
 LIBFT_A = $(addprefix $(LIBFT), libft.a)
 
 SRC = main.c \
-	  ray_cast.c \
-	  ray_cast_calcul.c \
 	  parsing/parsing.c \
 	  parsing/parsing_colors.c \
 	  parsing/parsing_textures.c \
 	  parsing/parsing_map.c \
 	  parsing/parsing_player.c \
-	  utils.c
+	  utils.c \
+	  mini_map.c \
+	  events.c \
+	  door.c \
+	  ray_cast.c \
+	  ray_cast_calcul.c \
+	  ray_cast_utils.c \
 
 OBJ = $(SRC:.c=.o)
 
@@ -34,7 +38,7 @@ CC = cc
 
 INCLUDES = -I includes -I $(LIBFT)libft.h -I $(GNL)get_next_line.h
 
-CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) #-fsanitize=address -fsanitize=leak -g
+CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) -fsanitize=address -fsanitize=leak 
 
 all:
 	@$(MAKE) -C $(LIBFT)

@@ -3,18 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/30 12:23:44 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/12 13:56:38 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CUB3D_H
 # define CUB3D_H
 
+# define TILE 			64
+# define HEIGHT 		800
+# define LENGTH 		1280
+# define PICS			10
+# define SPRITE_TIME    10
+
 //Libraries
-# include "struct.h"
 # include "../gnl/get_next_line.h"
 # include "../mlx_linux/mlx.h"
 # include "../libft/libft.h"
@@ -26,17 +31,36 @@
 # include <X11/keysym.h>
 # include <math.h>
 # include <X11/Xlib.h>
+# include <sys/time.h>
+# include <math.h>
+# include "struct.h"
 # include <limits.h>
 # include <float.h>
 
-# define TILE 64
-# define HEIGHT 800
-# define LENGTH 1000
+//# define WHITE			0xFFFFFF
+//# define BLACK			0x0000
+# define PASTEL_PURPLE  0xC3B1E1
+# define DARK_PURPLE	0x4B2C58
+# define DARK_PINK		0x9B1B30
+# define BRIGHT_BLUE	0x1ABC9C
+
+//door
+void	init_sprite_door(t_data *data);
+void	do_door(t_data *data, int x, int y);
+void	close_door(t_data *data);
+
+//mini_map
+void	do_mini_map(t_data *data, char **matrix);
+void	put_scaled_image(t_data *data, int x, int y, int color);
+int		height_map(char **matrix);
+int		width_map(char **matrix);
 
 //events
 int		do_key(int keysym, t_data *data);
 void	init_events(t_data *data);
 int		close_escape(t_data *data);
+void	do_view(t_data *data, int keysym);
+void	do_move(t_data *data, int x, int y, int keysym);
 
 //parsing_player
 void	map_check_player(t_data *data, int i, int j, char **matrix);
@@ -66,13 +90,16 @@ void	check_cub_file(t_data *data, char *file);
 //utils
 int		error_msg(char *str, t_data *data);
 void	free_array(char **array);
+void	free_image(t_image *image, t_data *data);
+void	free_data_texture(t_data *data);
 void	free_data(t_data *data);
 
 //main
-void	print_data(t_data *data);
+void	print_data(t_data *data); //to borrow
+int		is_cub(char *argv);
+void	implementation_mlx(t_data *data, char *name);
 void	*initialize(t_data *data);
 int		main(int argc, char **argv);
-int		is_cub(char *argv);
 
 //ray cast
 void	init_ray(t_data *data);
@@ -87,7 +114,7 @@ void	find_shortest_distance(t_data *data);
 void	print_ray(t_ray ray);
 void    map_size(t_data *data);
 void    wall_height(t_data *data, int x);
+int     ray_projected_up(int angle);
+int     ray_projected_right(int angle);
 
-//mlx
-void	implementation_mlx(t_data *data, char *name);
 #endif

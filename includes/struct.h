@@ -25,6 +25,22 @@
 #define STRUCT_H
 
 
+typedef struct s_files
+{
+	void			*img;
+	int				width;
+	int				height;
+}			   t_files;
+
+typedef	struct s_door
+{
+	int				x;
+	int				y;
+	int				flag;
+	int				count;
+	t_files			sprite[10];
+}			   t_door;
+
 typedef struct s_color
 {
 	int				red;
@@ -85,6 +101,9 @@ typedef struct s_data
 	t_player		player;
 	t_ray			ray;
 	t_image			*image;
+	//struct timeval	timer;
+	t_files			texture[4];
+	t_door			doors;
 }			   t_data;
 
 #endif

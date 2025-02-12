@@ -114,8 +114,9 @@ void	implementation_mlx(t_data *data, char *name)
 	data->image->pix_add = mlx_get_data_addr(data->image->img_add,
 			&data->image->bit_pix, &data->image->length_line,
 			&data->image->endian);
+
 	//rempli les ints de la struc IMG et renvoie l'adr memoire du pixel en cours
-	//init_events(data);
+	init_events(data);
 }
 
 int	main(int argc, char **argv)

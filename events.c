@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   events.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/21 17:52:21 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/12 15:13:57 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,68 @@ int	do_key(int keysym, t_data *data)
 {
 	if (keysym == XK_Escape)
 		close_escape(data);
-	if (keysym == XK_Left)
+	if (keysym == XK_Left || keysym == XK_Right)
+		do_view(data, keysym);
+	if (keysym == XK_w || keysym == XK_a || keysym == XK_s || keysym == XK_d)
+		do_move(data, data->player.position_x, data->player.position_y, keysym);
+	/*if (keysym == XK_space)
+		do_door(data, data->player.position_x, data->player.position_y);*/
+	find_wall(data);
 	
-	if (keysym == XK_Right)
-	
-	if (keysym == XK_w)
-	
-	if (keysym == XK_a)
-	
-	if (keysym == XK_s)
-
-	if (keysym == XK_d)
-	
-	//recreat the image;
 	return (0);
+}
+
+void	do_view(t_data *data, int keysym)
+{
+	if (keysym == XK_Left)
+	{
+		data->player.angle = data->player.angle + 20;
+		if (data->player.angle >= 360)
+			data->player.angle = data->player.angle - 360;
+	}
+	if (keysym == XK_Right)
+	{
+		data->player.angle = data->player.angle - 20;
+		if (data->player.angle <= 0)
+			data->player.angle = data->player.angle + 360;
+	}
+	//raycasting
+}
+
+void	do_move(t_data *data, int x, int y, int keysym)
+{
+	if (keysym == XK_w && data->map->matrix[y - 1][x] == '0')
+	{
+		printf("Do we enter\n");
+		data->player.position_y = y - 1;
+	}
+	else if (keysym == XK_w && data->map->matrix[y - 1][x] == 'D'
+		&& data->doors.flag == 0)
+		data->player.position_y = y - 2;
+	else if (keysym == XK_s && data->map->matrix[y + 1][x] == '0')
+		data->player.position_y = y + 1;
+	else if (keysym == XK_a && data->map->matrix[y][x - 1] == '0')
+		data->player.position_x = x - 1;
+	else if (keysym == XK_d && data->map->matrix[y][x + 1] == '0')
+		data->player.position_x = x + 1;
+	else
+		return ;
+	//raycasting + position player sur minimap
+
+	//ou a la fin de la fonction de raycasting.
+}
+
+void	init_events(t_data *data)
+{
+	mlx_key_hook(data->mlx_window, do_key, data);
+	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
+	//mlx_mouse_hook(data->mlx_window, do_mouse, data);
+}
+
+int	close_escape(t_data *data)
+{
+	free_data(data);
+	exit (EXIT_SUCCESS);
 }
 // zoom with the mouse:
 /*int	do_mouse(int button, int x, int y, t_data *data)
@@ -51,23 +99,4 @@ int	do_key(int keysym, t_data *data)
 	return (0);
 }*/
 
-void	init_events(t_data *data)
-{
-	mlx_key_hook(data->window, do_key, data);
-	mlx_hook(data->window, 17, (1L << 5), close_escape, data);
-	mlx_mouse_hook(data->window, do_mouse, data);
-}
-
-int	close_escape(t_data *data)
-{
-	mlx_destroy_image(data->mlx, data->image->img_add);//changer le deuxieme arg
-	mlx_destroy_window(data->mlx, data->mlx_window);
-	mlx_destroy_display(data->mlx);
-	free (data);
-	exit (EXIT_SUCCESS);
-}
-
-◦ The left and right arrow keys of the keyboard must allow you to look left and
-right in the maze.
-◦ The W, A, S, and D keys must allow you to move the point of view through
-the maze. //player movement
+//faire sprite sur la porte avec la couleur des neons qui change et porte qui s'ouvre
