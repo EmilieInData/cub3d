@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   events.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/12 15:13:57 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:48:44 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ int	do_key(int keysym, t_data *data)
 	/*if (keysym == XK_space)
 		do_door(data, data->player.position_x, data->player.position_y);*/
 	find_wall(data);
-	
 	return (0);
 }
 
@@ -41,16 +40,12 @@ void	do_view(t_data *data, int keysym)
 		if (data->player.angle <= 0)
 			data->player.angle = data->player.angle + 360;
 	}
-	//raycasting
 }
 
 void	do_move(t_data *data, int x, int y, int keysym)
 {
 	if (keysym == XK_w && data->map->matrix[y - 1][x] == '0')
-	{
-		printf("Do we enter\n");
 		data->player.position_y = y - 1;
-	}
 	else if (keysym == XK_w && data->map->matrix[y - 1][x] == 'D'
 		&& data->doors.flag == 0)
 		data->player.position_y = y - 2;
@@ -62,9 +57,6 @@ void	do_move(t_data *data, int x, int y, int keysym)
 		data->player.position_x = x + 1;
 	else
 		return ;
-	//raycasting + position player sur minimap
-
-	//ou a la fin de la fonction de raycasting.
 }
 
 void	init_events(t_data *data)

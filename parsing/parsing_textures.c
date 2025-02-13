@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/23 19:57:21 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/04 19:05:00 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,4 +60,23 @@ void	*news_check(char *str, t_data *data)
 		&& (str[i + 2] == ' ' || str[i + 2] == '	'))
 		return (news_args_check(&str[i + 2], data, &data->map->ea));
 	exit (error_msg("identifier argument is not appropriate", data));
+}
+
+t_files	create_struct_files(t_data *data, char *path)
+{
+	t_files	files;
+
+	files.img = mlx_xpm_file_to_image(data->mlx, path,
+			&files.width, &files.height);
+	if (!files.img)
+		exit (error_msg("image not loaded", data));
+	return (files);
+}
+
+void	create_struct_texture(t_data *data)
+{
+	data->texture[0] = create_struct_files(data, data->map->no);
+	data->texture[1] = create_struct_files(data, data->map->so);
+	data->texture[2] = create_struct_files(data, data->map->we);
+	data->texture[3] = create_struct_files(data, data->map->ea);
 }

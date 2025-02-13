@@ -38,7 +38,7 @@ CC = cc
 
 INCLUDES = -I includes -I $(LIBFT)libft.h -I $(GNL)get_next_line.h
 
-CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) -fsanitize=address -fsanitize=leak 
+CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) -fsanitize=address -fsanitize=leak
 
 all:
 	@$(MAKE) -C $(LIBFT)

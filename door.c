@@ -1,5 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   door.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/02/03 19:25:21 by esellier          #+#    #+#             */
+/*   Updated: 2025/02/07 19:09:44 by esellier         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "cub3D.h"
-/*
+
 void	init_sprite_door(t_data *data)
 {
 	data->doors.sprite[0] = create_struct_files(data, FILES_NAME);
@@ -80,4 +92,5 @@ void	close_door(t_data *data)
 // void	do_sprite_neon(t_data *data)
 // {
 // 	//une boucle
-// }*/
+// }
+

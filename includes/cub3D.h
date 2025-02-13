@@ -80,6 +80,8 @@ void	*fc_check(char *str, t_data *data, t_color *fc);
 //parsing_textures
 void	*news_args_check(char *str, t_data *data, char **news);
 void	*news_check(char *str, t_data *data);
+t_files	create_struct_files(t_data *data, char *news);
+void	create_struct_texture(t_data *data);
 
 //parsing
 void	*check_line(char *str, t_data *data);
