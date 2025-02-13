@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ray_cast.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/12 15:18:01 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/13 19:09:35 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -192,6 +192,7 @@ void	find_wall(t_data *data)
 		data->ray.angle_start -= increment;
 		x++;
 	}
+	do_mini_map(data, data->map->matrix);//a utiliser en updatant seulement le player
 	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
 }
 

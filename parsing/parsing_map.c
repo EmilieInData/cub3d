@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/30 13:31:51 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/13 15:21:05 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,8 @@ void	map_check(t_data *data, char **matrix)
 	if (j < 2)
 		exit (error_msg("map shape is incorrect, not big enough", data));
 	map_check_first_last_line(data, 0, j);
-	map_check_border(data, data->map->matrix);
+	j = 0;//for the next line only
+	map_check_border(data, data->map->matrix, j);
 	if (data->player.news == '0')
 		exit (error_msg("map is incorrect, miss a player", data));
 }
@@ -89,12 +90,10 @@ void	map_check_middle_line(t_data *data, int i, int j)
 		exit (error_msg("map border is incorrect", data));
 }
 
-void	map_check_border(t_data *data, char **matrix)
+void	map_check_border(t_data *data, char **matrix, int j)
 {
-	int					j;
 	unsigned long int	i;
 
-	j = 0;
 	while (matrix[j])
 	{
 		i = 0;
@@ -102,11 +101,16 @@ void	map_check_border(t_data *data, char **matrix)
 		{
 			if (matrix[j][i] == '0')
 			{
-				if (ft_strlen(matrix[j + 1]) < i || ft_strlen(matrix[j - 1]) < i
+				if (ft_strlen(matrix[j + 1]) < i + 1
+					|| ft_strlen(matrix[j - 1]) < i + 1
 					|| !matrix[j + 1][i] || matrix[j + 1][i] == ' '
 					|| !matrix[j - 1][i] || matrix[j - 1][i] == ' '
 					|| !matrix[j][i + 1] || matrix[j][i + 1] == ' '
-					|| !matrix[j][i + 1] || matrix[j][i - 1] == ' ')
+					|| !matrix[j][i + 1] || matrix[j][i - 1] == ' '
+					|| !matrix[j + 1][i + 1] || matrix[j + 1][i + 1] == ' '
+					|| !matrix[j - 1][i + 1] || matrix[j - 1][i + 1] == ' '
+					|| !matrix[j + 1][i - 1] || matrix[j + 1][i - 1] == ' '
+					|| !matrix[j - 1][i - 1] || matrix[j - 1][i - 1] == ' ')
 					exit (error_msg("border not well closed", data));
 			}
 			i++;
@@ -114,8 +118,3 @@ void	map_check_border(t_data *data, char **matrix)
 		j++;
 	}
 }
-
-//checker si ok parsing color&texture, peut etre doit on pouvoir mettre des 
-//couleurs a la place des textures et inversement, ce serait galere dans la struc
-
-//printf("char = %c & i = %d\n", data->map->matrix[j][i], i);

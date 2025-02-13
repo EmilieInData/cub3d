@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/12 13:56:38 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/13 19:21:26 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@
 # include <X11/X.h>
 # include <fcntl.h>
 # include <X11/keysym.h>
-# include <math.h>
 # include <X11/Xlib.h>
 # include <sys/time.h>
 # include <math.h>
@@ -60,7 +59,7 @@ int		do_key(int keysym, t_data *data);
 void	init_events(t_data *data);
 int		close_escape(t_data *data);
 void	do_view(t_data *data, int keysym);
-void	do_move(t_data *data, int x, int y, int keysym);
+void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
 
 //parsing_player
 void	map_check_player(t_data *data, int i, int j, char **matrix);
@@ -70,7 +69,7 @@ void	map_check(t_data *data, char **matrix);
 void	map_check_door(t_data *data, int i, int j, char **matrix); //bonus
 void	map_check_first_last_line(t_data *data, int i, int j);
 void	map_check_middle_line(t_data *data, int i, int j);
-void	map_check_border(t_data *data, char **matrix);
+void	map_check_border(t_data *data, char **matrix, int j);
 
 //parsing_colors
 char	*fc_clean_args(char *str, t_data *data);

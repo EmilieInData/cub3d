@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/07 19:09:37 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/13 19:29:33 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,9 +51,9 @@ typedef struct s_map
 typedef struct s_player
 {
 	char			news;
-	int				angle;
-	int				position_x;
-	int				position_y;
+	double			angle;
+	double			position_x;
+	double			position_y;
 }              t_player;
 
 typedef struct s_image
@@ -67,19 +67,19 @@ typedef struct s_image
 
 typedef struct s_ray
 {
-	double	player_x;
-	double	player_y;
-	double	angle_start;
-	double	angle_end;
-	int FOV;
-	double dist_h;
-	double dist_v;
-	double dist_t_wall;
-	int		map_x;
-	int		map_y;
-	double	wall_height;
-	int		ceiling_floor;
-}				t_ray;
+	double			player_x;
+	double			player_y;
+	double			angle_start;
+	double			angle_end;
+	int 			FOV;
+	double 			dist_h;
+	double 			dist_v;
+	double 			dist_t_wall;
+	int				map_x;
+	int				map_y;
+	double			wall_height;
+	int				ceiling_floor;
+}			   t_ray;
 
 typedef struct s_data
 {

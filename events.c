@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/07 17:48:44 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/13 19:34:05 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@ int	do_key(int keysym, t_data *data)
 {
 	if (keysym == XK_Escape)
 		close_escape(data);
-	if (keysym == XK_Left || keysym == XK_Right)
+	else if (keysym == XK_Left || keysym == XK_Right)
 		do_view(data, keysym);
-	if (keysym == XK_w || keysym == XK_a || keysym == XK_s || keysym == XK_d)
-		do_move(data, data->player.position_x, data->player.position_y, keysym);
-	/*if (keysym == XK_space)
+	else if (keysym == XK_w || keysym == XK_a || keysym == XK_s || keysym == XK_d)
+		do_move(data, keysym, data->player.position_x, data->player.position_y);
+	/*else if (keysym == XK_space)
 		do_door(data, data->player.position_x, data->player.position_y);*/
 	find_wall(data);
 	return (0);
@@ -42,21 +42,42 @@ void	do_view(t_data *data, int keysym)
 	}
 }
 
-void	do_move(t_data *data, int x, int y, int keysym)
+void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 {
-	if (keysym == XK_w && data->map->matrix[y - 1][x] == '0')
-		data->player.position_y = y - 1;
-	else if (keysym == XK_w && data->map->matrix[y - 1][x] == 'D'
-		&& data->doors.flag == 0)
-		data->player.position_y = y - 2;
-	else if (keysym == XK_s && data->map->matrix[y + 1][x] == '0')
-		data->player.position_y = y + 1;
-	else if (keysym == XK_a && data->map->matrix[y][x - 1] == '0')
-		data->player.position_x = x - 1;
-	else if (keysym == XK_d && data->map->matrix[y][x + 1] == '0')
-		data->player.position_x = x + 1;
+	double	radian;
+	int		x;
+	int		y;
+
+	radian = (data->player.angle * M_PI) / (double)180.0;
+	if (keysym == XK_w)
+	{
+		tmp_y -= 0.25 * sin(radian);
+		tmp_x += 0.25 * cos(radian);
+	}
+	else if (keysym == XK_s)
+	{
+		tmp_y += 0.25 * sin(radian);
+		tmp_x -= 0.25 * cos(radian);
+	}
+	else if (keysym == XK_a)
+	{
+		tmp_y -= 0.25 * cos(radian);
+		tmp_x -= 0.25 * sin(radian);
+	}
+	else if (keysym == XK_d)
+	{
+		tmp_y += 0.25 * cos(radian);
+		tmp_x += 0.25 * sin(radian);
+	}
 	else
 		return ;
+	x = (int)floor(tmp_x);
+	y = (int)floor(tmp_y);
+	if (data->map->matrix[y][x] == '1' || (data->map->matrix[y][x] == 'D'
+		&& data->doors.flag == -1))
+		return ;
+	data->player.position_y = tmp_y;
+	data->player.position_x = tmp_x;
 }
 
 void	init_events(t_data *data)
@@ -90,5 +111,3 @@ int	close_escape(t_data *data)
 	create_fractal(data);
 	return (0);
 }*/
-
-//faire sprite sur la porte avec la couleur des neons qui change et porte qui s'ouvre

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/13 13:04:53 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/13 19:09:44 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,11 +35,11 @@ void	print_data(t_data *data)
 	if (data->player.news)
 		printf("Player_news = %c\n", data->player.news);
 	if (data->player.position_x)
-		printf("Player_X = %d\n", data->player.position_x);
+		printf("Player_X = %f\n", data->player.position_x);
 	if (data->player.position_y)
-		printf("Player_Y = %d\n", data->player.position_y);
+		printf("Player_Y = %f\n", data->player.position_y);
 	if (data->player.angle)
-		printf("Player_angle = %d\n", data->player.angle);
+		printf("Player_angle = %f\n", data->player.angle);
 	if (data->map->matrix)
 	{
 		while (data->map->matrix[i])
@@ -168,9 +168,9 @@ void	*initialize(t_data *data)
 	data->map->matrix = NULL;
 	data->map->flag = -1;
 	data->player.news = '0';
-	data->player.position_x = -1;
-	data->player.position_y = -1;
-	data->player.angle = -1;
+	data->player.position_x = -1.00;
+	data->player.position_y = -1.00;
+	data->player.angle = -1.00;
 	data->image = NULL;
 	data->timer.tv_sec = 0;
 	data->timer.tv_usec = 0;
@@ -196,8 +196,6 @@ int	main(int argc, char **argv)
 	map_size(data);
 	implementation_mlx(data, "cub3D_map");
 	find_wall(data);
-	do_mini_map(data, data->map->matrix); //a utiliser en updatant seulement le player
-	//create_struct_texture(data);
 	//print_data(data);
 	//close_door(data);
 	mlx_loop(data->mlx);
