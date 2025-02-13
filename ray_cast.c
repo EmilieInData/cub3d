@@ -6,13 +6,31 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/12 15:18:01 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/13 15:27:38 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/cub3D.h"
 
 //here I created functions which are checking where the ray casted by our plyer first interact with the wall on the horizontal and vertical plane
+
+int length(t_data * data, int i, int j)
+{
+	int x;
+
+	printf("line y = %i\n", i);
+	printf("line x = %i\n", j);
+	if (data->map->matrix[i])
+	{
+		x = 0;
+		while (data->map->matrix[0][x])
+			x++;
+		printf("line length = %i\n", x - 3);
+		return (x - 3);
+	}
+	else
+		return (j - 1);
+}
 
 void next_vertical(t_data * data, double x_a, double b_y, double b_x, double radians)
 {
@@ -25,17 +43,21 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 	{
 		b_x += x_a;
 		b_y += a_y;
-		if ((int)b_y / TILE >= 0 && (int)b_x / TILE >= 0 && data->ray.map_x > (int)b_x / TILE && data->ray.map_y > (int)b_y / TILE && data->map->matrix[(int)b_y / TILE][(int)b_x / TILE])
+		if ((int)b_y / TILE >= 0 && (int)b_x / TILE >= 0 && data->ray.map_x > (int)b_x / TILE && data->ray.map_y > (int)b_y / TILE)
 		{
-			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1')
+			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE])
 			{
-				data->ray.dist_v = find_distance_v(data, b_x, b_y);
-				break;
+				if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1')
+				{
+					data->ray.dist_v = find_distance_v(data, b_x, b_y);
+					break;
+				}
 			}
 		}
 		else
 		{
-			data->ray.dist_v = DBL_MAX;
+			find_shortest_distance(data);
+			//data->ray.dist_v = DBL_MAX;
 			break;
 		}
 	}
@@ -69,7 +91,7 @@ void vertical_check(t_data *data, double radians)
 				next_vertical(data, x_a, b_y, b_x, radians);
 		}
 		else
-			data->ray.dist_v = DBL_MAX;
+			find_shortest_distance(data);
 	}
 }
 
@@ -91,19 +113,27 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 	{
 		c_x = a_x + x_a;
 		c_y = a_y + y_a;
-		if ((int)c_y / TILE >= 0 && (int)c_x / TILE >= 0 && data->ray.map_x > (int)c_x / TILE && data->ray.map_y > (int)c_y / TILE && data->map->matrix[(int)c_y / TILE][(int)c_x / TILE])
+		printf("positions x %f and y %f\n", c_x / TILE, c_y /TILE);
+		if ((int)c_y / TILE >= 0 && (int)c_x / TILE >= 0 && length(data, ceil(c_y / TILE), c_x / TILE) >= (int)c_x / TILE && data->ray.map_y >= (int)c_y / TILE)
 		{
-			if (data->map->matrix[(int)c_y / TILE][(int)c_x / TILE] == '1')
+			printf("Hola\n");
+			if (data->map->matrix[(int)c_y / TILE][(int)c_x / TILE])
 			{
-				data->ray.dist_h = find_distance_h(data, c_x, c_y);
-				break;
+				printf("Que tal\n");
+				if (data->map->matrix[(int)c_y / TILE][(int)c_x / TILE] == '1')
+				{
+					data->ray.dist_h = find_distance_h(data, c_x, c_y);
+					break;
+				}
+				a_x = c_x;
+				a_y = c_y;
 			}
-			a_x = c_x;
-			a_y = c_y;
+			else
+				break;
 		}
 		else
 		{
-			data->ray.dist_h = DBL_MAX;
+			//data->ray.dist_h = DBL_MAX;
 			break;
 		}
 	}
@@ -111,8 +141,8 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 
 void horizontal_check(t_data *data, double radians)
 {
-	int a;
-	int b;
+	//int a;
+	//int b;
 	double a_y;
 	double a_x;
 
@@ -122,17 +152,18 @@ void horizontal_check(t_data *data, double radians)
 	else
 		a_y += TILE;
 	a_x = data->ray.player_x + (data->ray.player_y - a_y) / tan(radians);
-	a = (int)a_x / TILE;
-	b = (int)a_y / TILE;
-	if (a_y / TILE >= 0 && a_x / TILE >= 0 && data->ray.map_x > a_x / TILE && data->ray.map_y > a_y / TILE && data->map->matrix[(int)a_y / TILE][(int)a_x / TILE])
+	//a = (int)a_x / TILE;
+	//b = (int)a_y / TILE;
+	
+	if ((int)a_y / TILE >= 0 && (int)a_x / TILE >= 0 && length(data, (int)a_y / TILE, a_x / TILE) > (int)a_x / TILE && data->ray.map_y > (int)a_y / TILE && data->map->matrix[(int)a_y / TILE][(int)a_x / TILE])
 	{
 		if (data->map->matrix[(int)a_y / TILE][(int)a_x / TILE] == '1')
 				data->ray.dist_h = find_distance_h(data, a_x, a_y);
 		else
 			next_checks(data, a_x, a_y, radians);
 	}
-	else
-		data->ray.dist_h = DBL_MAX;
+	//else
+		//data->ray.dist_h = DBL_MAX;
 }
 
 void	init_ray(t_data *data)
@@ -200,8 +231,10 @@ void map_size(t_data *data)
 {
 	int i;
 	int a;
+	int max_length;
 
 	i = 0;
+	max_length = 0;
 	if (data->map->matrix)
 	{
 		while (data->map->matrix[i])
@@ -209,9 +242,11 @@ void map_size(t_data *data)
 			a = 0;
 			while (data->map->matrix[0][a])
 				a++;
+			if (max_length < a)
+				max_length = a;
 			i++;
 		}
-		data->ray.map_x = a;
+		data->ray.map_x = max_length;
 		data->ray.map_y = i;
 	}
 }
