@@ -10,6 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef STRUCT_H
+#define STRUCT_H
+
 typedef struct s_files
 {
 	void			*img;
@@ -62,6 +65,22 @@ typedef struct s_image
 	int				endian;
 }			   t_image;
 
+typedef struct s_ray
+{
+	double	player_x;
+	double	player_y;
+	double	angle_start;
+	double	angle_end;
+	int FOV;
+	double dist_h;
+	double dist_v;
+	double dist_t_wall;
+	int		map_x;
+	int		map_y;
+	double	wall_height;
+	int		ceiling_floor;
+}				t_ray;
+
 typedef struct s_data
 {
 	void			*mlx;
@@ -72,4 +91,7 @@ typedef struct s_data
 	struct timeval	timer;
 	t_files			texture[4];
 	t_door			doors;
+	t_ray			ray;
 }			   t_data;
+
+#endif

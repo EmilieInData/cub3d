@@ -63,6 +63,10 @@ void	free_image(t_image *image, t_data *data)
 
 void	free_data(t_data *data)
 {
+	//if (mlx_init)
+		//destroy mlx_init
+	//if (mlx_window)
+		//destroy mlx_window
 	if (data->map)
 	{
 		if (data->map->no)

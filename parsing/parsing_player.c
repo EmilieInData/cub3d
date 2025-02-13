@@ -38,6 +38,11 @@ void	map_check_player(t_data *data, int i, int j, char **matrix)
 	matrix[j][i] = '0';
 }
 
+//format texture xpm ou png
+//floodfill pour checker la position du player? pas enferme quelque part
+//checker la position du player, lui mettre un objectif a atteindre comme
+//une porte de sortie pour checker si la carte est ok ou un truc a recuperer
 
 //format texture xpm ou png
+
 //faire les signaux (terminal) ctrl c etc

@@ -93,3 +93,4 @@ void	close_door(t_data *data)
 // {
 // 	//une boucle
 // }
+

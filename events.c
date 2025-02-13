@@ -20,8 +20,9 @@ int	do_key(int keysym, t_data *data)
 		do_view(data, keysym);
 	if (keysym == XK_w || keysym == XK_a || keysym == XK_s || keysym == XK_d)
 		do_move(data, data->player.position_x, data->player.position_y, keysym);
-	if (keysym == XK_space)
-		do_door(data, data->player.position_x, data->player.position_y);
+	/*if (keysym == XK_space)
+		do_door(data, data->player.position_x, data->player.position_y);*/
+	find_wall(data);
 	return (0);
 }
 
@@ -39,8 +40,6 @@ void	do_view(t_data *data, int keysym)
 		if (data->player.angle <= 0)
 			data->player.angle = data->player.angle + 360;
 	}
-	//raycasting
-	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
 }
 
 void	do_move(t_data *data, int x, int y, int keysym)
@@ -58,9 +57,6 @@ void	do_move(t_data *data, int x, int y, int keysym)
 		data->player.position_x = x + 1;
 	else
 		return ;
-	//raycasting + position player sur minimap
-	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
-	//ou a la fin de la fonction de raycasting.
 }
 
 void	init_events(t_data *data)

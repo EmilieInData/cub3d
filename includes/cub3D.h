@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/07 17:45:50 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/12 13:56:38 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@
 # include <sys/time.h>
 # include <math.h>
 # include "struct.h"
+# include <limits.h>
+# include <float.h>
 
 //# define WHITE			0xFFFFFF
 //# define BLACK			0x0000
@@ -100,5 +102,21 @@ int		is_cub(char *argv);
 void	implementation_mlx(t_data *data, char *name);
 void	*initialize(t_data *data);
 int		main(int argc, char **argv);
+
+//ray cast
+void	init_ray(t_data *data);
+void    next_vertical(t_data *data, double x_a, double b_y, double b_x, double radians);
+void    vertical_check(t_data *data, double radians);
+void	next_checks(t_data *data, double a_x, double a_y, double radians);
+void    horizontal_check(t_data *data, double radians);
+void	find_wall(t_data *data);
+int     find_distance_v(t_data *data, double x, double y);
+int     find_distance_h(t_data *data, double x, double y);
+void	find_shortest_distance(t_data *data);
+void	print_ray(t_ray ray);
+void    map_size(t_data *data);
+void    wall_height(t_data *data, int x);
+int     ray_projected_up(int angle);
+int     ray_projected_right(int angle);
 
 #endif

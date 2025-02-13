@@ -40,6 +40,7 @@ void	*news_args_check(char *str, t_data *data, char **news)
 	*news = tmp;
 	return (0);
 }
+//checker si le chemin d'acces des textures est ok plus tard, par Julia
 
 void	*news_check(char *str, t_data *data)
 {
