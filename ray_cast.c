@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/13 15:27:38 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/13 15:32:32 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,9 +114,10 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 		c_x = a_x + x_a;
 		c_y = a_y + y_a;
 		printf("positions x %f and y %f\n", c_x / TILE, c_y /TILE);
-		if ((int)c_y / TILE >= 0 && (int)c_x / TILE >= 0 && length(data, ceil(c_y / TILE), c_x / TILE) >= (int)c_x / TILE && data->ray.map_y >= (int)c_y / TILE)
+		if ((int)c_y / TILE >= 0 && (int)c_x / TILE >= 0 && (double)length(data, ceil(c_y / TILE), c_x / TILE) >= c_x / TILE && data->ray.map_y >= (int)c_y / TILE)
 		{
 			printf("Hola\n");
+			printf("positions x %f and y %f\n", c_x / TILE, c_y /TILE);
 			if (data->map->matrix[(int)c_y / TILE][(int)c_x / TILE])
 			{
 				printf("Que tal\n");
