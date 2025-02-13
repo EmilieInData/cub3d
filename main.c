@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/21 17:51:41 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/13 12:31:05 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -145,9 +145,6 @@ void	*initialize(t_data *data)
 	data->map->ceiling.blue = -1;
 	data->map->matrix = NULL;
 	data->map->flag = -1;
-	/*data->player = malloc (sizeof (t_player));
-	if (!data->player)
-		exit (error_msg("malloc didn't work correctly", data), 1);*/ //pas besoin d'alloquer de la memoire si seulement int 
 	data->player.news = '0';
 	data->player.position_x = -1;
 	data->player.position_y = -1;
