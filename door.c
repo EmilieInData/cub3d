@@ -6,11 +6,11 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/03 19:25:21 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/07 19:09:44 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/13 13:01:29 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "cub3D.h"
+//#include "cub3D.h"
 
 void	init_sprite_door(t_data *data)
 {

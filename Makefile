@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+         #
+#    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/02/12 13:50:08 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/02/13 13:00:55 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,10 +27,10 @@ SRC = main.c \
 	  utils.c \
 	  mini_map.c \
 	  events.c \
-	  door.c \
 	  ray_cast.c \
 	  ray_cast_calcul.c \
 	  ray_cast_utils.c \
+	  #door.c \
 
 OBJ = $(SRC:.c=.o)
 
