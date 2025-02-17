@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ray_cast_calcul.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/20 14:06:13 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/13 15:46:18 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,6 +82,7 @@ void wall_height(t_data *data, int x)
 	angle = tan(30.0 * (M_PI / 180.0));
 	dist_t_proj_plane = (LENGTH / 2) / angle;
 	data->ray.wall_height  = (TILE / data->ray.dist_t_wall) * dist_t_proj_plane;
+	data->ray.wall_height  = ceil(data->ray.wall_height);
 	middle_of_screen = HEIGHT / 2;
 	middle_of_wall = data->ray.wall_height / 2;
 	data->ray.ceiling_floor = middle_of_screen - middle_of_wall;

@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/13 15:32:32 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/13 15:39:06 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -142,8 +142,7 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 
 void horizontal_check(t_data *data, double radians)
 {
-	//int a;
-	//int b;
+
 	double a_y;
 	double a_x;
 
@@ -152,11 +151,8 @@ void horizontal_check(t_data *data, double radians)
 		a_y -= 0.000000000001;
 	else
 		a_y += TILE;
-	a_x = data->ray.player_x + (data->ray.player_y - a_y) / tan(radians);
-	//a = (int)a_x / TILE;
-	//b = (int)a_y / TILE;
-	
-	if ((int)a_y / TILE >= 0 && (int)a_x / TILE >= 0 && length(data, (int)a_y / TILE, a_x / TILE) > (int)a_x / TILE && data->ray.map_y > (int)a_y / TILE && data->map->matrix[(int)a_y / TILE][(int)a_x / TILE])
+	a_x = data->ray.player_x + (data->ray.player_y - a_y) / tan(radians);	
+	if ((int)a_y / TILE >= 0 && (int)a_x / TILE >= 0 && (double)length(data, ceil(a_y / TILE), a_x / TILE) > a_x / TILE && data->ray.map_y > (int)a_y / TILE && data->map->matrix[(int)a_y / TILE][(int)a_x / TILE])
 	{
 		if (data->map->matrix[(int)a_y / TILE][(int)a_x / TILE] == '1')
 				data->ray.dist_h = find_distance_h(data, a_x, a_y);
