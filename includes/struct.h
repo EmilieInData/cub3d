@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   struct.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/20 14:13:14 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/17 16:21:25 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,8 +71,8 @@ typedef struct s_image
 
 typedef struct s_player
 {
-	int				position_x;
-	int				position_y;
+	double				position_x;
+	double				position_y;
 	int				angle;
 	char			news;
 }              t_player;

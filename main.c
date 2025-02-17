@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/01/21 17:51:41 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/17 17:42:24 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,10 @@
 
 void	print_data(t_data *data)
 {
-	int i;
-	int counter;
-	int j;
-	int a;
+	int	i;
 
 	i = 0;
-	j = 0;
-	a = 0;
-	counter = 0;
-	/*if (data->map->no)
+	if (data->map->no)
 		printf("NO = %s\n", data->map->no);
 	if (data->map->so)
 		printf("SO = %s\n", data->map->so);
@@ -40,29 +34,40 @@ void	print_data(t_data *data)
 	printf("Flag = %d\n", data->map->flag);
 	if (data->player.news)
 		printf("Player_news = %c\n", data->player.news);
-	if (data->player.position_x)
-		printf("Player_X = %d\n", data->player.position_x);
-	if (data->player.position_y)
-		printf("Player_Y = %d\n", data->player.position_y);
-	if (data->player.angle)
-		printf("Player_angle = %d\n", data->player.angle);*/
+	//if (data->player.position_x)
+	//	printf("Player_X = %d\n", data->player.position_x);
+	//if (data->player.position_y)
+	//	printf("Player_Y = %d\n", data->player.position_y);
+	//if (data->player.angle)
+	//	printf("Player_angle = %d\n", data->player.angle);
 	if (data->map->matrix)
 	{
 		while (data->map->matrix[i])
 		{
-			//printf("%i   ", counter);
-			//while (data->map->matrix[0][a])
-			//{
-				//printf("%i", j);
-				//j++;
-				//a++;
-			//}
 			printf("%s\n", data->map->matrix[i]);
 			i++;
-			counter++;
 		}
 	}
-	printf("Value at matrix[%d][%d]: %c\n", 7, 8, data->map->matrix[7][8]);
+}
+
+int	is_cub(char *argv)
+{
+	int	i;
+	int	fd;
+
+	fd = -1;
+	i = ft_strlen(argv) - 1;
+	if (!(argv[i - 3] == '.' && argv[i - 2] == 'c' && argv[i - 1] == 'u'
+			&& argv[i] == 'b'))
+		exit (error_msg("map file is incorrect", NULL));
+	else
+	{
+		if (access(argv, F_OK) == 0 && access(argv, R_OK) == 0)
+			fd = open(argv, O_RDONLY);
+		if (fd == -1 || access(argv, F_OK) != 0 || access(argv, R_OK) != 0)
+			exit (error_msg("map file is not open", NULL));
+	}
+	return (0);
 }
 
 void	*initialize(t_data *data)
@@ -136,25 +141,5 @@ int	main(int argc, char **argv)
 	mlx_loop(data->mlx);
 	//print_data(data);
 	free_data(data);
-	return (0);
-}
-
-int	is_cub(char *argv)
-{
-	int	i;
-	int	fd;
-
-	fd = -1;
-	i = ft_strlen(argv) - 1;
-	if (!(argv[i - 3] == '.' && argv[i - 2] == 'c' && argv[i - 1] == 'u'
-			&& argv[i] == 'b'))
-		exit (error_msg("map file is incorrect", NULL));
-	else
-	{
-		if (access(argv, F_OK) == 0 && access(argv, R_OK) == 0)
-			fd = open(argv, O_RDONLY);
-		if (fd == -1 || access(argv, F_OK) != 0 || access(argv, R_OK) != 0)
-			exit (error_msg("map file is not open", NULL));
-	}
 	return (0);
 }

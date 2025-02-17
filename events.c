@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/12 15:13:57 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/17 17:53:10 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	do_key(int keysym, t_data *data)
 	if (keysym == XK_Left || keysym == XK_Right)
 		do_view(data, keysym);
 	if (keysym == XK_w || keysym == XK_a || keysym == XK_s || keysym == XK_d)
-		do_move(data, data->player.position_x, data->player.position_y, keysym);
+		do_move(data, keysym, data->player.position_x, data->player.position_y);
 	/*if (keysym == XK_space)
 		do_door(data, data->player.position_x, data->player.position_y);*/
 	find_wall(data);
@@ -31,41 +31,58 @@ void	do_view(t_data *data, int keysym)
 {
 	if (keysym == XK_Left)
 	{
-		data->player.angle = data->player.angle + 20;
+		data->player.angle = data->player.angle + 5;
 		if (data->player.angle >= 360)
 			data->player.angle = data->player.angle - 360;
 	}
 	if (keysym == XK_Right)
 	{
-		data->player.angle = data->player.angle - 20;
+		data->player.angle = data->player.angle - 5;
 		if (data->player.angle <= 0)
 			data->player.angle = data->player.angle + 360;
 	}
-	//raycasting
 }
 
-void	do_move(t_data *data, int x, int y, int keysym)
+void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 {
-	if (keysym == XK_w && data->map->matrix[y - 1][x] == '0')
+	double	radian;
+	int		x;
+	int		y;
+
+	radian = (data->player.angle * M_PI) / (double)180.0;
+	if (keysym == XK_w)
 	{
-		printf("Do we enter\n");
-		data->player.position_y = y - 1;
+		tmp_y -= 0.1 * sin(radian);
+		tmp_x += 0.1 * cos(radian);
 	}
-	else if (keysym == XK_w && data->map->matrix[y - 1][x] == 'D'
-		&& data->doors.flag == 0)
-		data->player.position_y = y - 2;
-	else if (keysym == XK_s && data->map->matrix[y + 1][x] == '0')
-		data->player.position_y = y + 1;
-	else if (keysym == XK_a && data->map->matrix[y][x - 1] == '0')
-		data->player.position_x = x - 1;
-	else if (keysym == XK_d && data->map->matrix[y][x + 1] == '0')
-		data->player.position_x = x + 1;
+	else if (keysym == XK_s)
+	{
+		tmp_y += 0.1 * sin(radian);
+		tmp_x -= 0.1 * cos(radian);
+	}
+	else if (keysym == XK_a)
+	{
+		tmp_y -= 0.1 * cos(radian);
+		tmp_x -= 0.1 * sin(radian);
+	}
+	else if (keysym == XK_d)
+	{
+		tmp_y += 0.1 * cos(radian);
+		tmp_x += 0.1 * sin(radian);
+	}
 	else
 		return ;
-	//raycasting + position player sur minimap
-
-	//ou a la fin de la fonction de raycasting.
+	x = (int)ceil(tmp_x);
+	y = (int)ceil(tmp_y);
+	printf("TEST2_position_y = %f\n position_x = %f \n matrix = %c\n", data->player.position_y, data->player.position_x, data->map->matrix[y][x]);
+	if (data->map->matrix[y][x] == '1' || (data->map->matrix[y][x] == 'D'
+		&& data->doors.flag == -1))
+		return ;
+	data->player.position_y = tmp_y;
+	data->player.position_x = tmp_x;
+	printf("TEST_3position_y = %f\n position_x = %f \n matrix = %c\n", data->player.position_y, data->player.position_x, data->map->matrix[y][x]);
 }
+
 
 void	init_events(t_data *data)
 {
@@ -99,4 +116,4 @@ int	close_escape(t_data *data)
 	return (0);
 }*/
 
-//faire sprite sur la porte avec la couleur des neons qui change et porte qui s'ouvre
+//faire sprite sur la porte avec la couleur des neons qui change et porte qui s'ouvremake

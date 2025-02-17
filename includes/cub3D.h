@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/17 11:35:30 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/17 17:43:15 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ int		do_key(int keysym, t_data *data);
 void	init_events(t_data *data);
 int		close_escape(t_data *data);
 void	do_view(t_data *data, int keysym);
-void	do_move(t_data *data, int x, int y, int keysym);
+void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
 
 //parsing_player
 void	map_check_player(t_data *data, int i, int j, char **matrix);
