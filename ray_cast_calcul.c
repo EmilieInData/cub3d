@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/13 15:46:18 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/17 11:10:16 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@ void	find_shortest_distance(t_data *data)
 
 	radians = (data->ray.angle_start - data->player.angle) * (M_PI / 180.0);
 	if (data->ray.dist_h > data->ray.dist_v)
-		data->ray.dist_t_wall = data->ray.dist_v;
+		data->ray.dist_t_wall = ceil(data->ray.dist_v);
 	else
-		data->ray.dist_t_wall = data->ray.dist_h;
+		data->ray.dist_t_wall = ceil(data->ray.dist_h);
 	data->ray.dist_t_wall *= cos(radians);
 }
 

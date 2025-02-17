@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/12 13:56:38 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/17 11:35:30 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,6 +115,6 @@ void	print_ray(t_ray ray);
 void    map_size(t_data *data);
 void    wall_height(t_data *data, int x);
 int     ray_projected_up(int angle);
-int     ray_projected_right(int angle);
+int     ray_projected_left(int angle);
 
 #endif
