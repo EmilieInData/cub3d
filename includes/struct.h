@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/17 16:21:25 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/18 15:00:07 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,8 +87,17 @@ typedef struct s_ray
 	double dist_h;
 	double dist_v;
 	double dist_t_wall;
+	char	wall_hit;
+	int		v_x;
+	int		v_y;
+	int		h_x;
+	int		h_y;
+	int		hit_x;
+	int		hit_y;
 	int		map_x;
 	int		map_y;
+	int		first_wall_pxl;
+	int		last_wall_pxl;
 	double	wall_height;
 	int		ceiling_floor;
 }				t_ray;

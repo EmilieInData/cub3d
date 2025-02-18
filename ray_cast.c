@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/18 12:19:24 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/18 14:16:36 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -245,6 +245,13 @@ void	init_ray(t_data *data)
 	data->ray.angle_end = (double)data->player.angle - (data->ray.FOV / 2);
 	if (data->ray.angle_end < 0)
 		data->ray.angle_end = 360 + data->ray.angle_end;
+	data->ray.wall_hit = 'c';
+	data->ray.h_x = 0;
+	data->ray.v_x = 0;
+	data->ray.h_y = 0;
+	data->ray.v_y = 0;
+	data->ray.hit_x = 0;
+	data->ray.hit_y = 0;
 }
 
 void	ray_trace(t_data *data, int x, double increment)
