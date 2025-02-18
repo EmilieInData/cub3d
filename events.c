@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/17 17:53:10 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/18 12:15:35 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,17 @@ int	do_key(int keysym, t_data *data)
 	if (keysym == XK_Escape)
 		close_escape(data);
 	if (keysym == XK_Left || keysym == XK_Right)
+	{
 		do_view(data, keysym);
+		find_wall(data);
+	}
 	if (keysym == XK_w || keysym == XK_a || keysym == XK_s || keysym == XK_d)
+	{
 		do_move(data, keysym, data->player.position_x, data->player.position_y);
+		find_wall(data);
+	}
 	/*if (keysym == XK_space)
-		do_door(data, data->player.position_x, data->player.position_y);*/
-	find_wall(data);
-	
+		do_door(data, data->player.position_x, data->player.position_y);*/	
 	return (0);
 }
 
@@ -74,13 +78,13 @@ void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 		return ;
 	x = (int)ceil(tmp_x);
 	y = (int)ceil(tmp_y);
-	printf("TEST2_position_y = %f\n position_x = %f \n matrix = %c\n", data->player.position_y, data->player.position_x, data->map->matrix[y][x]);
+	//printf("TEST2_position_y = %f\n position_x = %f \n matrix = %c\n", data->player.position_y, data->player.position_x, data->map->matrix[y][x]);
 	if (data->map->matrix[y][x] == '1' || (data->map->matrix[y][x] == 'D'
 		&& data->doors.flag == -1))
 		return ;
 	data->player.position_y = tmp_y;
 	data->player.position_x = tmp_x;
-	printf("TEST_3position_y = %f\n position_x = %f \n matrix = %c\n", data->player.position_y, data->player.position_x, data->map->matrix[y][x]);
+	//printf("TEST_3position_y = %f\n position_x = %f \n matrix = %c\n", data->player.position_y, data->player.position_x, data->map->matrix[y][x]);
 }
 
 

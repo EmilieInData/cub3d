@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/17 17:43:15 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/18 11:54:47 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,5 +116,8 @@ void    map_size(t_data *data);
 void    wall_height(t_data *data, int x);
 int     ray_projected_up(int angle);
 int     ray_projected_left(int angle);
+int     check_diagonal(char **matrix, t_data *data, int x, int y);
+int     wall_in_ascending_diagonal(char **matrix, t_data *data, int x, int y);
+int     wall_in_descending_diagonal(char **matrix, t_data *data, int x, int y);
 
 #endif

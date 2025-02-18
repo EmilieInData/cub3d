@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/17 11:10:16 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/18 11:01:13 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,6 +86,7 @@ void wall_height(t_data *data, int x)
 	middle_of_screen = HEIGHT / 2;
 	middle_of_wall = data->ray.wall_height / 2;
 	data->ray.ceiling_floor = middle_of_screen - middle_of_wall;
+	printf("Wall height = %f\n", data->ray.wall_height);
 	while(y <= HEIGHT)
 	{
 		if(i >= (HEIGHT - ((int)data->ray.wall_height + (int)data->ray.ceiling_floor)))
