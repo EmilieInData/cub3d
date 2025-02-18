@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/18 16:02:25 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/18 16:21:22 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,13 +96,13 @@ void wall_height(t_data *data, int x)
 	while(y <= HEIGHT)
 	{
 		if(i >= (HEIGHT - ((int)data->ray.wall_height + (int)data->ray.ceiling_floor)))
-			render_ceil_floor(x, &y, data);
+			render_ceil_floor(x, &y, data, data->ray.angle_start);
 			//put_pixel_image(data->image, x, y,  0x87d3f8);
 		if (i >= (int)data->ray.ceiling_floor && i <= ((int)data->ray.wall_height + (int)data->ray.ceiling_floor))
-			render_wall(x, &y, data);
+			render_wall(x, &y, data, data->ray.angle_start);
 			//put_pixel_image(data->image, x, y, 0xc8509b);	
 		if(i <= (int)data->ray.ceiling_floor && i >= 0)
-			render_ceil_floor(x, &y, data);
+			render_ceil_floor(x, &y, data, data->ray.angle_start);
 			//put_pixel_image(data->image, x, y, 0x1e434e);
 		i--;
 		y++;

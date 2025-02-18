@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/18 15:00:07 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/18 16:16:11 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,7 @@ typedef struct s_ray
 	double	wall_height;
 	int		ceiling_floor;
 }				t_ray;
+
 
 typedef struct s_data
 {
