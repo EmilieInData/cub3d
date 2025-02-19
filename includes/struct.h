@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/18 16:16:11 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/19 12:44:08 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,10 @@
 typedef struct s_files
 {
 	void			*img;
+	char			*addr;
+	int				bpp;
+	int				line_len;
+	int				endian;
 	int				width;
 	int				height;
 }			   t_files;
@@ -112,7 +116,10 @@ typedef struct s_data
 	t_ray			ray;
 	t_image			*image;
 	//struct timeval	timer;
-	t_files			texture[4];
+	t_files 		*texture_north;
+	t_files 		*texture_south;
+	t_files 		*texture_west;
+	t_files 		*texture_east;
 	t_door			doors;
 }			   t_data;
 

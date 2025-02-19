@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/18 11:54:47 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/19 13:08:50 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,14 @@ void	implementation_mlx(t_data *data, char *name);
 void	*initialize(t_data *data);
 int		main(int argc, char **argv);
 
+//textures
+void	create_struct_files(t_data *data, char *path, t_files *files);
+void	get_wall_texture(t_data *data);
+t_files    *choose_wall_direction(t_data *data, double angle);
+void	render_wall(int x, int *y, t_data *data);
+int 	get_pixel_texture(t_files *files, int x, int y);
+void	print_pixel(t_data *data, int x, int y, int color);
+
 //ray cast
 void	init_ray(t_data *data);
 void    next_vertical(t_data *data, double x_a, double b_y, double b_x, double radians);
@@ -119,5 +127,7 @@ int     ray_projected_left(int angle);
 int     check_diagonal(char **matrix, t_data *data, int x, int y);
 int     wall_in_ascending_diagonal(char **matrix, t_data *data, int x, int y);
 int     wall_in_descending_diagonal(char **matrix, t_data *data, int x, int y);
+
+
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/18 16:21:22 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/19 12:07:45 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,15 +95,15 @@ void wall_height(t_data *data, int x)
 	printf("Wall height = %f\n", data->ray.wall_height);
 	while(y <= HEIGHT)
 	{
-		if(i >= (HEIGHT - ((int)data->ray.wall_height + (int)data->ray.ceiling_floor)))
-			render_ceil_floor(x, &y, data, data->ray.angle_start);
-			//put_pixel_image(data->image, x, y,  0x87d3f8);
+		if (i >= (HEIGHT - ((int)data->ray.wall_height + (int)data->ray.ceiling_floor)))
+			put_pixel_image(data->image, x, y,  0x87d3f8);
+			//render_ceil_floor(x, &y, data, data->ray.angle_start);
 		if (i >= (int)data->ray.ceiling_floor && i <= ((int)data->ray.wall_height + (int)data->ray.ceiling_floor))
-			render_wall(x, &y, data, data->ray.angle_start);
+			render_wall(x, &y, data);
 			//put_pixel_image(data->image, x, y, 0xc8509b);	
-		if(i <= (int)data->ray.ceiling_floor && i >= 0)
-			render_ceil_floor(x, &y, data, data->ray.angle_start);
-			//put_pixel_image(data->image, x, y, 0x1e434e);
+		if (i <= (int)data->ray.ceiling_floor && i >= 0)
+			put_pixel_image(data->image, x, y, 0x1e434e);
+			//render_ceil_floor(x, &y, data, data->ray.angle_start);	
 		i--;
 		y++;
 		//printf("x = %i, y = %i\n", x, y);
