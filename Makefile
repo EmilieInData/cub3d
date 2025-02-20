@@ -6,7 +6,7 @@
 #    By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/02/19 13:09:34 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/02/20 13:59:08 by ineimatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,9 +37,9 @@ OBJ = $(SRC:.c=.o)
 
 CC = cc
 
-INCLUDES = -I includes -I $(LIBFT)libft.h -I $(GNL)get_next_line.h
+INCLUDES = -I includes -I $(LIBFT) -I $(GNL)
 
-CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) -fsanitize=address -fsanitize=leak 
+CCFLAGS =  $(INCLUDES) -fsanitize=address -fsanitize=leak 
 
 all:
 	@$(MAKE) -C $(LIBFT)

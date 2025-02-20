@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/18 15:06:55 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:57:54 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ void	*news_args_check(char *str, t_data *data, char **news)
 	int		i;
 	char	*tmp;
 
+	tmp = NULL;
 	i = 0;
 	if (*news)
 		exit (error_msg("duplicate texture element ", data));

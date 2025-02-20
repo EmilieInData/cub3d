@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/20 13:47:45 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/20 15:06:22 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,9 +90,11 @@ void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 }
 
 
-void	init_events(t_data *data)
+int	init_events(t_data *data)
 {
-	mlx_key_hook(data->mlx_window, do_key, data);
+	//mlx_key_hook(data->mlx_window, do_key, data);
+	//printf("entered\n");
+	mlx_hook(data->mlx_window, 2, (1L<<0), do_key, data);
 	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
 	//mlx_mouse_hook(data->mlx_window, do_mouse, data);
 }
