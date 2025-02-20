@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/19 12:07:45 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:42:43 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ int find_distance_v(t_data *data, double x, double y)
 {
 	double dist;
 
-	data->ray.v_x = (int)x / TILE;
-	data->ray.v_y = (int)y / TILE;
+	data->ray.v_x = (int)x; // TILE;
+	data->ray.v_y = (int)y; // TILE;
 	dist = sqrt(pow((data->ray.player_x - x), 2) + pow((data->ray.player_y - y), 2));
 	return (dist);
 }
@@ -26,8 +26,8 @@ int find_distance_h(t_data *data, double x, double y)
 {
 	double dist;
 	
-	data->ray.h_x = (int)x / TILE;
-	data->ray.h_y = (int)y / TILE;
+	data->ray.h_x = (int)x; // TILE;
+	data->ray.h_y = (int)y; // TILE;
 	dist = sqrt(pow((data->ray.player_x - x), 2) + pow((data->ray.player_y - y), 2));
 	return(dist);
 }
@@ -92,21 +92,15 @@ void wall_height(t_data *data, int x)
 	data->ray.last_wall_pxl = data->ray.first_wall_pxl - data->ray.wall_height;
 	middle_of_wall = data->ray.wall_height / 2;
 	data->ray.ceiling_floor = middle_of_screen - middle_of_wall;
-	printf("Wall height = %f\n", data->ray.wall_height);
 	while(y <= HEIGHT)
 	{
 		if (i >= (HEIGHT - ((int)data->ray.wall_height + (int)data->ray.ceiling_floor)))
-			put_pixel_image(data->image, x, y,  0x87d3f8);
-			//render_ceil_floor(x, &y, data, data->ray.angle_start);
+			put_pixel_image(data->image, x, y,  rgb_to_int_ceil(data));
 		if (i >= (int)data->ray.ceiling_floor && i <= ((int)data->ray.wall_height + (int)data->ray.ceiling_floor))
-			render_wall(x, &y, data);
-			//put_pixel_image(data->image, x, y, 0xc8509b);	
+			render_wall(x, &y, data, &i);
 		if (i <= (int)data->ray.ceiling_floor && i >= 0)
-			put_pixel_image(data->image, x, y, 0x1e434e);
-			//render_ceil_floor(x, &y, data, data->ray.angle_start);	
+			put_pixel_image(data->image, x, y, rgb_to_int_floor(data));	
 		i--;
 		y++;
-		//printf("x = %i, y = %i\n", x, y);
 	}
-	//:printf("x = %i, y = %i\n", x, y);
 }

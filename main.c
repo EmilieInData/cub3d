@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/19 13:32:42 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:45:51 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -138,10 +138,12 @@ int	main(int argc, char **argv)
 	map_check(data, data->map->matrix);
 	map_size(data);
 	implementation_mlx(data, "cub3D_map");
+	/*if (!data->texture_north)*/
 	get_wall_texture(data);
 	find_wall(data);
 	mlx_loop(data->mlx);
 	print_data(data);
+	free_textures(data);
 	//free_data(data);
 	return (0);
 }

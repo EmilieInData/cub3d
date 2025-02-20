@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/19 14:01:38 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:43:11 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ t_files *choose_wall_direction(t_data *data, double angle)
     t_files	*files;
     
 	files = NULL;
-	//printf("Angle %f\n wall_hit %c\n", angle, data->ray.wall_hit);
 	if ((ray_projected_left(angle) == 0) && (data->ray.wall_hit == 'v'))
 		files = data->texture_west; //west
 	if ((ray_projected_left(angle) == 1) && (data->ray.wall_hit == 'v'))
@@ -64,7 +63,7 @@ t_files *choose_wall_direction(t_data *data, double angle)
 	return (files);
 }
 
-void	render_wall(int x, int *y, t_data *data)
+void	render_wall(int x, int *y, t_data *data, int *i)
 {
 	int			tex[2];
 	float		texture[2];
@@ -72,15 +71,9 @@ void	render_wall(int x, int *y, t_data *data)
 	t_files		*files;
 
 	if (data->ray.wall_hit == 'h')
-	{
 		texture[0] = fmod(data->ray.hit_x, TILE);
-		//texture[0] = data->ray.hit_x - floor(data->ray.hit_x);
-	}
 	else
-	{
-		texture[0] = fmod(data->ray.hit_y, TILE);
-		//texture[0] = data->ray.hit_y - floor(data->ray.hit_y);
-	}	
+		texture[0] = fmod(data->ray.hit_y, TILE);	
 	files = choose_wall_direction(data, data->ray.angle_start);
 	texture[0] = (texture[0] / TILE) * files->width;
 	texture[1] = 0.0f;
@@ -97,6 +90,7 @@ void	render_wall(int x, int *y, t_data *data)
 				tex[1], tex[0]));
 		texture[1] += y_step;
 		(*y)++;
+		(*i)--;
 	}
 }
 
@@ -105,7 +99,7 @@ int 	get_pixel_texture(t_files *files, int x, int y)
 	char *pixel;
 	int color;
 
-	if (x < 0 || y < 0 || x > files->width || y > files->height)
+	if (x < 0 || y < 0 || !files || x >= files->width || y >= files->height)
 		return (0x0);
 	pixel = files->addr + ((y * files->line_len) + (x * (files->bpp / 8)));
 	color = *(int *)pixel;
@@ -124,4 +118,22 @@ void	print_pixel(t_data *data, int x, int y, int color)
 	data->image->pix_add[pixel + 2] = (color >> 16) & 0xFF;
 	if (data->image->bit_pix == 32)
 		data->image->pix_add[pixel + 3] = (color >> 24);
+}
+
+int	rgb_to_int_floor(t_data *data)
+{
+	return ((data->map->floor.red << 24) | (data->map->floor.green << 16) | (data->map->floor.blue << 8) | 255);
+}
+
+int	rgb_to_int_ceil(t_data *data)
+{
+	return ((data->map->ceiling.red << 24) | (data->map->ceiling.green << 16) | (data->map->ceiling.blue << 8) | 255);
+}
+
+void free_textures(t_data *data)
+{
+	free(data->texture_north); 
+	free(data->texture_south);
+	free(data->texture_west);
+	free(data->texture_east); 
 }

@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 13:35:51 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/18 12:10:07 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/20 11:20:47 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,7 +56,7 @@ int wall_in_ascending_diagonal(char **matrix, t_data *data, int x, int y)
     if (ray_projected_up(data->ray.angle_start) == 1
 		&& ray_projected_left(data->ray.angle_start) == 0)
     {
-        printf("Hello\n");
+       // printf("Hello\n");
 		if (y < 0 && x < 0 )
         {
             if (y < data->ray.map_y

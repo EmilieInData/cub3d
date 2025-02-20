@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/18 12:15:35 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/20 13:47:45 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 int	do_key(int keysym, t_data *data)
 {
+	/*if (!data->texture_north)
+		get_wall_texture(data);*/
 	if (keysym == XK_Escape)
 		close_escape(data);
 	if (keysym == XK_Left || keysym == XK_Right)
@@ -97,6 +99,8 @@ void	init_events(t_data *data)
 
 int	close_escape(t_data *data)
 {
+	if (data->texture_north)
+		free_textures(data);
 	free_data(data);
 	exit (EXIT_SUCCESS);
 }
