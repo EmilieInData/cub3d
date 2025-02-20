@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/02/13 13:00:55 by esellier         ###   ########.fr        #
+#    Updated: 2025/02/20 16:04:15 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,9 +36,9 @@ OBJ = $(SRC:.c=.o)
 
 CC = cc
 
-INCLUDES = -I includes -I $(LIBFT)libft.h -I $(GNL)get_next_line.h
+INCLUDES = -I includes -I $(LIBFT) -I $(GNL)
 
-CCFLAGS = -Wextra -Werror -Wall $(INCLUDES) -fsanitize=address -fsanitize=leak
+CCFLAGS = -Wall -Wextra -Werror $(INCLUDES) -fsanitize=address -fsanitize=leak
 
 all:
 	@$(MAKE) -C $(LIBFT)
@@ -46,8 +46,8 @@ all:
 	@$(MAKE) -C $(MLX)
 	@$(MAKE) $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(CCFLAGS) $(OBJ) -L$(LIBFT) -lft -L$(GNL) -lgnl -L$(MLX) -Lmlx_linux -lmlx_Linux -L/usr/lib -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
+$(NAME): $(OBJ) $(LIBFT_A) $(GNL_A) $(MLX_A)
+	$(CC) $(CCFLAGS) $(OBJ) -L/usr/lib -lft -lgnl -Lmlx_linux -lmlx_Linux -Imlx_linux -lXext -lX11 -lm -lz -o $(NAME)
 
 %.o:		%.c Makefile includes/cub3D.h includes/struct.h $(LIBFT_A) $(GNL_A) $(MLX_A)
 			$(CC) $(CCFLAGS) -Imlx_linux -O3 -c $< -o $(<:.c=.o)
@@ -65,5 +65,3 @@ fclean:		clean
 re:	fclean all
 
 .PHONY: all clean fclean re
-
-#reglas bonus
