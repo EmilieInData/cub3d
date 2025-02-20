@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/13 19:34:05 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/20 12:31:49 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,17 +30,17 @@ void	do_view(t_data *data, int keysym)
 {
 	if (keysym == XK_Left)
 	{
-		data->player.angle = data->player.angle + 20;
+		data->player.angle = data->player.angle + 5;
 		if (data->player.angle >= 360)
 			data->player.angle = data->player.angle - 360;
 	}
 	if (keysym == XK_Right)
 	{
-		data->player.angle = data->player.angle - 20;
+		data->player.angle = data->player.angle - 5;
 		if (data->player.angle <= 0)
 			data->player.angle = data->player.angle + 360;
 	}
-}
+} //checker le changement de 0 a  360
 
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 {
@@ -51,34 +51,34 @@ void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 	radian = (data->player.angle * M_PI) / (double)180.0;
 	if (keysym == XK_w)
 	{
-		tmp_y -= 0.25 * sin(radian);
-		tmp_x += 0.25 * cos(radian);
+		tmp_y -= SPEED * sin(radian);
+		tmp_x += SPEED * cos(radian);
 	}
 	else if (keysym == XK_s)
 	{
-		tmp_y += 0.25 * sin(radian);
-		tmp_x -= 0.25 * cos(radian);
+		tmp_y += SPEED * sin(radian);
+		tmp_x -= SPEED * cos(radian);
 	}
 	else if (keysym == XK_a)
 	{
-		tmp_y -= 0.25 * cos(radian);
-		tmp_x -= 0.25 * sin(radian);
+		tmp_y -= SPEED * cos(radian);
+		tmp_x -= SPEED * sin(radian);
 	}
 	else if (keysym == XK_d)
 	{
-		tmp_y += 0.25 * cos(radian);
-		tmp_x += 0.25 * sin(radian);
+		tmp_y += SPEED * cos(radian);
+		tmp_x += SPEED * sin(radian);
 	}
 	else
 		return ;
-	x = (int)floor(tmp_x);
-	y = (int)floor(tmp_y);
+	x = (int)ceil(tmp_x);
+	y = (int)ceil(tmp_y);
 	if (data->map->matrix[y][x] == '1' || (data->map->matrix[y][x] == 'D'
 		&& data->doors.flag == -1))
 		return ;
 	data->player.position_y = tmp_y;
 	data->player.position_x = tmp_x;
-}
+} // add protection for wall de la taille du speed ?
 
 void	init_events(t_data *data)
 {

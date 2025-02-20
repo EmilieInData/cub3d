@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/13 19:21:26 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/17 17:26:50 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # define LENGTH 		1280
 # define PICS			10
 # define SPRITE_TIME    10
+# define SPEED          0.1
 
 //Libraries
 # include "../gnl/get_next_line.h"
