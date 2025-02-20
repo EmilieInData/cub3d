@@ -3,24 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   utils.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:54:16 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/17 16:52:43 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/20 16:21:48 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3D.h"
 
-int	error_msg(char *str, t_data *data)
+int error_msg(char *str, t_data *data)
 {
-	write(2, "Error\n", 6);
-	while (*str)
-		write(2, str++, 1);
-	write(2, "\n", 1);
-	if (data)
-		free_data(data);
-	return (1);
+    //write(2, "Error\n", 6);
+    printf("Error\n");
+    printf("%s\n", str);
+    //while (*str)
+    //  write(2, str++, 1);
+    //write(2, "\n", 1);
+    if (data)
+        free_data(data);
+    return (1);
 }
 
 void	free_array(char **array)

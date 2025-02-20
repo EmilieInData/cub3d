@@ -6,7 +6,7 @@
 #    By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/02/20 13:59:08 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/02/20 16:25:19 by ineimatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,11 +27,11 @@ SRC = main.c \
 	  utils.c \
 	  mini_map.c \
 	  events.c \
-	  door.c \
 	  ray_cast.c \
 	  ray_cast_calcul.c \
 	  ray_cast_utils.c \
 	  textures.c \
+	  #door.c \
 
 OBJ = $(SRC:.c=.o)
 
@@ -39,7 +39,7 @@ CC = cc
 
 INCLUDES = -I includes -I $(LIBFT) -I $(GNL)
 
-CCFLAGS =  $(INCLUDES) -fsanitize=address -fsanitize=leak 
+CCFLAGS = -Wall -Wextra -Werror $(INCLUDES) -fsanitize=address -fsanitize=leak
 
 all:
 	@$(MAKE) -C $(LIBFT)
@@ -66,5 +66,3 @@ fclean:		clean
 re:	fclean all
 
 .PHONY: all clean fclean re
-
-#reglas bonus

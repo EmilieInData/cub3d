@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/20 15:21:47 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/20 16:22:19 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ int		width_map(char **matrix);
 
 //events
 int		do_key(int keysym, t_data *data);
-int	init_events(t_data *data);
+void	init_events(t_data *data);
 int		close_escape(t_data *data);
 void	do_view(t_data *data, int keysym);
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
