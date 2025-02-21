@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 11:42:26 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 14:27:24 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,7 +118,7 @@ void	implementation_mlx(t_data *data, char *name)
 	data->mlx_window = mlx_new_window(data->mlx, LENGTH, HEIGHT, name);
 	if (!data->mlx_window)
 		exit (error_msg("mlx_new_window didn't works properly", data));
-	data->image->img_add = mlx_new_image(data->mlx, LENGTH, HEIGHT);
+	data->image->img_add = mlx_new_image(data->mlx, LENGTH, HEIGHT); //checker si il y a une image et la destroy avant de reutiliser le pointeur
 	if (!data->image->img_add)
 		exit (error_msg("mlx_new_image didn't works properly", data));
 	data->image->pix_add = mlx_get_data_addr(data->image->img_add,
@@ -152,11 +152,7 @@ int	main(int argc, char **argv)
 	init_events(data);
 	//mlx_loop_hook(data->mlx, (void*)find_wall, data);
 	mlx_loop(data->mlx);
-	print_data(data);
-	/*if (data->texture_north)
-		free_textures(data);
-	if (data->door)
-		free(data->door);*/
+	//print_data(data);
 	free_data(data);
 	return (0);
 }

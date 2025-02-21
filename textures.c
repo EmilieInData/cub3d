@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   textures.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 13:02:44 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 14:12:18 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,10 +45,10 @@ void	get_wall_texture(t_data *data)
 	return ;
 }
 
-t_files *choose_wall_direction(t_data *data, double angle)
+t_files	*choose_wall_direction(t_data *data, double angle)
 {
-    t_files	*files;
-    
+	t_files	*files;
+
 	files = NULL;
 	if ((ray_projected_left(angle) == 0) && (data->ray.wall_hit == 'v'))
 		files = data->texture_west; //west

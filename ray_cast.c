@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ray_cast.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 11:33:18 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 13:33:11 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -282,18 +282,18 @@ void	ray_trace(t_data *data, int x, double increment)
 
 void	find_wall(t_data *data)
 { 
-	int x;
-	double increment;
-		
+	int		x;
+	double	increment;
+
 	x = 0;
 	increment = (double)data->ray.FOV / LENGTH;
 	init_ray(data);
-	printf("angle start %f\n, angle end %f\n,", data->ray.angle_start, data->ray.angle_end);
+	//printf("angle start %f\n, angle end %f\n,", data->ray.angle_start, data->ray.angle_end);
 	if (data->ray.angle_start == 90)
 	{
 		data->ray.angle_start -= 2.2;
 		data->ray.angle_end -= 2.2;
-		printf("angle start %f\n, angle end %f\n,", data->ray.angle_start, data->ray.angle_end);
+	//	printf("angle start %f\n, angle end %f\n,", data->ray.angle_start, data->ray.angle_end);
 	}
 	while (data->ray.angle_start < data->ray.angle_end)
 	{

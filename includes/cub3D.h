@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 11:10:06 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 14:21:29 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@
 # define SPRITE_TIME    10
 
 //Libraries
+# include "struct.h"
 # include "../gnl/get_next_line.h"
 # include "../mlx_linux/mlx.h"
 # include "../libft/libft.h"
@@ -32,8 +33,6 @@
 # include <math.h>
 # include <X11/Xlib.h>
 # include <sys/time.h>
-# include <math.h>
-# include "struct.h"
 # include <limits.h>
 # include <float.h>
 
@@ -91,7 +90,6 @@ void	check_cub_file(t_data *data, char *file);
 int		error_msg(char *str, t_data *data);
 void	free_array(char **array);
 void	free_image(t_image *image, t_data *data);
-void	free_data_texture(t_data *data);
 void	free_data(t_data *data);
 
 //main
@@ -102,18 +100,19 @@ void	*initialize(t_data *data);
 int		main(int argc, char **argv);
 
 //textures
-int	rgb_to_int_floor(t_data *data);
-int	rgb_to_int_ceil(t_data *data);
+int     rgb_to_int_floor(t_data *data);
+int	    rgb_to_int_ceil(t_data *data);
 void	create_struct_files(t_data *data, char *path, t_files *files);
 void	get_wall_texture(t_data *data);
-t_files    *choose_wall_direction(t_data *data, double angle);
+t_files *choose_wall_direction(t_data *data, double angle);
 void	render_wall(int x, int *y, t_data *data, int *i);
 int 	get_pixel_texture(t_files *files, int x, int y);
 void	print_pixel(t_data *data, int x, int y, int color);
 void    put_pixel_image(t_image *image, int x, int y, int color);
 void    free_textures(t_data *data);
-void door_projection(t_data *data);
-void free_door(t_data *data);
+void    door_projection(t_data *data);
+void    free_door(t_data *data);
+//void	free_textures_end(t_data *data);
 
 //ray cast
 void	init_ray(t_data *data);
@@ -133,7 +132,5 @@ int     ray_projected_left(int angle);
 int     check_diagonal(char **matrix, t_data *data, int x, int y);
 int     wall_in_ascending_diagonal(char **matrix, t_data *data, int x, int y);
 int     wall_in_descending_diagonal(char **matrix, t_data *data, int x, int y);
-
-
 
 #endif
