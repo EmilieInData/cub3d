@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 11:42:26 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 13:40:32 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,6 +104,7 @@ void	*initialize(t_data *data)
 	data->texture_east = NULL;
 	data->texture_west = NULL;
 	data->door = NULL;
+	data->mouse_position = -1;
 	return (data);
 }
 

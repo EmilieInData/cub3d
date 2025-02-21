@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 10:48:43 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 13:30:14 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,6 +116,7 @@ typedef struct s_data
 	t_player		player;
 	t_ray			ray;
 	t_image			*image;
+	int				mouse_position;
 	//struct timeval	timer;
 	t_files			*door;
 	t_files 		*texture_north;

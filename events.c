@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/21 11:42:32 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 14:12:54 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,40 +92,39 @@ void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 
 void	init_events(t_data *data)
 {
-	//mlx_key_hook(data->mlx_window, do_key, data);
-	//printf("entered\n");
 	mlx_hook(data->mlx_window, 2, (1L<<0), do_key, data);
 	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
-	//mlx_mouse_hook(data->mlx_window, do_mouse, data);
+	mlx_hook(data->mlx_window, 6, 1L << 6, do_mouse, data); //PointerMotionMask
 }
 
 int	close_escape(t_data *data)
 {
-	/*if (data->texture_north)
-		free_textures(data);
-	if (data->door)
-		free(data->door);*/
 	free_data(data);
 	exit (EXIT_SUCCESS);
 }
-// zoom with the mouse:
-/*int	do_mouse(int button, int x, int y, t_data *data)
+
+int do_mouse(int x, int y, t_data *data)
 {
-	double	d_x;
-	double	d_y;
-	double	zoom;
+	int	movement;
 
-	d_x = ((double)x * 4 / WIDTH - 2) * data->zoom + data->move_x;
-	d_y = ((double)y * 4 / HEIGHT - 2) * data->zoom + data->move_y;
-	if (button == Button5)
-		zoom = 1.10;
-	if (button == Button4)
-		zoom = 0.90;
-	data->move_x = data->move_x + (d_x - data->move_x) * (1 - zoom);
-	data->move_y = data->move_y + (d_y - data->move_y) * (1 - zoom);
-	data->zoom = data->zoom * zoom;
-	create_fractal(data);
+	(void)y;
+	movement = 0;
+	if (data->mouse_position)
+	{
+		data->mouse_position = 0;
+		return (0);
+	}
+	movement = x - (LENGTH / 2);
+	if (movement)
+	{
+		data->player.angle -= movement * ROTATION;
+		data->player.angle = fmod(data->player.angle, 360);
+		if (data->player.angle < 0)
+			data->player.angle += 360;
+		find_wall(data);
+	}
+	data->mouse_position = 1;
+	mlx_mouse_move(data->mlx, data->mlx_window,
+		LENGTH / 2, HEIGHT / 2);
 	return (0);
-}*/
-
-//faire sprite sur la porte avec la couleur des neons qui change et porte qui s'ouvremake
+}

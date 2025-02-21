@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 11:10:06 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 13:35:42 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # define LENGTH 		1240
 # define PICS			10
 # define SPRITE_TIME    10
+# define ROTATION       0.09
 
 //Libraries
 # include "../gnl/get_next_line.h"
@@ -61,6 +62,7 @@ void	init_events(t_data *data);
 int		close_escape(t_data *data);
 void	do_view(t_data *data, int keysym);
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
+int do_mouse(int x, int y, t_data *data);
 
 //parsing_player
 void	map_check_player(t_data *data, int i, int j, char **matrix);
