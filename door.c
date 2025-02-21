@@ -13,7 +13,6 @@ void	init_sprite_door(t_data *data)
 	data->doors.sprite[8] = create_struct_files(data, FILES_NAME);
 	data->doors.sprite[9] = create_struct_files(data, FILES_NAME);
 }
-
 void	do_door(t_data *data, int x, int y)
 {
 	if (data->map->matrix[y - 1][x] == 'D' && data->player.angle <= 100

@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/20 13:43:11 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 11:25:49 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,8 +73,11 @@ void	render_wall(int x, int *y, t_data *data, int *i)
 	if (data->ray.wall_hit == 'h')
 		texture[0] = fmod(data->ray.hit_x, TILE);
 	else
-		texture[0] = fmod(data->ray.hit_y, TILE);	
-	files = choose_wall_direction(data, data->ray.angle_start);
+		texture[0] = fmod(data->ray.hit_y, TILE);
+	if (data->ray.type == 'w')
+		files = choose_wall_direction(data, data->ray.angle_start);
+	else
+		files = data->door;
 	texture[0] = (texture[0] / TILE) * files->width;
 	texture[1] = 0.0f;
 	y_step = (float)files->height / data->ray.wall_height;
@@ -94,46 +97,9 @@ void	render_wall(int x, int *y, t_data *data, int *i)
 	}
 }
 
-int 	get_pixel_texture(t_files *files, int x, int y)
+void door_projection(t_data *data)
 {
-	char *pixel;
-	int color;
+	data->door  = malloc(sizeof(t_files) * 1);
 
-	if (x < 0 || y < 0 || !files || x >= files->width || y >= files->height)
-		return (0x0);
-	pixel = files->addr + ((y * files->line_len) + (x * (files->bpp / 8)));
-	color = *(int *)pixel;
-	return (color);
-}
-
-void	print_pixel(t_data *data, int x, int y, int color)
-{
-	int pixel;
-	
-	if (x < 0 || y < 0 || x >= LENGTH || y >= HEIGHT)
-		return ;
-	pixel = (y * data->image->length_line) + (x * (data->image->bit_pix / 8));
-	data->image->pix_add[pixel] = color & 0xFF;
-	data->image->pix_add[pixel + 1] = (color >> 8) & 0xFF;
-	data->image->pix_add[pixel + 2] = (color >> 16) & 0xFF;
-	if (data->image->bit_pix == 32)
-		data->image->pix_add[pixel + 3] = (color >> 24);
-}
-
-int	rgb_to_int_floor(t_data *data)
-{
-	return ((data->map->floor.red << 24) | (data->map->floor.green << 16) | (data->map->floor.blue << 8) | 255);
-}
-
-int	rgb_to_int_ceil(t_data *data)
-{
-	return ((data->map->ceiling.red << 24) | (data->map->ceiling.green << 16) | (data->map->ceiling.blue << 8) | 255);
-}
-
-void free_textures(t_data *data)
-{
-	free(data->texture_north); 
-	free(data->texture_south);
-	free(data->texture_west);
-	free(data->texture_east); 
+	create_struct_files(data, "./Doors/door_1.xpm", data->door);		
 }

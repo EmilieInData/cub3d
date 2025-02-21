@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/20 16:22:08 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 11:33:04 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,8 @@ int	close_escape(t_data *data)
 {
 	if (data->texture_north)
 		free_textures(data);
+	if (data->door)
+		free(data->door);
 	free_data(data);
 	exit (EXIT_SUCCESS);
 }

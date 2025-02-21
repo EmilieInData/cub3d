@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/19 12:44:08 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 10:48:43 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ typedef	struct s_door
 	int				y;
 	int				flag;
 	int				count;
-	t_files			sprite[10];
+	t_files			*sprite;
 }			   t_door;
 
 typedef struct s_color
@@ -103,6 +103,7 @@ typedef struct s_ray
 	int		first_wall_pxl;
 	int		last_wall_pxl;
 	double	wall_height;
+	char	type;
 	int		ceiling_floor;
 }				t_ray;
 
@@ -116,6 +117,7 @@ typedef struct s_data
 	t_ray			ray;
 	t_image			*image;
 	//struct timeval	timer;
+	t_files			*door;
 	t_files 		*texture_north;
 	t_files 		*texture_south;
 	t_files 		*texture_west;

@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/20 15:20:16 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 11:33:30 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -141,6 +141,7 @@ int	main(int argc, char **argv)
 	implementation_mlx(data, "cub3D_map");
 	/*if (!data->texture_north)*/
 	get_wall_texture(data);
+	door_projection(data);
 	find_wall(data);
 	//mlx_loop_hook(data->mlx_window, do_key, data);
 	init_events(data);
@@ -148,6 +149,7 @@ int	main(int argc, char **argv)
 	mlx_loop(data->mlx);
 	print_data(data);
 	free_textures(data);
+	free(data->door);
 	//free_data(data);
 	return (0);
 }

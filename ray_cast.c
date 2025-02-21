@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/20 14:51:53 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 11:33:18 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,9 +76,12 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 		{
 			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE])
 			{
-				if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1')
+				if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1' || data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == 'D')
 				{
-					//printf("\nOn the %i times it hit the wall\n", i);
+					if (data->map->matrix[(int)(b_y / TILE)][(int)(b_x / TILE)] == 'D')
+						data->ray.type = 'd';
+					else
+						data->ray.type = 'w';
 					data->ray.dist_v = find_distance_v(data, b_x, b_y);
 					break;
 				}
@@ -122,9 +125,12 @@ void vertical_check(t_data *data, double radians)
 		//printf("%i\n", height(data, fabs(b_x / TILE), b_y / TILE));
 		if ((double)length(data, ceil(b_y / TILE), ceil(b_x / TILE)) >= b_x / TILE /*&& data->ray.map_y > (int)b_y / TILE */&& data->map->matrix[(int)b_y / TILE][(int)b_x / TILE])
 		{
-			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1')
+			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1' || data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == 'D')
 			{	
-				//printf("\n Find wall on firt hit \n");
+				if (data->map->matrix[(int)(b_y / TILE)][(int)(b_x / TILE)] == 'D')
+						data->ray.type = 'd';
+					else
+						data->ray.type = 'w';
 				data->ray.dist_v = find_distance_v(data, b_x, b_y);
 			}
 			else
@@ -173,9 +179,12 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 		{
 			if (data->map->matrix[(int)(c_y / TILE)][(int)(c_x / TILE)])
 			{
-				if (data->map->matrix[(int)(c_y / TILE)][(int)(c_x / TILE)] == '1')
+				if (data->map->matrix[(int)(c_y / TILE)][(int)(c_x / TILE)] == '1' || data->map->matrix[(int)(c_y / TILE)][(int)(c_x / TILE)] == 'D')
 				{
-					//printf("\nOn the %i times it hit the wall\n", i);
+					if (data->map->matrix[(int)(c_y / TILE)][(int)(c_x / TILE)] == 'D')
+						data->ray.type = 'd';
+					else
+						data->ray.type = 'w';
 					data->ray.dist_h = find_distance_h(data, c_x, c_y);
 					break;
 				}
@@ -218,9 +227,12 @@ void horizontal_check(t_data *data, double radians)
 	{
 		if (data->map->matrix[(int)a_y / TILE][(int)a_x / TILE])
 		{
-			if (data->map->matrix[(int)(a_y / TILE)][(int)(a_x / TILE)] == '1')
+			if (data->map->matrix[(int)(a_y / TILE)][(int)(a_x / TILE)] == '1' || data->map->matrix[(int)(a_y / TILE)][(int)(a_x / TILE)] == 'D')
 			{
-					//printf("\n Find wall on first hit \n");
+					if (data->map->matrix[(int)(a_y / TILE)][(int)(a_x / TILE)] == 'D')
+						data->ray.type = 'd';
+					else
+						data->ray.type = 'w';
 					data->ray.dist_h = find_distance_h(data, a_x, a_y);
 			}
 			else
@@ -304,6 +316,9 @@ void	find_wall(t_data *data)
 	do_mini_map(data, data->map->matrix);
 	if (data->texture_north)
 		free_textures(data);
+	if (data->door)
+		free(data->door);
+	door_projection(data);
 	get_wall_texture(data);
 }
 

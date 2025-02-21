@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/20 16:22:19 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 11:10:06 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,6 +112,8 @@ int 	get_pixel_texture(t_files *files, int x, int y);
 void	print_pixel(t_data *data, int x, int y, int color);
 void    put_pixel_image(t_image *image, int x, int y, int color);
 void    free_textures(t_data *data);
+void door_projection(t_data *data);
+void free_door(t_data *data);
 
 //ray cast
 void	init_ray(t_data *data);
