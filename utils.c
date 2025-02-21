@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:54:16 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/20 16:21:48 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 11:42:37 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,6 +44,10 @@ void	free_data(t_data *data)
 		//destroy mlx_init
 	//if (mlx_window)
 		//destroy mlx_window
+	if (data->texture_north)
+		free_textures(data);
+	if (data->door)
+		free(data->door);
 	if (data->map)
 	{
 		if (data->map->no)

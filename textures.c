@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 11:25:49 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 11:39:26 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	create_struct_files(t_data *data, char *path, t_files *files)
 }
 
 void	get_wall_texture(t_data *data)
-{
+{		
 	data->texture_north = malloc(sizeof(t_files) * 1);
 	if (!data->texture_north)
 		exit (error_msg("Malloc error", data));

@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 11:33:30 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 11:42:26 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,11 @@ void	*initialize(t_data *data)
 	data->player.position_x = -1;
 	data->player.position_y = -1;
 	data->player.angle = -1;
+	data->texture_north = NULL;
+	data->texture_south = NULL;
+	data->texture_east = NULL;
+	data->texture_west = NULL;
+	data->door = NULL;
 	return (data);
 }
 
@@ -148,8 +153,10 @@ int	main(int argc, char **argv)
 	//mlx_loop_hook(data->mlx, (void*)find_wall, data);
 	mlx_loop(data->mlx);
 	print_data(data);
-	free_textures(data);
-	free(data->door);
-	//free_data(data);
+	/*if (data->texture_north)
+		free_textures(data);
+	if (data->door)
+		free(data->door);*/
+	free_data(data);
 	return (0);
 }
