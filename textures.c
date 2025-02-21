@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 11:39:26 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/21 13:02:44 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ void	render_wall(int x, int *y, t_data *data, int *i)
 		tex[1] = (int)texture[1] % files->height;
 		tex[0] = fmod(texture[0], files->width);
 		print_pixel(data, x, *y, get_pixel_texture(files,
-				tex[1], tex[0]));
+				tex[0], tex[1]));
 		texture[1] += y_step;
 		(*y)++;
 		(*i)--;
