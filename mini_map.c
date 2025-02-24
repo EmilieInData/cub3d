@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   mini_map.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:14:45 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/12 13:53:33 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/24 17:23:43 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,20 +25,18 @@ void	do_mini_map(t_data *data, char **matrix)
 		i = 0;
 		while (matrix[j][i])
 		{
-			//if (matrix[j][i] == ' ') // for transparency, we put nothing
-			//	put_scaled_image(data->image, i * scale, j * scale, BLACK);
 			if (matrix[j][i] == 'D')
 				put_scaled_image(data, i * scale, j * scale, DARK_PINK);
-			else if (matrix[j][i] == '0')
-				put_scaled_image(data, i * scale, j * scale, PASTEL_PURPLE);
 			else if (matrix[j][i] == '1')
 				put_scaled_image(data, i * scale, j * scale, DARK_PURPLE);
+			else
+				put_scaled_image(data, i * scale, j * scale, PASTEL_PURPLE);
 			i++;
 		}
 		j++;
 	}
 	put_scaled_image(data, data->player.position_x * scale,
-		data->player.position_y * scale, BRIGHT_BLUE);
+		data->player.position_y * scale, BRIGHT_BLUE); 
 	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add,
 		0, 0);
 }
@@ -97,4 +95,3 @@ int	width_map(char **matrix)
 	return (w);
 }
 // mettre des touches pour regler la taille de la map manuellement de la fenetre?
-//checker si ok map sans contours et pas adaptee a la position du joueur

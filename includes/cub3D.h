@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 14:21:29 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/24 18:29:14 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,10 @@
 # define TILE 			64
 # define HEIGHT 		800
 # define LENGTH 		1240
-# define PICS			10
+# define PICS			5
 # define SPRITE_TIME    10
 
 //Libraries
-# include "struct.h"
 # include "../gnl/get_next_line.h"
 # include "../mlx_linux/mlx.h"
 # include "../libft/libft.h"
@@ -35,6 +34,7 @@
 # include <sys/time.h>
 # include <limits.h>
 # include <float.h>
+# include "struct.h"
 
 //# define WHITE			0xFFFFFF
 //# define BLACK			0x0000
@@ -91,12 +91,17 @@ int		error_msg(char *str, t_data *data);
 void	free_array(char **array);
 void	free_image(t_image *image, t_data *data);
 void	free_data(t_data *data);
+void	free_doors(t_data *data, t_door *doors);
+
+//initialize
+void	initialize_textures(t_files *texture);
+void	initialize_door(t_data *data);
+void	*initialize(t_data *data);
 
 //main
 void	print_data(t_data *data); //to borrow
 int		is_cub(char *argv);
 void	implementation_mlx(t_data *data, char *name);
-void	*initialize(t_data *data);
 int		main(int argc, char **argv);
 
 //textures

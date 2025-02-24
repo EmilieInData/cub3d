@@ -3,27 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   struct.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 10:48:43 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/24 18:38:45 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//struct of map 
-//struct of player or have everything in one struct.
-//we basically need *mlx
-//*mlx_win
-//*player - for connecting with img
-//*wall -same
-//size_t of position of player in x and y 
-//**matrix of game to save map inside of our game
-//we would also need height, length of the map. 
-//and i think we woulld have to use flood_fill function to check if the map is valid to play and the player is not stuck. lets see how we are handeling this 
-
 #ifndef STRUCT_H
 #define STRUCT_H
-
 
 typedef struct s_files
 {
@@ -42,7 +30,7 @@ typedef	struct s_door
 	int				y;
 	int				flag;
 	int				count;
-	t_files			*sprite;
+	t_files			sprite[PICS];
 }			   t_door;
 
 typedef struct s_color
@@ -71,41 +59,41 @@ typedef struct s_image
 	int				bit_pix;
 	int				length_line;
 	int				endian;
-}				t_image;
+}			   t_image;
 
 typedef struct s_player
 {
-	double				position_x;
-	double				position_y;
+	double			position_x;
+	double			position_y;
 	int				angle;
 	char			news;
 }              t_player;
 
 typedef struct s_ray
 {
-	double	player_x;
-	double	player_y;
-	double	angle_start;
-	double	angle_end;
-	int FOV;
-	double dist_h;
-	double dist_v;
-	double dist_t_wall;
-	char	wall_hit;
-	int		v_x;
-	int		v_y;
-	int		h_x;
-	int		h_y;
-	int		hit_x;
-	int		hit_y;
-	int		map_x;
-	int		map_y;
-	int		first_wall_pxl;
-	int		last_wall_pxl;
-	double	wall_height;
-	char	type;
-	int		ceiling_floor;
-}				t_ray;
+	double			player_x;
+	double			player_y;
+	double			angle_start;
+	double			angle_end;
+	int 			FOV;
+	double 			dist_h;
+	double 			dist_v;
+	double 			dist_t_wall;
+	char			wall_hit;
+	int				v_x;
+	int				v_y;
+	int				h_x;
+	int				h_y;
+	int				hit_x;
+	int				hit_y;
+	int				map_x;
+	int				map_y;
+	int				first_wall_pxl;
+	int				last_wall_pxl;
+	double			wall_height;
+	char			type;
+	int				ceiling_floor;
+}			   t_ray;
 
 
 typedef struct s_data
@@ -116,13 +104,13 @@ typedef struct s_data
 	t_player		player;
 	t_ray			ray;
 	t_image			*image;
-	//struct timeval	timer;
-	t_files			*door;
-	t_files 		*texture_north;
-	t_files 		*texture_south;
-	t_files 		*texture_west;
-	t_files 		*texture_east;
-	t_door			doors;
+	struct timeval	timer;
+	t_files			door;
+	t_files 		texture_north;
+	t_files 		texture_south;
+	t_files 		texture_west;
+	t_files 		texture_east;
+	t_door			*doors;
 }			   t_data;
 
 #endif

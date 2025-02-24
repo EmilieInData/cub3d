@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 11:25:23 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 14:21:25 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/24 18:54:17 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,42 +48,15 @@ int	rgb_to_int_ceil(t_data *data)
 	return ((data->map->ceiling.red << 24) | (data->map->ceiling.green << 16) | (data->map->ceiling.blue << 8) | 255);
 }
 
-// void	free_textures_end(t_data *data)
-// {
-// 	if (data->texture_north)
-// 	{
-// 		if (data->texture_north->addr)
-// 			mlx_destroy_image(data->mlx, data->texture_north->addr);
-// 		free(data->texture_north);
-// 	}
-// 	if (data->texture_south)
-// 	{
-// 		if (data->texture_south->addr)
-// 			mlx_destroy_image(data->mlx, data->texture_south->addr);
-// 		free(data->texture_south);
-// 	}
-// 	if (data->texture_west)
-// 	{
-// 		if (data->texture_west->addr)
-// 			mlx_destroy_image(data->mlx, data->texture_west->addr);
-// 		free(data->texture_west);
-// 	}
-// 	 if (data->texture_east)
-// 	{
-// 		 if (data->texture_east->addr)
-// 			 mlx_destroy_image(data->mlx, data->texture_east->addr);
-// 		free(data->texture_east);
-// 	}
-// }
-
 void	free_textures(t_data *data)
 {
-	if (data->texture_north)
-		free(data->texture_north);
-	if (data->texture_south)
-		free(data->texture_south);
-	if (data->texture_west)
-		free(data->texture_west);
-	 if (data->texture_east)
-		free(data->texture_east);
+	if (data->texture_north.img)
+		mlx_destroy_image(data->mlx, data->texture_north.img);
+	if (data->texture_south.img)
+		mlx_destroy_image(data->mlx, data->texture_south.img);
+	if (data->texture_west.img)
+		mlx_destroy_image(data->mlx, data->texture_west.img);
+	if (data->texture_east.img)
+		mlx_destroy_image(data->mlx, data->texture_east.img);
 }
+

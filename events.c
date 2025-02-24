@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/21 13:53:04 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/24 19:29:27 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 int	do_key(int keysym, t_data *data)
 {
-	/*if (!data->texture_north)
-		get_wall_texture(data);*/
 	if (keysym == XK_Escape)
 		close_escape(data);
 	if (keysym == XK_Left || keysym == XK_Right)
@@ -28,8 +26,8 @@ int	do_key(int keysym, t_data *data)
 		do_move(data, keysym, data->player.position_x, data->player.position_y);
 		find_wall(data);
 	}
-	/*if (keysym == XK_space)
-		do_door(data, data->player.position_x, data->player.position_y);*/	
+	if (keysym == XK_space)
+		do_door(data, data->player.position_x, data->player.position_y);
 	return (0);
 }
 
@@ -80,21 +78,25 @@ void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 		return ;
 	x = (int)ceil(tmp_x);
 	y = (int)ceil(tmp_y);
-	//printf("TEST2_position_y = %f\n position_x = %f \n matrix = %c\n", data->player.position_y, data->player.position_x, data->map->matrix[y][x]);
+	// if (data->map->matrix[y + 1][x] == '1' || data->map->matrix[y][x + 1] == '1'
+	// || data->map->matrix[y - 1][x] == '1' || data->map->matrix[y][x - 1] == '1'
+	// || data->map->matrix[y + 1][x] == 'D' || data->map->matrix[y][x + 1] == 'D'
+	// || data->map->matrix[y - 1][x] == 'D' || data->map->matrix[y][x - 1] == 'D')
+	// 	return ; //protection de mur mais pas propre
+	printf ("x = %f, y = %f\n", tmp_x, tmp_y);
+	printf ("x = %c, x - 1 = %c\n", data->map->matrix[y][x], data->map->matrix[y][x - 1]);
 	if (data->map->matrix[y][x] == '1' || (data->map->matrix[y][x] == 'D'
-		&& data->doors.flag == -1))
+		&& data->doors->flag == -1))
 		return ;
 	data->player.position_y = tmp_y;
 	data->player.position_x = tmp_x;
-	//printf("TEST_3position_y = %f\n position_x = %f \n matrix = %c\n", data->player.position_y, data->player.position_x, data->map->matrix[y][x]);
 }
+
 
 
 void	init_events(t_data *data)
 {
-	//mlx_key_hook(data->mlx_window, do_key, data);
-	//printf("entered\n");
-	mlx_hook(data->mlx_window, 2, (1L<<0), do_key, data);
+	mlx_hook(data->mlx_window, 2, (1L << 0), do_key, data);
 	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
 	//mlx_mouse_hook(data->mlx_window, do_mouse, data);
 }
@@ -123,5 +125,3 @@ int	close_escape(t_data *data)
 	create_fractal(data);
 	return (0);
 }*/
-
-//faire sprite sur la porte avec la couleur des neons qui change et porte qui s'ouvremake

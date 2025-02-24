@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 13:33:11 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/24 17:25:40 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int length(t_data * data, int y, int x)
 {
-	int i;
+	int	i;
 
 	//printf("line y = %i\n", y);
 	//printf("line x = %i\n", x);
@@ -186,22 +186,19 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 					else
 						data->ray.type = 'w';
 					data->ray.dist_h = find_distance_h(data, c_x, c_y);
-					break;
+					break ;
 				}
 				a_x = c_x;
 				a_y = c_y;
 				i++;
 			}
 			else
-			{
-				break;
-			}
-
+				break ;
 		}
 		else
 		{
 			data->ray.dist_h = DBL_MAX;
-			break;
+			break ;
 		}
 	}
 }
@@ -268,7 +265,7 @@ void	init_ray(t_data *data)
 
 void	ray_trace(t_data *data, int x, double increment)
 {
-	double radians;
+	double	radians;
 
 	radians = data->ray.angle_start * (M_PI / 180.0);
 	horizontal_check(data, radians);
@@ -277,11 +274,10 @@ void	ray_trace(t_data *data, int x, double increment)
 	wall_height(data, x);
 	increment = (double)data->ray.FOV / LENGTH;
 	data->ray.angle_start -= increment;
-		//data->ray.angle_start -= increment;
 }
 
 void	find_wall(t_data *data)
-{ 
+{
 	int		x;
 	double	increment;
 
@@ -299,7 +295,7 @@ void	find_wall(t_data *data)
 	{
 		//printf("Hola!\n");
 		while (data->ray.angle_start >= 0)
-		{	
+		{
 			ray_trace(data, x, increment);
 			x++;
 		}
@@ -308,26 +304,26 @@ void	find_wall(t_data *data)
 		//printf("angle_start = %f", data->ray.angle_start);
 	}
 	while ((data->ray.angle_start >= data->ray.angle_end))
-	{	
+	{
 		ray_trace(data, x, increment);
 		x++;
 	}
 	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
 	do_mini_map(data, data->map->matrix);
-	if (data->texture_north)
-		free_textures(data);
-	if (data->door)
-		free(data->door);
-	door_projection(data);
-	get_wall_texture(data);
+	//if (data->texture_north)
+	//	free_textures(data);
+	// if (data->door)
+	// 	free(data->door);
+	//door_projection(data);
+	//get_wall_texture(data);
 }
 
 
 void map_size(t_data *data)
 {
-	int i;
-	int a;
-	int max_length;
+	int	i;
+	int	a;
+	int	max_length;
 
 	i = 0;
 	max_length = 0;
@@ -346,4 +342,3 @@ void map_size(t_data *data)
 		data->ray.map_y = i;
 	}
 }
-	

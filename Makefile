@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+         #
+#    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/02/21 11:26:24 by ineimatu         ###   ########.fr        #
+#    Updated: 2025/02/24 18:09:23 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,7 +32,8 @@ SRC = main.c \
 	  ray_cast_utils.c \
 	  textures.c \
 	  texture_utils.c \
-	  #door.c \
+	  door.c \
+	  initialize.c
 
 OBJ = $(SRC:.c=.o)
 

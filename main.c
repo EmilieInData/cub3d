@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 14:27:24 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/24 18:45:42 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,43 +70,6 @@ int	is_cub(char *argv)
 	return (0);
 }
 
-void	*initialize(t_data *data)
-{
-	data = malloc (sizeof (t_data));
-	if (!data)
-		exit (error_msg("malloc didn't work correctly", NULL));
-	data->map = malloc (sizeof (t_map));
-	if (!data->map)
-		exit (error_msg("malloc didn't work correctly", data));
-	//mlx
-	//mlx_window
-	data->map->no = NULL;
-	data->map->so = NULL;
-	data->map->we = NULL;
-	data->map->ea = NULL;
-	data->map->floor.red = -1;
-	data->map->floor.green = -1;
-	data->map->floor.blue = -1;
-	data->map->ceiling.red = -1;
-	data->map->ceiling.green = -1;
-	data->map->ceiling.blue = -1;
-	data->map->matrix = NULL;
-	data->map->flag = -1;
-	/*data->player = malloc (sizeof (t_player));
-	if (!data->player)
-		exit (error_msg("malloc didn't work correctly", data), 1);*/ //pas besoin d'alloquer de la memoire si seulement int 
-	data->player.news = '0';
-	data->player.position_x = -1;
-	data->player.position_y = -1;
-	data->player.angle = -1;
-	data->texture_north = NULL;
-	data->texture_south = NULL;
-	data->texture_east = NULL;
-	data->texture_west = NULL;
-	data->door = NULL;
-	return (data);
-}
-
 void	implementation_mlx(t_data *data, char *name)
 {
 	data->image = malloc(sizeof(t_image));
@@ -124,10 +87,10 @@ void	implementation_mlx(t_data *data, char *name)
 	data->image->pix_add = mlx_get_data_addr(data->image->img_add,
 			&data->image->bit_pix, &data->image->length_line,
 			&data->image->endian);
-
+	get_wall_texture(data);
+	door_projection(data);
+	initialize_door(data);
 	//rempli les ints de la struc IMG et renvoie l'adr memoire du pixel en cours
-	
-	//
 }
 
 
@@ -144,13 +107,8 @@ int	main(int argc, char **argv)
 	map_check(data, data->map->matrix);
 	map_size(data);
 	implementation_mlx(data, "cub3D_map");
-	/*if (!data->texture_north)*/
-	get_wall_texture(data);
-	door_projection(data);
 	find_wall(data);
-	//mlx_loop_hook(data->mlx_window, do_key, data);
 	init_events(data);
-	//mlx_loop_hook(data->mlx, (void*)find_wall, data);
 	mlx_loop(data->mlx);
 	//print_data(data);
 	free_data(data);

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 14:12:18 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/24 17:43:00 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,24 +24,11 @@ void	create_struct_files(t_data *data, char *path, t_files *files)
 }
 
 void	get_wall_texture(t_data *data)
-{		
-	data->texture_north = malloc(sizeof(t_files) * 1);
-	if (!data->texture_north)
-		exit (error_msg("Malloc error", data));
-	data->texture_south = malloc(sizeof(t_files) * 1);
-	if (!data->texture_south)
-		exit (error_msg("Malloc error", data));
-	data->texture_west = malloc(sizeof(t_files) * 1);
-	if (!data->texture_west)
-		exit (error_msg("Malloc error", data));
-	data->texture_east = malloc(sizeof(t_files) * 1);
-	if (!data->texture_east)
-		exit (error_msg("Malloc error", data));
-	
-	create_struct_files(data, data->map->no, data->texture_north);
-	create_struct_files(data, data->map->so, data->texture_south);
-	create_struct_files(data, data->map->we, data->texture_west);
-	create_struct_files(data, data->map->ea, data->texture_east);
+{	
+	create_struct_files(data, data->map->no, &data->texture_north);
+	create_struct_files(data, data->map->so, &data->texture_south);
+	create_struct_files(data, data->map->we, &data->texture_west);
+	create_struct_files(data, data->map->ea, &data->texture_east);
 	return ;
 }
 
@@ -51,15 +38,15 @@ t_files	*choose_wall_direction(t_data *data, double angle)
 
 	files = NULL;
 	if ((ray_projected_left(angle) == 0) && (data->ray.wall_hit == 'v'))
-		files = data->texture_west; //west
+		files = &data->texture_west; //west
 	if ((ray_projected_left(angle) == 1) && (data->ray.wall_hit == 'v'))
-		files = data->texture_east; //east;
+		files = &data->texture_east; //east;
 	if ((ray_projected_up(angle) == 1) && (data->ray.wall_hit == 'h'))
-		files = data->texture_south; // south
+		files = &data->texture_south; // south
 	if ((ray_projected_up(angle) == 0) && (data->ray.wall_hit == 'h'))
-		files = data->texture_north; // north
+		files = &data->texture_north; // north
 	if (!files)
-		ft_putstr_fd("Failed to load textures\n", 2);
+		ft_putstr_fd("Failed to load textures\n", 2); //exit & free?
 	return (files);
 }
 
@@ -77,7 +64,7 @@ void	render_wall(int x, int *y, t_data *data, int *i)
 	if (data->ray.type == 'w')
 		files = choose_wall_direction(data, data->ray.angle_start);
 	else
-		files = data->door;
+		files = &data->door;
 	texture[0] = (texture[0] / TILE) * files->width;
 	texture[1] = 0.0f;
 	y_step = (float)files->height / data->ray.wall_height;
@@ -99,7 +86,5 @@ void	render_wall(int x, int *y, t_data *data, int *i)
 
 void door_projection(t_data *data)
 {
-	data->door  = malloc(sizeof(t_files) * 1);
-
-	create_struct_files(data, "./Doors/door_1.xpm", data->door);		
+	create_struct_files(data, "./Doors/door_1.xpm", &data->door);
 }
