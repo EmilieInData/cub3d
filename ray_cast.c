@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/24 17:25:40 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/25 19:50:28 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -147,17 +147,17 @@ void vertical_check(t_data *data, double radians)
 
 void	next_checks(t_data *data, double a_x, double a_y, double radians)
 {
-	double y_a;
-	double x_a;
-	double c_x;
-	double c_y;
-	int i;
+	double	y_a;
+	double	x_a;
+	double	c_x;
+	double	c_y;
+	int		i;
 
 	i = 0;
 	y_a = TILE;
 	if (ray_projected_up(data->ray.angle_start) == 1)
 		y_a *= -1;
-	x_a = fabs(TILE/tan(radians));
+	x_a = fabs(TILE / tan(radians));
 	if (ray_projected_left(data->ray.angle_start) == 1)
 		x_a *= -1;
 	/*printf("%i horizontal x increment = %f\n", i, x_a);

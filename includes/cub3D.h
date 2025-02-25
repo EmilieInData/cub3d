@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/24 18:29:14 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/25 21:26:39 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ void	init_events(t_data *data);
 int		close_escape(t_data *data);
 void	do_view(t_data *data, int keysym);
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
+int	    check_wall_distance(double tmp_x, double tmp_y, t_data *data);
 
 //parsing_player
 void	map_check_player(t_data *data, int i, int j, char **matrix);
@@ -117,7 +118,6 @@ void    put_pixel_image(t_image *image, int x, int y, int color);
 void    free_textures(t_data *data);
 void    door_projection(t_data *data);
 void    free_door(t_data *data);
-//void	free_textures_end(t_data *data);
 
 //ray cast
 void	init_ray(t_data *data);

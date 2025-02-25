@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:14:45 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/24 17:23:43 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/25 19:50:03 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ void	do_mini_map(t_data *data, char **matrix)
 		{
 			if (matrix[j][i] == 'D')
 				put_scaled_image(data, i * scale, j * scale, DARK_PINK);
+			else if (matrix[j][i] == ' ')
+				i++;
 			else if (matrix[j][i] == '1')
 				put_scaled_image(data, i * scale, j * scale, DARK_PURPLE);
 			else
