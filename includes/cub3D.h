@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/21 13:35:42 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/25 12:32:32 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 # define CUB3D_H
 
 # define TILE 			64
-# define HEIGHT 		800
-# define LENGTH 		1240
+# define HEIGHT 		1800
+# define LENGTH 		2000
 # define PICS			10
 # define SPRITE_TIME    10
-# define ROTATION       0.09
+# define ROTATION       0.05
 
 //Libraries
 # include "../gnl/get_next_line.h"
