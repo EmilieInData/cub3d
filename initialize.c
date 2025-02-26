@@ -6,11 +6,27 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:06:09 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/24 18:47:23 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/26 18:43:44 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3D.h"
+
+void	initialize_map(t_map *map)
+{
+	map->no = NULL;
+	map->so = NULL;
+	map->we = NULL;
+	map->ea = NULL;
+	map->floor.red = -1;
+	map->floor.green = -1;
+	map->floor.blue = -1;
+	map->ceiling.red = -1;
+	map->ceiling.green = -1;
+	map->ceiling.blue = -1;
+	map->matrix = NULL;
+	map->flag = -1;
+}
 
 void	initialize_textures(t_files *texture)
 {
@@ -25,20 +41,19 @@ void	initialize_textures(t_files *texture)
 
 void	initialize_door(t_data *data)
 {
-    data->doors = malloc(sizeof(t_door));
+    data->doors = malloc(sizeof (t_door));
     if (!data->doors)
-    {
+	{
         exit (error_msg("malloc didn't work correctly", data));
-    }
+	}
     data->doors->x = -1;
 	data->doors->y = -1;
 	data->doors->flag = -1;
 	data->doors->count = 0;
-    create_struct_files(data, "./Doors/door_1.xpm", &data->doors->sprite[0]);
-	create_struct_files(data, "./Doors/door_2.xpm", &data->doors->sprite[1]);
-	create_struct_files(data, "./Doors/door_3.xpm", &data->doors->sprite[2]);
-	create_struct_files(data, "./Doors/door_4.xpm", &data->doors->sprite[3]);
-	create_struct_files(data, "./Doors/door_1.xpm", &data->doors->sprite[4]);
+    create_struct_files(data, "./Doors/door_4.xpm", &data->doors->sprite[0]);
+	create_struct_files(data, "./Doors/door_3.xpm", &data->doors->sprite[1]);
+	create_struct_files(data, "./Doors/door_2.xpm", &data->doors->sprite[2]);
+	create_struct_files(data, "./Doors/door_1.xpm", &data->doors->sprite[3]);
 }
 
 void	*initialize(t_data *data)
@@ -49,22 +64,14 @@ void	*initialize(t_data *data)
 	data->map = malloc (sizeof (t_map));
 	if (!data->map)
 		exit (error_msg("malloc didn't work correctly", data));
-	data->map->no = NULL;
-	data->map->so = NULL;
-	data->map->we = NULL;
-	data->map->ea = NULL;
-	data->map->floor.red = -1;
-	data->map->floor.green = -1;
-	data->map->floor.blue = -1;
-	data->map->ceiling.red = -1;
-	data->map->ceiling.green = -1;
-	data->map->ceiling.blue = -1;
-	data->map->matrix = NULL;
-	data->map->flag = -1;
+	initialize_map(data->map);
 	data->player.news = '0';
 	data->player.position_x = -1;
 	data->player.position_y = -1;
 	data->player.angle = -1;
+	//ray
+	//image
+	gettimeofday(&data->timer, NULL);
 	initialize_textures(&data->door);
 	initialize_textures(&data->texture_north);
 	initialize_textures(&data->texture_south);

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/25 21:24:02 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/26 18:54:38 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int	do_key(int keysym, t_data *data)
 	}
 	if (keysym == XK_space)
 	{
+		printf("DOOR PRESS\n");
 		do_door(data, data->player.position_x, data->player.position_y);
 		find_wall(data);
 	}
@@ -53,11 +54,8 @@ void	do_view(t_data *data, int keysym)
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 {
 	double	radian;
-	int		x;
-	int		y;
 
 	radian = (data->player.angle * M_PI) / (double)180.00;
-	printf("Radian = %f\n", radian);
 	if (keysym == XK_w)
 	{
 		tmp_y -= 0.15 * sin(radian);
@@ -78,29 +76,82 @@ void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
 		tmp_y += 0.15 * cos(radian);
 		tmp_x += 0.15 * sin(radian);
 	}
-	else
+	if (check_wall_distance(tmp_x, tmp_y, data))
 		return ;
-	if (radian >= 0 && radian <= M_PI / 2)
+}
+
+int	check_wall_distance(double tmp_x, double tmp_y, t_data *data)
+{
+	int	i;
+	int	j;
+	int	x;
+	int	y;
+
+	j = -1;
+	while (j < 2)
 	{
-		x = (int)ceil(tmp_x + 1);
-		y = (int)floor(tmp_y + 1);
+		i = -1;
+		while (i < 2)
+		{
+			x = (int)round(tmp_x) + i;
+			y = (int)round(tmp_y) + j;
+			printf("%c\n", data->map->matrix[y][x]);
+			if ((data->map->matrix[y][x] == '1'
+				|| (data->map->matrix[y][x] == 'D' && data->doors->flag == -1))
+				&& wall_distance_calcul(x, y, tmp_x, tmp_y))
+				return (1);
+			i++;
+		}
+		j++;
 	}
-	if (radian > M_PI / 2 && radian <= M_PI)
-	{
-		x = (int)floor(tmp_x + 1);
-		y = (int)floor(tmp_y + 1);
-	}
-	if (radian > M_PI && radian <= (3 * M_PI) / 2)
-	{
-		x = (int)floor(tmp_x + 1);
-		y = (int)ceil(tmp_y - 1);
-	}
-	else
-	//if (radian > (3 * M_PI) / 2 && radian <= 2 * M_PI)
-	{
-		x = (int)ceil(tmp_x - 1);
-		y = (int)ceil(tmp_y - 1);
-	}
+	data->player.position_y = tmp_y;
+	data->player.position_x = tmp_x;
+	return (0);
+}
+
+int	wall_distance_calcul(int x, int y, double tmp_x, double tmp_y)
+{
+	double	dx;
+	double	dy;
+
+	dx = fabs(tmp_x - floor(x + 0.5));
+	dy = fabs(tmp_y - floor(y + 0.5));
+	if (sqrt(dx * dx + dy * dy) < 0.7)
+		return (1);
+	return (0);
+}
+
+	// x = (int)round(tmp_x);
+	// y = (int)round(tmp_y);
+	// printf("tmp_x = %f, tmp_y= %f\n", tmp_x, tmp_y);
+	// printf("X = %d, Y = %d\n", x, y);
+	// printf("data->map->matrix[y][x] = %c \n", data->map->matrix[y][x]);
+	// if (data->map->matrix[y][x] == '1' || (data->map->matrix[y][x] == 'D'
+	// 	&& data->doors->flag == -1))
+	// 	return ;
+
+// if (radian >= 0 && radian <= M_PI / 2)
+	// {
+	// 	x = (int)ceil(tmp_x + 1);
+	// 	y = (int)floor(tmp_y + 1);
+	// }
+	// if (radian > M_PI / 2 && radian <= M_PI)
+	// {
+	// 	x = (int)floor(tmp_x + 1);
+	// 	y = (int)floor(tmp_y + 1);
+	// }
+	// if (radian > M_PI && radian <= (3 * M_PI) / 2)
+	// {
+	// 	x = (int)floor(tmp_x + 1);
+	// 	y = (int)ceil(tmp_y - 1);
+	// }
+	// else
+	// //if (radian > (3 * M_PI) / 2 && radian <= 2 * M_PI)
+	// {
+	// 	x = (int)ceil(tmp_x - 1);
+	// 	y = (int)ceil(tmp_y - 1);
+	// }
+	
 	// if (cos(radian) >= 0) // Vers la droite
     // 	x = (int)ceil(tmp_x - 1);
 	// else // Vers la gauche
@@ -109,59 +160,9 @@ void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y)
     // 	y = (int)ceil(tmp_y - 1);
 	// else // Vers le haut
     // 	y = (int)floor(tmp_y + 1);
-	printf("tmp_x = %f, tmp_y= %f\n", tmp_x, tmp_y);
-	printf("X = %d, Y = %d\n", x, y);
-	printf("data->map->matrix[y][x] = %c \n", data->map->matrix[y][x]);
-	if (data->map->matrix[y][x] == '1' || (data->map->matrix[y][x] == 'D'
-		&& data->doors->flag == -1))
-		return ;
-	data->player.position_y = tmp_y;
-	data->player.position_x = tmp_x;
-}
-	//x = (int)ceil(tmp_x);
-	//y = (int)ceil(tmp_y);
-
+	
 	// if (data->map->matrix[y + 1][x] == '1' || data->map->matrix[y][x + 1] == '1'
 	// || data->map->matrix[y - 1][x] == '1' || data->map->matrix[y][x - 1] == '1'
 	// || data->map->matrix[y + 1][x] == 'D' || data->map->matrix[y][x + 1] == 'D'
 	// || data->map->matrix[y - 1][x] == 'D' || data->map->matrix[y][x - 1] == 'D')
 	// 	return ;
-
-
-// int	check_wall_distance(double tmp_x, double tmp_y, t_data *data)
-// {
-// 	int	i;
-// 	int	j;
-// 	int	x;
-// 	int	y;
-
-// 	j = -1;
-// 	while (j < 2)
-// 	{
-// 		i = -1;
-// 		while (i < 2)
-// 		{
-// 			x = (int)ceil(tmp_x) + i;
-// 			y = (int)ceil(tmp_y) + j;
-// 			i++;
-// 			if (data->map->matrix[y][x] == '1'
-// 			|| (data->map->matrix[y][x] == 'D' && data->doors->flag == -1))
-// 				return (1);
-// 		}
-// 		j++;
-// 	}
-// 	return (0);
-// }
-
-void	init_events(t_data *data)
-{
-	mlx_hook(data->mlx_window, 2, (1L << 0), do_key, data);
-	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
-	//mlx_mouse_hook(data->mlx_window, do_mouse, data);
-}
-
-int	close_escape(t_data *data)
-{
-	free_data(data);
-	exit (EXIT_SUCCESS);
-}

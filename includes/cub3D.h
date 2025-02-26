@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/25 21:26:39 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/26 18:46:05 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,9 @@
 # define BRIGHT_BLUE	0x1ABC9C
 
 //door
-void	init_sprite_door(t_data *data);
 void	do_door(t_data *data, int x, int y);
 void	close_door(t_data *data);
+int 	do_sprite(t_data *data);
 
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);
@@ -56,11 +56,10 @@ int		width_map(char **matrix);
 
 //events
 int		do_key(int keysym, t_data *data);
-void	init_events(t_data *data);
-int		close_escape(t_data *data);
 void	do_view(t_data *data, int keysym);
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
 int	    check_wall_distance(double tmp_x, double tmp_y, t_data *data);
+int     wall_distance_calcul(int x, int y, double tmp_x, double tmp_y);
 
 //parsing_player
 void	map_check_player(t_data *data, int i, int j, char **matrix);
@@ -95,12 +94,14 @@ void	free_data(t_data *data);
 void	free_doors(t_data *data, t_door *doors);
 
 //initialize
+void	initialize_map(t_map *map);
 void	initialize_textures(t_files *texture);
 void	initialize_door(t_data *data);
 void	*initialize(t_data *data);
 
 //main
 void	print_data(t_data *data); //to borrow
+int		close_escape(t_data *data);
 int		is_cub(char *argv);
 void	implementation_mlx(t_data *data, char *name);
 int		main(int argc, char **argv);
@@ -116,8 +117,6 @@ int 	get_pixel_texture(t_files *files, int x, int y);
 void	print_pixel(t_data *data, int x, int y, int color);
 void    put_pixel_image(t_image *image, int x, int y, int color);
 void    free_textures(t_data *data);
-void    door_projection(t_data *data);
-void    free_door(t_data *data);
 
 //ray cast
 void	init_ray(t_data *data);

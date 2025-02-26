@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/24 17:43:00 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/26 18:44:47 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,10 @@ void	create_struct_files(t_data *data, char *path, t_files *files)
 	files->img = mlx_xpm_file_to_image(data->mlx, path,
 			&files->width, &files->height);
 	if (!files->img)
-		exit (error_msg("image not loaded", data));
+		exit (error_msg("image not loaded\n", data));
 	files->addr = mlx_get_data_addr(files->img, &files->bpp, &files->line_len, &files->endian);
 	if (!files->addr)
-		exit (error_msg("Error mlx_get_data_addr failed", data));
+		exit (error_msg("Error mlx_get_data_addr failed\n", data));
 }
 
 void	get_wall_texture(t_data *data)
@@ -78,13 +78,10 @@ void	render_wall(int x, int *y, t_data *data, int *i)
 		tex[0] = fmod(texture[0], files->width);
 		print_pixel(data, x, *y, get_pixel_texture(files,
 				tex[0], tex[1]));
+		// if (data->ray.type == 'd')// test sprite
+		// 	do_sprite(data, x, *y);// test sprite
 		texture[1] += y_step;
 		(*y)++;
 		(*i)--;
 	}
-}
-
-void door_projection(t_data *data)
-{
-	create_struct_files(data, "./Doors/door_1.xpm", &data->door);
 }

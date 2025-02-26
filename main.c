@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/24 18:45:42 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/26 18:44:59 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,12 +34,12 @@ void	print_data(t_data *data)
 	printf("Flag = %d\n", data->map->flag);
 	if (data->player.news)
 		printf("Player_news = %c\n", data->player.news);
-	//if (data->player.position_x)
-	//	printf("Player_X = %d\n", data->player.position_x);
-	//if (data->player.position_y)
-	//	printf("Player_Y = %d\n", data->player.position_y);
-	//if (data->player.angle)
-	//	printf("Player_angle = %d\n", data->player.angle);
+	if (data->player.position_x)
+		printf("Player_X = %f\n", data->player.position_x);
+	if (data->player.position_y)
+		printf("Player_Y = %f\n", data->player.position_y);
+	if (data->player.angle)
+		printf("Player_angle = %d\n", data->player.angle);
 	if (data->map->matrix)
 	{
 		while (data->map->matrix[i])
@@ -48,6 +48,12 @@ void	print_data(t_data *data)
 			i++;
 		}
 	}
+}
+
+int	close_escape(t_data *data)
+{
+	free_data(data);
+	exit (EXIT_SUCCESS);
 }
 
 int	is_cub(char *argv)
@@ -81,16 +87,15 @@ void	implementation_mlx(t_data *data, char *name)
 	data->mlx_window = mlx_new_window(data->mlx, LENGTH, HEIGHT, name);
 	if (!data->mlx_window)
 		exit (error_msg("mlx_new_window didn't works properly", data));
-	data->image->img_add = mlx_new_image(data->mlx, LENGTH, HEIGHT); //checker si il y a une image et la destroy avant de reutiliser le pointeur
+	data->image->img_add = mlx_new_image(data->mlx, LENGTH, HEIGHT);
 	if (!data->image->img_add)
 		exit (error_msg("mlx_new_image didn't works properly", data));
 	data->image->pix_add = mlx_get_data_addr(data->image->img_add,
 			&data->image->bit_pix, &data->image->length_line,
 			&data->image->endian);
 	get_wall_texture(data);
-	door_projection(data);
 	initialize_door(data);
-	//rempli les ints de la struc IMG et renvoie l'adr memoire du pixel en cours
+	data->door = data->doors->sprite[3];
 }
 
 
@@ -108,7 +113,10 @@ int	main(int argc, char **argv)
 	map_size(data);
 	implementation_mlx(data, "cub3D_map");
 	find_wall(data);
-	init_events(data);
+	mlx_loop_hook(data->mlx, do_sprite, data);
+	mlx_hook(data->mlx_window, 2, (1L << 0), do_key, data);
+	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
+	//mlx_mouse_hook(data->mlx_window, do_mouse, data);
 	mlx_loop(data->mlx);
 	//print_data(data);
 	free_data(data);

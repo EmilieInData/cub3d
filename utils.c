@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:54:16 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/24 18:52:11 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/26 18:40:39 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,8 +65,6 @@ void	free_data(t_data *data)
 	}
 	free_doors(data, data->doors);
 	free_textures(data);
-	if (data->door.addr)
-		mlx_destroy_image(data->mlx, data->door.img);
 	if (data->image)
 		free_image(data->image, data);
 	free (data);
@@ -76,13 +74,14 @@ void	free_doors(t_data *data, t_door *doors)
 {
 	int	count;
 
+	(void)data;
 	count = 0;
 	if (doors->sprite)
 	{
-		while (count < PICS && &doors->sprite[count])
+		while (count < (PICS - 1) && &doors->sprite[count].img)
 		{
 			mlx_destroy_image(data->mlx, data->doors->sprite[count].img);
-			count ++;
+			count++;
 		}
 		free(doors);
 	}
