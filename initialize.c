@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:06:09 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/26 18:43:44 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:32:38 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	initialize_door(t_data *data)
 	data->doors->y = -1;
 	data->doors->flag = -1;
 	data->doors->count = 0;
+	//struct tinemal timer?
     create_struct_files(data, "./Doors/door_4.xpm", &data->doors->sprite[0]);
 	create_struct_files(data, "./Doors/door_3.xpm", &data->doors->sprite[1]);
 	create_struct_files(data, "./Doors/door_2.xpm", &data->doors->sprite[2]);
@@ -72,7 +73,7 @@ void	*initialize(t_data *data)
 	//ray
 	//image
 	gettimeofday(&data->timer, NULL);
-	initialize_textures(&data->door);
+	initialize_textures(&data->texture_door);
 	initialize_textures(&data->texture_north);
 	initialize_textures(&data->texture_south);
 	initialize_textures(&data->texture_west);

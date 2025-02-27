@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/26 17:57:36 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/27 15:26:43 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ typedef	struct s_door
 	int				y;
 	int				flag;
 	int				count;
+	struct timeval	timer;
 	t_files			sprite[PICS];
 }			   t_door;
 
@@ -105,7 +106,7 @@ typedef struct s_data
 	t_ray			ray;
 	t_image			*image;
 	struct timeval	timer;
-	t_files			door;
+	t_files			texture_door;
 	t_files 		texture_north;
 	t_files 		texture_south;
 	t_files 		texture_west;

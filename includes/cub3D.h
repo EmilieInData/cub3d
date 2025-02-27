@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/26 18:46:05 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/27 18:48:42 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,9 +44,12 @@
 # define BRIGHT_BLUE	0x1ABC9C
 
 //door
-void	do_door(t_data *data, int x, int y);
-void	close_door(t_data *data);
 int 	do_sprite(t_data *data);
+int 	door_distance_check(double door, t_data *data);
+double	door_distance_calcul(int x, int y, double tmp_x, double tmp_y);
+void	do_door(t_data *data);
+int     close_door(t_data *data);
+int     do_hook(t_data *data);
 
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);

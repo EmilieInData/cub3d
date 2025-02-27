@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/26 18:44:59 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/27 18:48:50 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,7 @@ void	implementation_mlx(t_data *data, char *name)
 			&data->image->endian);
 	get_wall_texture(data);
 	initialize_door(data);
-	data->door = data->doors->sprite[3];
+	data->texture_door = data->doors->sprite[3];
 }
 
 
@@ -113,7 +113,7 @@ int	main(int argc, char **argv)
 	map_size(data);
 	implementation_mlx(data, "cub3D_map");
 	find_wall(data);
-	mlx_loop_hook(data->mlx, do_sprite, data);
+	mlx_loop_hook(data->mlx, do_hook, data);
 	mlx_hook(data->mlx_window, 2, (1L << 0), do_key, data);
 	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
 	//mlx_mouse_hook(data->mlx_window, do_mouse, data);

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/26 18:47:20 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:22:04 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ int length(t_data * data, int y, int x)
 
 int height(t_data *data, int x, int y)
 {
-	int i;
+	int	i;
 
 	//printf("line y = %i\n", y);
 	//printf("line x = %i\n", x);
@@ -50,8 +50,8 @@ int height(t_data *data, int x, int y)
 
 void next_vertical(t_data * data, double x_a, double b_y, double b_x, double radians)
 {
-	double a_y;
-	int i;
+	double	a_y;
+	int		i;
 
 	i = 0;
 	a_y = fabs(TILE * tan(radians));
@@ -108,7 +108,7 @@ void vertical_check(t_data *data, double radians)
 	x_a = TILE;
 	if (ray_projected_left(data->ray.angle_start) == 1)
 	{
-		b_x -= 0.000000000001;
+		b_x -= 0.0000000001;
 		x_a *= -1;
 	}
 	else
@@ -205,14 +205,13 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 
 void horizontal_check(t_data *data, double radians)
 {
-	
-	double a_y;
-	double a_x;
+	double	a_y;
+	double	a_x;
 
 	a_y = floor(data->ray.player_y / TILE); 
 	a_y *= TILE;
 	if (ray_projected_up(data->ray.angle_start) == 1)
-		a_y -= 0.000000000001;
+		a_y -= 0.0000000001;
 	else
 		a_y += TILE;
 	a_x = data->ray.player_x + (data->ray.player_y - a_y) / tan(radians);	

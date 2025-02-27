@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/26 18:54:38 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/27 19:16:59 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,7 @@ int	do_key(int keysym, t_data *data)
 		find_wall(data);
 	}
 	if (keysym == XK_space)
-	{
-		printf("DOOR PRESS\n");
-		do_door(data, data->player.position_x, data->player.position_y);
-		find_wall(data);
-	}
+		do_door(data);
 	return (0);
 }
 
@@ -95,7 +91,6 @@ int	check_wall_distance(double tmp_x, double tmp_y, t_data *data)
 		{
 			x = (int)round(tmp_x) + i;
 			y = (int)round(tmp_y) + j;
-			printf("%c\n", data->map->matrix[y][x]);
 			if ((data->map->matrix[y][x] == '1'
 				|| (data->map->matrix[y][x] == 'D' && data->doors->flag == -1))
 				&& wall_distance_calcul(x, y, tmp_x, tmp_y))

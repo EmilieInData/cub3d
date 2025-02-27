@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/26 18:44:47 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:21:00 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	render_wall(int x, int *y, t_data *data, int *i)
 	if (data->ray.type == 'w')
 		files = choose_wall_direction(data, data->ray.angle_start);
 	else
-		files = &data->door;
+		files = &data->texture_door;
 	texture[0] = (texture[0] / TILE) * files->width;
 	texture[1] = 0.0f;
 	y_step = (float)files->height / data->ray.wall_height;
@@ -78,8 +78,6 @@ void	render_wall(int x, int *y, t_data *data, int *i)
 		tex[0] = fmod(texture[0], files->width);
 		print_pixel(data, x, *y, get_pixel_texture(files,
 				tex[0], tex[1]));
-		// if (data->ray.type == 'd')// test sprite
-		// 	do_sprite(data, x, *y);// test sprite
 		texture[1] += y_step;
 		(*y)++;
 		(*i)--;

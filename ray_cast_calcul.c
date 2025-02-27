@@ -6,19 +6,19 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/25 17:30:04 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/27 19:00:10 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/cub3D.h"
 
-int find_distance_v(t_data *data, double x, double y)
+int	find_distance_v(t_data *data, double x, double y)
 {
-	double dist;
+	double	dist;
 
-	data->ray.v_x = (int)x; // TILE;
-	data->ray.v_y = (int)y; // TILE;
-	dist = sqrt(pow((data->ray.player_x - x), 2) + pow((data->ray.player_y - y), 2));
+	data->ray.v_x = x; // TILE;
+	data->ray.v_y = y; // TILE;
+	dist = sqrt((pow((data->ray.player_x - x), 2)) + (pow((data->ray.player_y - y), 2)));
 	return (dist);
 }
 
@@ -26,9 +26,9 @@ int	find_distance_h(t_data *data, double x, double y)
 {
 	double	dist;
 
-	data->ray.h_x = (int)x; // TILE;
-	data->ray.h_y = (int)y; // TILE;
-	dist = sqrt(pow((data->ray.player_x - x), 2) + pow((data->ray.player_y - y), 2));
+	data->ray.h_x = x; // TILE;
+	data->ray.h_y = y; // TILE;
+	dist = sqrt((pow((data->ray.player_x - x), 2)) + (pow((data->ray.player_y - y), 2)));
 	return(dist);
 }
 
