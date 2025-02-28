@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/02/26 18:41:46 by esellier         ###   ########.fr        #
+#    Updated: 2025/02/28 14:42:02 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,6 @@ SRC = main.c \
 	  parsing/parsing_colors.c \
 	  parsing/parsing_textures.c \
 	  parsing/parsing_map.c \
-	  parsing/parsing_player.c \
 	  utils.c \
 	  mini_map.c \
 	  events.c \
@@ -33,9 +32,13 @@ SRC = main.c \
 	  textures.c \
 	  texture_utils.c \
 	  door.c \
+	  sprite.c \
 	  initialize.c
 
+SRC_BONUS =
+
 OBJ = $(SRC:.c=.o)
+OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 CC = cc
 
@@ -54,17 +57,44 @@ $(NAME): $(OBJ)
 
 %.o:		%.c Makefile includes/cub3D.h includes/struct.h $(LIBFT_A) $(GNL_A) $(MLX_A)
 			$(CC) $(CCFLAGS) -Imlx_linux -O3 -c $< -o $(<:.c=.o)
+
+bonus: .bonus
+	
+.bonus : $(NAME) $(OBJ_BONUS)
+	touch .bonus
+	ar rcs $(NAME) $(OBJ_BONUS)
+	
 clean:
-			rm -f $(OBJ)
+			rm -f $(OBJ) $(OBJ_BONUS)
 			$(MAKE) clean -s -C $(GNL)
 			$(MAKE) clean -s -C $(LIBFT)
 
 fclean:		clean
 			$(MAKE) clean -s -C $(MLX)
-			$(MAKE) fclean -s -C $(GNL)
-			$(MAKE) fclean -s -C $(LIBFT)
+			# $(MAKE) fclean -s -C $(GNL)
+			# $(MAKE) fclean -s -C $(LIBFT)
 			rm -f $(NAME)
 
 re:	fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
+
+# all : $(NAME)
+
+# %.o : %.c Makefile libft.h
+# 	$(CC) $(FLAGS) -o $@ -c $<
+
+# $(NAME) : $(OBJ)
+# 	ar rcs $(NAME) $(OBJ)
+
+# bonus: .bonus
+
+# .bonus : $(NAME) $(OBJ_B)
+# 	touch .bonus
+# 	ar rcs $(NAME) $(OBJ_B)
+
+# clean :
+# 	rm -f *.o .bonus
+
+# fclean : clean
+# 	rm -f $(NAME)

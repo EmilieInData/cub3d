@@ -6,60 +6,11 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:40:27 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/27 19:21:41 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/28 14:13:48 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3D.h"
-
-int	do_sprite(t_data *data)
-{
-	struct timeval	now;
-	double			gap;
-
-	gettimeofday(&now, NULL);
-	gap = (now.tv_sec - data->timer.tv_sec)
-		+ (now.tv_usec - data->timer.tv_usec) / 1000000;
-	if (gap >= 0.1)
-	{
-		gettimeofday(&data->timer, NULL);
-		if (data->doors->count == PICS - 1)
-			data->doors->count = 0;
-		data->texture_door = data->doors->sprite[data->doors->count];
-		find_wall(data);
-		data->doors->count++;
-	}
-	return (0);
-}
-
-int	do_hook(t_data *data)
-{
-	do_sprite(data);
-	close_door(data);
-	return (0);
-}
-
-// void	do_sprite(t_data *data, int x, int y)
-// {
-// 	printf("SPRITE ENTER\n");
-// 	//trouver une porte pres du player(en commencant par l'avant)
-// 	// x = round (x / 64);
-// 	// y = round (y / 64); 
-// 	data->doors->x = x;
-//  	data->doors->y = y;
-// 	//printf("X = %d, Y = %d\n", x, y);
-// 	// printf("%c\n", data->map->matrix[y][x]);
-// 	if (data->doors->count == PICS)
-// 	{
-// 		data->doors->flag = 0;
-// 		gettimeofday(&data->timer, NULL);
-// 		return ;
-// 	}
-// 	mlx_put_image_to_window(data->mlx, data->mlx_window,
-// 		data->doors->sprite[data->doors->count].img, data->doors->x,
-// 		data->doors->y);
-// 	data->doors->count++;
-// }
 
 int	check_door_distance(double tmp_x, double tmp_y, t_data *data)
 {
@@ -122,7 +73,6 @@ int	door_distance_check(double door, t_data *data)
 
 void	do_door(t_data *data)
 {
-	printf("DOOR ENTER\n");
 	if (check_door_distance(data->player.position_x, data->player.position_y, data))
 	{
 		data->map->matrix[data->doors->y][data->doors->x] = '0';
@@ -139,14 +89,18 @@ int	close_door(t_data *data)
 	struct timeval	new;
 	double			result;
 
-	if (data->doors->flag == 0 && ((data->player.position_x != data->doors->x)
-		|| (data->player.position_y != data->doors->y)))
+	if (data->doors->flag == 0 && (double_to_int(data->doors->x, data->player.position_x)
+		!= data->doors->x || double_to_int(data->doors->y, data->player.position_y)
+		!= data->doors->y))
 	{
 		gettimeofday(&new, NULL);
 		result = (new.tv_sec - data->doors->timer.tv_sec)
 			+ (new.tv_usec - data->doors->timer.tv_usec) / 1000000;
 		if (result >= 5)
 		{
+			printf("door_closed_timer_ok\n");
+			printf("player_y = %f, player_x = %f\n", data->player.position_y, data->player.position_x);
+			printf("door_y = %d, door_x = %d\n", data->doors->y, data->doors->x);
 			data->map->matrix[data->doors->y][data->doors->x] = 'D';
 			data->doors->x = -1;
 			data->doors->y = -1;
@@ -156,3 +110,15 @@ int	close_door(t_data *data)
 	}
 	return (0);
 }
+
+int	double_to_int(int door, double player)
+{
+	int	tmp;
+	
+	tmp = 0;
+	if (player > door)
+		tmp = floor (player);
+	if (player < door)
+		tmp = ceil (player);
+	return (tmp);
+ }

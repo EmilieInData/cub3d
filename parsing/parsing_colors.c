@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/23 19:57:05 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/28 14:08:31 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ void	*fc_check(char *str, t_data *data, t_color *fc)
 	int		i;
 
 	i = 0;
-	if (fc->red != -1) // checker si pas doublons
+	if (fc->red != -1)
 		exit (error_msg("duplicate colors element", data));
 	if (str[1] != ' ' && str[1] != '	')
 		exit (error_msg("identifier argument is not appropriate", data));
@@ -85,5 +85,5 @@ void	*fc_check(char *str, t_data *data, t_color *fc)
 		else
 			exit (error_msg("too much colors informations", data));
 	}
-	return (0);// ou ici en changeant le type de la fonction
+	return (0);
 }

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/27 18:48:42 by esellier         ###   ########.fr       */
+/*   Updated: 2025/02/28 14:14:57 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,13 +43,16 @@
 # define DARK_PINK		0x9B1B30
 # define BRIGHT_BLUE	0x1ABC9C
 
-//door
+//sprite
 int 	do_sprite(t_data *data);
+int     do_hook(t_data *data);
+
+//door
 int 	door_distance_check(double door, t_data *data);
 double	door_distance_calcul(int x, int y, double tmp_x, double tmp_y);
 void	do_door(t_data *data);
 int     close_door(t_data *data);
-int     do_hook(t_data *data);
+int     double_to_int(int door, double player);
 
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);
@@ -63,9 +66,6 @@ void	do_view(t_data *data, int keysym);
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
 int	    check_wall_distance(double tmp_x, double tmp_y, t_data *data);
 int     wall_distance_calcul(int x, int y, double tmp_x, double tmp_y);
-
-//parsing_player
-void	map_check_player(t_data *data, int i, int j, char **matrix);
 
 //parsing_map
 void	map_check(t_data *data, char **matrix);
@@ -88,6 +88,7 @@ void	*check_line(char *str, t_data *data);
 void	*check_map_info(t_data *data, t_map *map, char *str);
 char	**ft_realloc(char **array, char *new_line, t_data *data);
 void	check_cub_file(t_data *data, char *file);
+void	map_check_player(t_data *data, int i, int j, char **matrix);
 
 //utils
 int		error_msg(char *str, t_data *data);
