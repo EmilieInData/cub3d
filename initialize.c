@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:06:09 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/27 14:32:38 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 17:26:18 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,12 +71,13 @@ void	*initialize(t_data *data)
 	data->player.position_y = -1;
 	data->player.angle = -1;
 	//ray
-	//image
+	data->image = NULL;
 	gettimeofday(&data->timer, NULL);
 	initialize_textures(&data->texture_door);
 	initialize_textures(&data->texture_north);
 	initialize_textures(&data->texture_south);
 	initialize_textures(&data->texture_west);
 	initialize_textures(&data->texture_east);
+	data->doors = NULL;
 	return (data);
 }

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:40:27 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/28 14:13:48 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 15:26:09 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,9 +98,9 @@ int	close_door(t_data *data)
 			+ (new.tv_usec - data->doors->timer.tv_usec) / 1000000;
 		if (result >= 5)
 		{
-			printf("door_closed_timer_ok\n");
-			printf("player_y = %f, player_x = %f\n", data->player.position_y, data->player.position_x);
-			printf("door_y = %d, door_x = %d\n", data->doors->y, data->doors->x);
+			// printf("door_closed_timer_ok\n");
+			// printf("player_y = %f, player_x = %f\n", data->player.position_y, data->player.position_x);
+			// printf("door_y = %d, door_x = %d\n", data->doors->y, data->doors->x);
 			data->map->matrix[data->doors->y][data->doors->x] = 'D';
 			data->doors->x = -1;
 			data->doors->y = -1;

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/27 14:22:04 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 18:46:39 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -245,8 +245,8 @@ void horizontal_check(t_data *data, double radians)
 void	init_ray(t_data *data)
 {
 	data->ray.FOV = 60;
-	data->ray.player_x = ((double)data->player.position_x * 64) + 32;
-	data->ray.player_y = ((double)data->player.position_y * 64) + 32;
+	data->ray.player_x = ((double)data->player.position_x * TILE);//
+	data->ray.player_y = ((double)data->player.position_y * TILE);//
 	data->ray.angle_start = (double)data->player.angle + (data->ray.FOV / 2);
 	if (data->ray.angle_start > 360)
 		data->ray.angle_start -= 360;
@@ -307,14 +307,8 @@ void	find_wall(t_data *data)
 		ray_trace(data, x, increment);
 		x++;
 	}
-	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
 	do_mini_map(data, data->map->matrix);
-	//if (data->texture_north)
-	//	free_textures(data);
-	// if (data->door)
-	// 	free(data->door);
-	//door_projection(data);
-	//get_wall_texture(data);
+	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add, 0, 0);
 }
 
 

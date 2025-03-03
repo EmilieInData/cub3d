@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/28 14:03:03 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 18:28:03 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -119,8 +119,8 @@ void	map_check_player(t_data *data, int i, int j, char **matrix)
 		&& matrix[j][i + 1] != 'D' && matrix[j][i - 1] != 'D')
 		exit (error_msg(m, data));
 	data->player.news = matrix[j][i];
-	data->player.position_x = i;// with 0,5 ?
-	data->player.position_y = j;// with 0,5 ?
+	data->player.position_x = i + 0.5;// with 0,5 ?
+	data->player.position_y = j + 0.5;// with 0,5 ?
 	if (matrix[j][i] == 'E')
 		data->player.angle = 0;
 	else if (matrix[j][i] == 'N')

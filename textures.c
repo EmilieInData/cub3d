@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/27 14:21:00 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 19:40:37 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,15 @@ void	create_struct_files(t_data *data, char *path, t_files *files)
 	files->img = mlx_xpm_file_to_image(data->mlx, path,
 			&files->width, &files->height);
 	if (!files->img)
-		exit (error_msg("image not loaded\n", data));
-	files->addr = mlx_get_data_addr(files->img, &files->bpp, &files->line_len, &files->endian);
+		exit (error_msg("image not loaded", data));
+	files->addr = mlx_get_data_addr(files->img, &files->bpp, &files->line_len,
+			&files->endian);
 	if (!files->addr)
-		exit (error_msg("Error mlx_get_data_addr failed\n", data));
+		exit (error_msg("mlx_get_data_addr failed", data));
 }
 
 void	get_wall_texture(t_data *data)
-{	
+{
 	create_struct_files(data, data->map->no, &data->texture_north);
 	create_struct_files(data, data->map->so, &data->texture_south);
 	create_struct_files(data, data->map->we, &data->texture_west);

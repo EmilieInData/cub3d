@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/27 19:00:10 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 18:57:08 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,11 +74,11 @@ void    put_pixel_image(t_image *image, int x, int y, int color)
 
 void wall_height(t_data *data, int x)
 {
-	double dist_t_proj_plane;
-	int middle_of_screen;
-	int middle_of_wall;
-	int i;
-	int y;
+	double	dist_t_proj_plane;
+	int		middle_of_screen;
+	int		middle_of_wall;
+	int		i;
+	int		y;
 	double	angle;
 
 	i = HEIGHT;
@@ -92,14 +92,14 @@ void wall_height(t_data *data, int x)
 	data->ray.last_wall_pxl = data->ray.first_wall_pxl - data->ray.wall_height;
 	middle_of_wall = data->ray.wall_height / 2;
 	data->ray.ceiling_floor = middle_of_screen - middle_of_wall;
-	while(y <= HEIGHT)
+	while (y <= HEIGHT)
 	{
 		if (i >= (HEIGHT - ((int)data->ray.wall_height + (int)data->ray.ceiling_floor)))
 			put_pixel_image(data->image, x, y,  rgb_to_int_ceil(data));
 		if (i >= (int)data->ray.ceiling_floor && i <= ((int)data->ray.wall_height + (int)data->ray.ceiling_floor))
 			render_wall(x, &y, data, &i);
 		if (i <= (int)data->ray.ceiling_floor && i >= 0)
-			put_pixel_image(data->image, x, y, rgb_to_int_floor(data));	
+			put_pixel_image(data->image, x, y, rgb_to_int_floor(data));
 		i--;
 		y++;
 	}

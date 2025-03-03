@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:54:16 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/26 18:40:39 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 17:25:50 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,8 @@ void	free_data(t_data *data)
 			free_array(data->map->matrix);
 		free(data->map);
 	}
-	free_doors(data, data->doors);
+	if (data->doors)
+		free_doors(data, data->doors);
 	free_textures(data);
 	if (data->image)
 		free_image(data->image, data);

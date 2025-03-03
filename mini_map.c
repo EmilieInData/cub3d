@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:14:45 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/25 19:50:03 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 18:55:50 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,10 @@ void	do_mini_map(t_data *data, char **matrix)
 		}
 		j++;
 	}
-	put_scaled_image(data, data->player.position_x * scale,
-		data->player.position_y * scale, BRIGHT_BLUE); 
-	mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add,
-		0, 0);
+	put_scaled_image(data, (data->player.position_x - 0.5) * scale,
+		(data->player.position_y - 0.5) * scale, BRIGHT_BLUE); 
+	//mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add,
+	//	0, 0);
 }
 
 void	put_scaled_image(t_data *data, int x, int y, int color)
@@ -96,4 +96,3 @@ int	width_map(char **matrix)
 	}
 	return (w);
 }
-// mettre des touches pour regler la taille de la map manuellement de la fenetre?

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/27 18:48:50 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 17:21:56 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,7 +95,8 @@ void	implementation_mlx(t_data *data, char *name)
 			&data->image->endian);
 	get_wall_texture(data);
 	initialize_door(data);
-	data->texture_door = data->doors->sprite[3];
+	if (&data->doors->sprite[3])
+		data->texture_door = data->doors->sprite[3];
 }
 
 

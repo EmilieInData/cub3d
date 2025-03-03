@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/02/28 14:42:02 by esellier         ###   ########.fr        #
+#    Updated: 2025/02/28 14:47:26 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -71,8 +71,8 @@ clean:
 
 fclean:		clean
 			$(MAKE) clean -s -C $(MLX)
-			# $(MAKE) fclean -s -C $(GNL)
-			# $(MAKE) fclean -s -C $(LIBFT)
+			$(MAKE) fclean -s -C $(GNL)
+			$(MAKE) fclean -s -C $(LIBFT)
 			rm -f $(NAME)
 
 re:	fclean all

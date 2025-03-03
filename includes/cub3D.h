@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/28 14:14:57 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 19:26:51 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,8 +40,9 @@
 //# define BLACK			0x0000
 # define PASTEL_PURPLE  0xC3B1E1
 # define DARK_PURPLE	0x4B2C58
-# define DARK_PINK		0x9B1B30
-# define BRIGHT_BLUE	0x1ABC9C
+# define DARK_PINK		0xF229D7
+# define BRIGHT_BLUE	0x2EBDFF
+//# define DARK_PURPLE	0x631D91
 
 //sprite
 int 	do_sprite(t_data *data);
@@ -64,8 +65,8 @@ int		width_map(char **matrix);
 int		do_key(int keysym, t_data *data);
 void	do_view(t_data *data, int keysym);
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
-int	    check_wall_distance(double tmp_x, double tmp_y, t_data *data);
-int     wall_distance_calcul(int x, int y, double tmp_x, double tmp_y);
+int    check_wall_distance(double tmp_x, double tmp_y, t_data *data);
+//int     wall_distance_calcul(int x, int y, double tmp_x, double tmp_y);
 
 //parsing_map
 void	map_check(t_data *data, char **matrix);

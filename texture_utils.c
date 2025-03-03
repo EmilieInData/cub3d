@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 11:25:23 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/24 18:54:17 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/03 16:41:49 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,12 +40,13 @@ void	print_pixel(t_data *data, int x, int y, int color)
 
 int	rgb_to_int_floor(t_data *data)
 {
-	return ((data->map->floor.red << 24) | (data->map->floor.green << 16) | (data->map->floor.blue << 8) | 255);
+	//printf("R= %d, V= %d, B= %d\n",  data->map->floor.red, data->map->floor.green, data->map->floor.blue);
+	return ((data->map->floor.red << 16) | (data->map->floor.green << 8) | (data->map->floor.blue) | 255 << 24);
 }
 
 int	rgb_to_int_ceil(t_data *data)
 {
-	return ((data->map->ceiling.red << 24) | (data->map->ceiling.green << 16) | (data->map->ceiling.blue << 8) | 255);
+	return ((data->map->ceiling.red << 16) | (data->map->ceiling.green << 8) | (data->map->ceiling.blue) | 255 << 24);
 }
 
 void	free_textures(t_data *data)
