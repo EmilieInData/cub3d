@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/25 12:32:32 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/03/03 15:43:18 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,12 @@
 # define CUB3D_H
 
 # define TILE 			64
-# define HEIGHT 		1800
-# define LENGTH 		2000
+# define HEIGHT 	    800
+# define LENGTH 		1260
 # define PICS			10
 # define SPRITE_TIME    10
 # define ROTATION       0.05
+# define PI             3.14
 
 //Libraries
 # include "../gnl/get_next_line.h"
@@ -124,8 +125,8 @@ void    vertical_check(t_data *data, double radians);
 void	next_checks(t_data *data, double a_x, double a_y, double radians);
 void    horizontal_check(t_data *data, double radians);
 void	find_wall(t_data *data);
-int     find_distance_v(t_data *data, double x, double y);
-int     find_distance_h(t_data *data, double x, double y);
+double     find_distance_v(t_data *data, double x, double y);
+double     find_distance_h(t_data *data, double x, double y);
 void	find_shortest_distance(t_data *data);
 void	print_ray(t_ray ray);
 void    map_size(t_data *data);

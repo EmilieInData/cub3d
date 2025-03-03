@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 13:35:51 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/20 11:20:47 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/27 14:24:59 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ int ray_projected_left(int angle)
     else
         return (0);
 }
-
+/*
 int check_diagonal(char **matrix, t_data *data, int x, int y)
 {
     if (wall_in_ascending_diagonal(matrix, data, x, y) == 1 
@@ -102,4 +102,4 @@ int wall_in_descending_diagonal(char **matrix, t_data *data, int x, int y)
         }
     }
     return (0);
-}
+}*/

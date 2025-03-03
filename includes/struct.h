@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/25 12:43:57 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/03/03 14:42:30 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,19 +92,21 @@ typedef struct s_ray
 	double dist_v;
 	double dist_t_wall;
 	char	wall_hit;
-	int		v_x;
-	int		v_y;
-	int		h_x;
-	int		h_y;
-	int		hit_x;
-	int		hit_y;
-	int		map_x;
-	int		map_y;
+	double		v_x;
+	double		v_y;
+	double		h_x;
+	double		h_y;
+	double		hit_x;
+	double		hit_y;
+	double		map_x;
+	double		map_y;
 	int		first_wall_pxl;
 	int		last_wall_pxl;
 	double	wall_height;
 	char	type;
 	int		ceiling_floor;
+	double	old_distance_h;
+	double	old_distance_v;
 }				t_ray;
 
 
@@ -114,7 +116,7 @@ typedef struct s_data
 	void			*mlx_window;
 	t_map			*map;
 	t_player		player;
-	t_ray			ray;
+	t_ray			*ray;
 	t_image			*image;
 	int				mouse_position;
 	int				ignore_mouse;
@@ -125,6 +127,7 @@ typedef struct s_data
 	t_files 		*texture_west;
 	t_files 		*texture_east;
 	t_door			doors;
+	
 }			   t_data;
 
 #endif

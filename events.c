@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/25 12:53:32 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/02/27 19:21:26 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,12 +21,14 @@ int	do_key(int keysym, t_data *data)
 	if (keysym == XK_Left || keysym == XK_Right)
 	{
 		do_view(data, keysym);
-		//find_wall(data);
+		find_wall(data);
 	}
 	if (keysym == XK_w || keysym == XK_a || keysym == XK_s || keysym == XK_d)
 	{
 		do_move(data, keysym, data->player.position_x, data->player.position_y);
-		//find_wall(data);
+		find_wall(data);
+		printf("position x %f position y %f\n", data->player.position_x, data->player.position_y);
+		printf("position x %f position y %f\n", data->ray->player_x, data->ray->player_y);
 	}
 	/*if (keysym == XK_space)
 		do_door(data, data->player.position_x, data->player.position_y);*/	
@@ -108,8 +110,8 @@ int	mouse_release(int action)
 void	init_events(t_data *data)
 {
 	mlx_hook(data->mlx_window, 2, (1L<<0), do_key, data);
-	mlx_hook(data->mlx_window, 6, 1L << 6, do_mouse, data);
-	mlx_loop_hook(data->mlx, (void *)find_wall, data);
+	//mlx_hook(data->mlx_window, 6, 1L << 6, do_mouse, data);
+	//mlx_loop_hook(data->mlx, (void *)find_wall, data);
 	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
 	//mlx_mouse_move(data->mlx, data->mlx_window, LENGTH / 2, HEIGHT / 2);
 	//mlx_hook(data->win, 4, (0L), mouse_handler, data);

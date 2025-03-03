@@ -6,7 +6,7 @@
 /*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/25 12:44:21 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/03/03 14:57:39 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,6 +106,9 @@ void	*initialize(t_data *data)
 	data->door = NULL;
 	data->mouse_position = -1;
 	data->ignore_mouse = 0;
+	data->ray = malloc(sizeof(t_ray) * 1);
+	if (!data->ray)
+		exit (error_msg("malloc didn't work correctly", data));
 	return (data);
 }
 
@@ -140,6 +143,7 @@ int	main(int argc, char **argv)
 	data = NULL;
 	if (argc != 2)
 		exit (error_msg("wrong number of arguments", NULL));
+	printf("test simon\n");
 	is_cub(argv[1]);
 	data = initialize(data);
 	check_cub_file(data, argv[1]);
@@ -153,8 +157,10 @@ int	main(int argc, char **argv)
 	//mlx_loop_hook(data->mlx_window, do_key, data);
 	init_events(data);
 	//mlx_loop_hook(data->mlx, (void*)find_wall, data);
-	mlx_loop(data->mlx);
 	print_data(data);
+	printf("test simon\n");
+	printf("fabs(data->ray->old_distance_v - data->ray->dist_v) = %f\n", fabs(data->ray->old_distance_v - data->ray->dist_v));
+	mlx_loop(data->mlx);
 	/*if (data->texture_north)
 		free_textures(data);
 	if (data->door)
