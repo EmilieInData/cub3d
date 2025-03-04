@@ -6,13 +6,13 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 12:45:15 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/03 18:57:08 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:14:46 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "includes/cub3D.h"
 
-int	find_distance_v(t_data *data, double x, double y)
+double	find_distance_v(t_data *data, double x, double y)
 {
 	double	dist;
 
@@ -22,7 +22,7 @@ int	find_distance_v(t_data *data, double x, double y)
 	return (dist);
 }
 
-int	find_distance_h(t_data *data, double x, double y)
+double	find_distance_h(t_data *data, double x, double y)
 {
 	double	dist;
 

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/03 19:26:51 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:15:13 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,7 @@ double	door_distance_calcul(int x, int y, double tmp_x, double tmp_y);
 void	do_door(t_data *data);
 int     close_door(t_data *data);
 int     double_to_int(int door, double player);
+ int	check_length(char **matrix, int y);
 
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);
@@ -65,7 +66,7 @@ int		width_map(char **matrix);
 int		do_key(int keysym, t_data *data);
 void	do_view(t_data *data, int keysym);
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
-int    check_wall_distance(double tmp_x, double tmp_y, t_data *data);
+int     check_wall_distance(double tmp_x, double tmp_y, t_data *data);
 //int     wall_distance_calcul(int x, int y, double tmp_x, double tmp_y);
 
 //parsing_map
@@ -130,8 +131,8 @@ void    vertical_check(t_data *data, double radians);
 void	next_checks(t_data *data, double a_x, double a_y, double radians);
 void    horizontal_check(t_data *data, double radians);
 void	find_wall(t_data *data);
-int     find_distance_v(t_data *data, double x, double y);
-int     find_distance_h(t_data *data, double x, double y);
+double  find_distance_v(t_data *data, double x, double y);
+double  find_distance_h(t_data *data, double x, double y);
 void	find_shortest_distance(t_data *data);
 void	print_ray(t_ray ray);
 void    map_size(t_data *data);
@@ -141,5 +142,7 @@ int     ray_projected_left(int angle);
 int     check_diagonal(char **matrix, t_data *data, int x, int y);
 int     wall_in_ascending_diagonal(char **matrix, t_data *data, int x, int y);
 int     wall_in_descending_diagonal(char **matrix, t_data *data, int x, int y);
+int     length(t_data * data, int y, int x);
+int     height(t_data *data, int x, int y);
 
 #endif

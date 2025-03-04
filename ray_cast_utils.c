@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ray_cast_utils.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 13:35:51 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/20 11:20:47 by ineimatu         ###   ########.fr       */
+/*   Updated: 2025/03/04 15:54:21 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int ray_projected_up(int angle)
 {
-    if (angle >= 0 && angle <= 180)
+    if (angle >= 0 && angle < 180)
         return (1);
     else
         return (0);
@@ -22,7 +22,7 @@ int ray_projected_up(int angle)
 
 int ray_projected_left(int angle)
 {
-    if (angle >= 90 && angle <= 270)
+    if (angle >= 90 && angle < 270)
         return (1);
     else
         return (0);

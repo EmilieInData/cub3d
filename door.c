@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:40:27 by esellier          #+#    #+#             */
-/*   Updated: 2025/03/03 15:26:09 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 14:10:55 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	check_door_distance(double tmp_x, double tmp_y, t_data *data)
 		{
 			x = (int)round(tmp_x) + i;
 			y = (int)round(tmp_y) + j;
-			if (data->map->matrix[y][x] == 'D' && data->doors->flag == -1)
+			if (x <= check_length(data->map->matrix, y) && data->map->matrix[y][x] == 'D' && data->doors->flag == -1)
 			{
 				door_angle = door_distance_calcul(x, y, tmp_x, tmp_y);
 				if (door_distance_check(door_angle, data))
@@ -121,4 +121,21 @@ int	double_to_int(int door, double player)
 	if (player < door)
 		tmp = ceil (player);
 	return (tmp);
+ }
+ int	check_length(char **matrix, int y)
+ {
+	int	i;
+	int j;
+
+	i = 0;
+	j = 0;
+	while (matrix[j])
+		j++;
+	if (y < j)
+	{
+		while (matrix[y][i])
+			i++;
+		return (i);
+	}	
+	return (-1);
  }

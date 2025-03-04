@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/03 18:46:39 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 16:32:54 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int height(t_data *data, int x, int y)
 		i = 0;
 		while (data->map->matrix[i][x])
 			i++;
-		//printf("line length = %i\n", i);	
+		//printf("line length = %i\n", i);
 		return (i);
 	}
 	else
@@ -70,11 +70,12 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 		if (check_diagonal(data->map->matrix, data, (int)b_x / TILE, (int)b_y / TILE) == 1)
 		{
 			data->ray.dist_v = data->ray.dist_v + 0.0000000001;
-			break;
+			break ;
 		}
-		if ((int)b_y / TILE >= 0 && (int)b_x / TILE >= 0 && data->ray.map_x > (int)b_x / TILE && data->ray.map_y > (int)b_y / TILE)
+		if ((int)b_y / TILE >= 0 && (int)b_x / TILE >= 0 && b_x / TILE < check_length(data->map->matrix, ceil(b_y / TILE)))
 		{
-			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE])
+			//printf ("3_Y = %d, X-1 = %d\n", (int)b_y / TILE, (int)b_x / TILE -1);
+			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE - 1])//here
 			{
 				if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1' || data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == 'D')
 				{
@@ -83,7 +84,7 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 					else
 						data->ray.type = 'w';
 					data->ray.dist_v = find_distance_v(data, b_x, b_y);
-					break;
+					break ;
 				}
 			}
 			i++;
@@ -99,9 +100,9 @@ void next_vertical(t_data * data, double x_a, double b_y, double b_x, double rad
 
 void vertical_check(t_data *data, double radians)
 {
-	double b_x;
-	double b_y;
-	double x_a;
+	double	b_x;
+	double	b_y;
+	double	x_a;
 
 	b_x = floor(data->ray.player_x / TILE);
 	b_x *= TILE;
@@ -112,19 +113,20 @@ void vertical_check(t_data *data, double radians)
 		x_a *= -1;
 	}
 	else
-	{
 		b_x += TILE;
-	}
 	b_y = data->ray.player_y + (data->ray.player_x - b_x)  * tan(radians);
 	/*printf("\n\n\nVERTICAL CHECK\n\n\n");
 	printf("First hit x = %f\n", b_x);
 	printf("First hit y = %f\n", b_y);
 	printf("Coordinates [%i], [%i]\n", (int)b_y / TILE, (int)b_x / TILE);*/
-	if ((int)b_y / TILE >= 0 && (int)b_x / TILE >= 0)
+	if ((int)b_y / TILE > 0 && (int)b_x / TILE >= 0)
 	{
 		//printf("%i\n", height(data, fabs(b_x / TILE), b_y / TILE));
-		if ((double)length(data, ceil(b_y / TILE), ceil(b_x / TILE)) >= b_x / TILE /*&& data->ray.map_y > (int)b_y / TILE */&& data->map->matrix[(int)b_y / TILE][(int)b_x / TILE])
+		//printf("1_length = %d\n", check_length(data->map->matrix, ceil(b_y / TILE) - 1));
+		if (b_x / TILE < check_length(data->map->matrix, ceil(b_y / TILE) - 1)) //here
+		//if ((double)length(data, ceil(b_y / TILE), ceil(b_x / TILE)) >= b_x / TILE /*&& data->ray.map_y > (int)b_y / TILE *//*&& //data->map->matrix[(int)b_y / TILE][(int)b_x / TILE]*/)
 		{
+			//printf("2_y-1 = %d, x = %d\n", (int)b_y / TILE -1, (int)b_x / TILE);
 			if (data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == '1' || data->map->matrix[(int)b_y / TILE][(int)b_x / TILE] == 'D')
 			{	
 				if (data->map->matrix[(int)(b_y / TILE)][(int)(b_x / TILE)] == 'D')
@@ -175,7 +177,8 @@ void	next_checks(t_data *data, double a_x, double a_y, double radians)
 			data->ray.dist_h = data->ray.dist_h;
 			break ;
 		}
-		if ((int)c_y / TILE >= 0 && (int)c_x / TILE >= 0 && (double)length(data, ceil(c_y / TILE), ceil(c_x / TILE)) >= c_x / TILE /*&& data->ray.map_y >= (int)c_y / TILE)*/)
+		if ((int)c_y / TILE >= 0 && (int)c_x / TILE >= 0 && c_x / TILE < check_length(data->map->matrix, ceil(c_y / TILE))) //here
+		//if ((int)c_y / TILE >= 0 && (int)c_x / TILE >= 0 && (double)length(data, ceil(c_y / TILE), ceil(c_x / TILE)) >= c_x / TILE /*&& data->ray.map_y >= (int)c_y / TILE)*/)
 		{
 			if (data->map->matrix[(int)(c_y / TILE)][(int)(c_x / TILE)])
 			{
@@ -219,7 +222,8 @@ void horizontal_check(t_data *data, double radians)
 	printf("First hit x = %f\n", a_x);
 	printf("First hit y = %f\n", a_y);
 	printf("Coordinates [%i], [%i]\n", (int)a_y / TILE, (int)a_x / TILE);*/
-	if ((int)a_y / TILE >= 0 && (int)a_x / TILE >= 0 && (double)length(data, ceil(a_y / TILE), ceil(a_x / TILE)) > a_x / TILE/*data->ray.map_y > (int)a_y / TILE &&*/)
+	if ((int)a_y / TILE >= 0 && (int)a_x / TILE >= 0 && a_x / TILE < check_length(data->map->matrix, ceil(a_y / TILE))) //here
+	//if ((int)a_y / TILE >= 0 && (int)a_x / TILE >= 0 && (double)length(data, ceil(a_y / TILE), ceil(a_x / TILE)) > a_x / TILE/*data->ray.map_y > (int)a_y / TILE &&*/)
 	{
 		if (data->map->matrix[(int)a_y / TILE][(int)a_x / TILE])
 		{

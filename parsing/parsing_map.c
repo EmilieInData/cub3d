@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/01/23 19:54:01 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 11:55:01 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,11 +114,3 @@ void	map_check_border(t_data *data, char **matrix)
 		j++;
 	}
 }
-
-//quoi faire des espaces dans la map, erreur ou 
-//convertit en zero ou un effet special?
-
-//checker si ok parsing color&texture, peut etre doit on pouvoir mettre des 
-//couleurs a la place des textures et inversement, ce serait galere dans la struc
-
-//printf("char = %c & i = %d\n", data->map->matrix[j][i], i);
