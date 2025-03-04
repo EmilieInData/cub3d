@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/14 11:32:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/04 16:32:54 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 18:26:34 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -109,7 +109,7 @@ void vertical_check(t_data *data, double radians)
 	x_a = TILE;
 	if (ray_projected_left(data->ray.angle_start) == 1)
 	{
-		b_x -= 0.0000000001;
+		b_x -= 0.00000001;
 		x_a *= -1;
 	}
 	else
@@ -214,7 +214,7 @@ void horizontal_check(t_data *data, double radians)
 	a_y = floor(data->ray.player_y / TILE); 
 	a_y *= TILE;
 	if (ray_projected_up(data->ray.angle_start) == 1)
-		a_y -= 0.0000000001;
+		a_y -= 0.00000001;
 	else
 		a_y += TILE;
 	a_x = data->ray.player_x + (data->ray.player_y - a_y) / tan(radians);	

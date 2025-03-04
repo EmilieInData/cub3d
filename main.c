@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/03 17:21:56 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 17:46:42 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,6 +112,7 @@ int	main(int argc, char **argv)
 	check_cub_file(data, argv[1]);
 	map_check(data, data->map->matrix);
 	map_size(data);
+	//print_data(data);
 	implementation_mlx(data, "cub3D_map");
 	find_wall(data);
 	mlx_loop_hook(data->mlx, do_hook, data);
@@ -119,7 +120,6 @@ int	main(int argc, char **argv)
 	mlx_hook(data->mlx_window, 17, (1L << 5), close_escape, data);
 	//mlx_mouse_hook(data->mlx_window, do_mouse, data);
 	mlx_loop(data->mlx);
-	//print_data(data);
 	free_data(data);
 	return (0);
 }

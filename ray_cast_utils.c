@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/12 13:35:51 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/04 15:54:21 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 18:31:16 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,14 @@ int ray_projected_up(int angle)
 {
     if (angle >= 0 && angle < 180)
         return (1);
-    else
-        return (0);
+    return (0);
 }
 
 int ray_projected_left(int angle)
 {
     if (angle >= 90 && angle < 270)
         return (1);
-    else
-        return (0);
+    return (0);
 }
 
 int check_diagonal(char **matrix, t_data *data, int x, int y)

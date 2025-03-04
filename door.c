@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 17:40:27 by esellier          #+#    #+#             */
-/*   Updated: 2025/03/04 14:10:55 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 20:14:48 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ int	check_door_distance(double tmp_x, double tmp_y, t_data *data)
 			if (x <= check_length(data->map->matrix, y) && data->map->matrix[y][x] == 'D' && data->doors->flag == -1)
 			{
 				door_angle = door_distance_calcul(x, y, tmp_x, tmp_y);
-				if (door_distance_check(door_angle, data))
+				//if (door_distance_check(door_angle, data))
+				if (!door_angle_check(data, door_angle))
 				{
 					data->doors->x = x;
 					data->doors->y = y;
@@ -56,20 +57,39 @@ double	door_distance_calcul(int x, int y, double tmp_x, double tmp_y)
 	door_angle = atan2(yy, xx) * (180.0 / M_PI); // Conversion en degrés
 	return (door_angle);
 }
-
-int	door_distance_check(double door, t_data *data)
+int	door_angle_check(t_data *data, double door_angle)
 {
-	double	diff_angle;
+	//double	tmp_start;
+	double	tmp_end;
 	
-	diff_angle = door - data->player.angle;
-	if (diff_angle > 180)
-		diff_angle -= 360;
-	if (diff_angle < -180)
-		diff_angle += 360;
-	if (fabs(diff_angle) < (data->ray.FOV / 2))
-		return (1);
-	return (0);
+	tmp_end = data->ray.angle_start + data->ray.FOV;
+	if (tmp_end > 360)
+	{
+		tmp_end = tmp_end - data->ray.angle_start;
+		if ((fabs)(door_angle) <= tmp_end)
+		return (0);
+	}
+	printf("Door_angle = %f\n", door_angle);
+	printf("view_angle = %f, %f\n", data->ray.angle_start, data->ray.angle_end);
+	//printf("view_angle-Emilie = %d\n", data->player.angle);
+	if ((fabs)(door_angle) >= data->ray.angle_start && (fabs)(door_angle) <= tmp_end)
+		return (0);
+	return (1);
 }
+
+// int	door_distance_check(double door, t_data *data)
+// {
+// 	double	diff_angle;
+	
+// 	diff_angle = door - data->player.angle;
+// 	if (diff_angle > 180)
+// 		diff_angle -= 360;
+// 	if (diff_angle < -180)
+// 		diff_angle += 360;
+// 	if (fabs(diff_angle) < (data->ray.FOV / 2))
+// 		return (1);
+// 	return (0);
+// }
 
 void	do_door(t_data *data)
 {
@@ -98,9 +118,6 @@ int	close_door(t_data *data)
 			+ (new.tv_usec - data->doors->timer.tv_usec) / 1000000;
 		if (result >= 5)
 		{
-			// printf("door_closed_timer_ok\n");
-			// printf("player_y = %f, player_x = %f\n", data->player.position_y, data->player.position_x);
-			// printf("door_y = %d, door_x = %d\n", data->doors->y, data->doors->x);
 			data->map->matrix[data->doors->y][data->doors->x] = 'D';
 			data->doors->x = -1;
 			data->doors->y = -1;

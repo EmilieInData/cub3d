@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:14:45 by esellier          #+#    #+#             */
-/*   Updated: 2025/03/04 16:10:30 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 17:52:51 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,14 +25,11 @@ void	do_mini_map(t_data *data, char **matrix)
 		i = 0;
 		while (matrix[j][i])
 		{
-			printf("Test_1\n");
 			if (matrix[j][i] == 'D')
 				put_scaled_image(data, i * scale, j * scale, DARK_PINK);
-			else if (matrix[j][i] == ' ')
-				i++;
 			else if (matrix[j][i] == '1')
 				put_scaled_image(data, i * scale, j * scale, DARK_PURPLE);
-			else
+			else if (matrix[j][i] != ' ')
 				put_scaled_image(data, i * scale, j * scale, PASTEL_PURPLE);
 			i++;
 		}
@@ -40,8 +37,6 @@ void	do_mini_map(t_data *data, char **matrix)
 	}
 	put_scaled_image(data, (data->player.position_x - 0.5) * scale,
 		(data->player.position_y - 0.5) * scale, BRIGHT_BLUE); 
-	//mlx_put_image_to_window(data->mlx, data->mlx_window, data->image->img_add,
-	//	0, 0);
 }
 
 void	put_scaled_image(t_data *data, int x, int y, int color)

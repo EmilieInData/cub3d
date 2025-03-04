@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sprite.c.c                                         :+:      :+:    :+:   */
+/*   sprite.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/28 14:11:08 by esellier          #+#    #+#             */
-/*   Updated: 2025/02/28 14:13:59 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 18:32:11 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	do_sprite(t_data *data)
 
 	gettimeofday(&now, NULL);
 	gap = (now.tv_sec - data->timer.tv_sec)
-		+ (now.tv_usec - data->timer.tv_usec) / 1000000;
-	if (gap >= 0.1)
+		+ (now.tv_usec - data->timer.tv_usec) / 1000000.0;
+	if (gap >= 0.3)
 	{
 		gettimeofday(&data->timer, NULL);
 		if (data->doors->count == PICS - 1)

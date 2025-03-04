@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/04 16:15:13 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/04 19:44:45 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,12 +49,13 @@ int 	do_sprite(t_data *data);
 int     do_hook(t_data *data);
 
 //door
-int 	door_distance_check(double door, t_data *data);
+//int 	door_distance_check(double door, t_data *data);
 double	door_distance_calcul(int x, int y, double tmp_x, double tmp_y);
 void	do_door(t_data *data);
 int     close_door(t_data *data);
 int     double_to_int(int door, double player);
  int	check_length(char **matrix, int y);
+ int	door_angle_check(t_data *data, double door_angle);
 
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);
