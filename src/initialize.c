@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:06:09 by esellier          #+#    #+#             */
-/*   Updated: 2025/03/05 14:33:38 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 18:44:08 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,6 @@ void	*initialize(t_data *data)
 	initialize_textures(&data->texture_west);
 	initialize_textures(&data->texture_east);
 	data->doors = NULL;
+	data->mouse = 400;
 	return (data);
 }

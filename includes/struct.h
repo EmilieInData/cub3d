@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/05 13:30:33 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 17:40:13 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,6 +111,8 @@ typedef struct s_data
 	t_files			texture_west;
 	t_files			texture_east;
 	t_door			*doors;
+	int				mouse;
+	int				mouse_flag;
 }				t_data;
 
 #endif

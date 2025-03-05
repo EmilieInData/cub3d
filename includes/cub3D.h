@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/05 12:31:33 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 17:46:46 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -74,6 +74,7 @@ void	do_move_up(t_data *data, double tmp_x, double tmp_y, double radian);
 void	do_move_down(t_data *data, double tmp_x, double tmp_y, double radian);
 void	do_move_left(t_data *data, double tmp_x, double tmp_y, double radian);
 void	do_move_right(t_data *data, double tmp_x, double tmp_y, double radian);
+int 	do_mouse(int x, int y, t_data *data);
 
 //parsing_map
 void	map_check(t_data *data, char **matrix);

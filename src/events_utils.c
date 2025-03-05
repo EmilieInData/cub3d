@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/21 15:39:05 by esellier          #+#    #+#             */
-/*   Updated: 2025/03/05 14:33:31 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 19:00:07 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,4 +70,34 @@ void	do_move_right(t_data *data, double tmp_x, double tmp_y, double radian)
 	tmp_x += 0.1001 * sin(radian);
 	if (!check_wall_distance(tmp_x, tmp_yy, data))
 		data->player.position_x = tmp_x;
+}
+
+int	do_mouse(int x, int y, t_data *data)
+{
+	int	tmp_x;
+
+	(void)y;
+	tmp_x = x - data->mouse;
+	if ((abs(tmp_x)) > 2)
+	{
+		if (tmp_x >= 0)
+			data->player.angle = data->player.angle - (tmp_x * 0.05);
+		if (tmp_x < 0)
+			data->player.angle = (ceil)(data->player.angle - (tmp_x * 0.05));
+		if (data->player.angle > 360)
+			data->player.angle = data->player.angle - 360;
+		else if (data->player.angle < 0)
+			data->player.angle = data->player.angle + 360;
+		find_wall(data);
+	}
+	// if (!data->mouse_flag)
+	// 	return (data->mouse_flag = -1, 0);
+	// if (x < LENGTH * 0.25 || x > LENGTH * 0.75)
+	// {
+	// 	data->mouse_flag = 0;
+	// 	mlx_mouse_move(data->mlx, data->mlx_window, LENGTH / 2, HEIGHT / 2);
+	// 	data->mouse = LENGTH / 2;
+	// 	return (0);
+	// }
+	return (data->mouse = x, 0);
 }
