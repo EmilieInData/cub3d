@@ -1,7 +1,7 @@
-NO ./textures/Texture_1_building.xpm
-SO ./textures/Wall_SO1.xpm
-WE ./textures/Wall_EA1.xpm
-EA ./textures/Texture_17_Building.xpm
+NO ./textures/3_Building.xpm
+SO ./textures/6_Bee.xpm
+WE ./textures/1_Square.xpm
+EA ./textures/2_Building.xpm
 
 C 44,31,105
 F 27,13,54

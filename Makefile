@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/03/05 13:22:55 by esellier         ###   ########.fr        #
+#    Updated: 2025/03/05 14:30:06 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,29 +18,26 @@ MLX_A = $(addprefix $(MLX), libmlx.a)
 GNL_A = $(addprefix $(GNL), libgnl.a)
 LIBFT_A = $(addprefix $(LIBFT), libft.a)
 
-SRC = main.c \
-	  parsing/parsing.c \
-	  parsing/parsing_colors.c \
-	  parsing/parsing_textures.c \
-	  parsing/parsing_map.c \
-	  utils.c \
-	  mini_map.c \
-	  events.c \
-	  events_utils.c \
-	  ray_cast.c \
-	  ray_cast_calcul.c \
-	  ray_cast_utils.c \
-	  textures.c \
-	  texture_utils.c \
-	  door.c \
-	  door_utils.c \
-	  sprite.c \
-	  initialize.c
-
-SRC_BONUS =
+SRC = src/main.c \
+	  src/parsing.c \
+	  src/parsing_colors.c \
+	  src/parsing_textures.c \
+	  src/parsing_map.c \
+	  src/utils.c \
+	  src/mini_map.c \
+	  src/events.c \
+	  src/events_utils.c \
+	  src/ray_cast.c \
+	  src/ray_cast_calcul.c \
+	  src/ray_cast_utils.c \
+	  src/textures.c \
+	  src/texture_utils.c \
+	  src/door.c \
+	  src/door_utils.c \
+	  src/sprite.c \
+	  src/initialize.c
 
 OBJ = $(SRC:.c=.o)
-OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 CC = cc
 
@@ -60,14 +57,9 @@ $(NAME): $(OBJ)
 %.o:		%.c Makefile includes/cub3D.h includes/struct.h $(LIBFT_A) $(GNL_A) $(MLX_A)
 			$(CC) $(CCFLAGS) -Imlx_linux -O3 -c $< -o $(<:.c=.o)
 
-bonus: .bonus
-	
-.bonus : $(NAME) $(OBJ_BONUS)
-	touch .bonus
-	ar rcs $(NAME) $(OBJ_BONUS)
 	
 clean:
-			rm -f $(OBJ) $(OBJ_BONUS)
+			rm -f $(OBJ)
 			$(MAKE) clean -s -C $(GNL)
 			$(MAKE) clean -s -C $(LIBFT)
 
@@ -79,24 +71,4 @@ fclean:		clean
 
 re:	fclean all
 
-.PHONY: all clean fclean re bonus
-
-# all : $(NAME)
-
-# %.o : %.c Makefile libft.h
-# 	$(CC) $(FLAGS) -o $@ -c $<
-
-# $(NAME) : $(OBJ)
-# 	ar rcs $(NAME) $(OBJ)
-
-# bonus: .bonus
-
-# .bonus : $(NAME) $(OBJ_B)
-# 	touch .bonus
-# 	ar rcs $(NAME) $(OBJ_B)
-
-# clean :
-# 	rm -f *.o .bonus
-
-# fclean : clean
-# 	rm -f $(NAME)
+.PHONY: all clean fclean re
