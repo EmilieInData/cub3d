@@ -6,55 +6,11 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:16:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/04 17:46:42 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 13:21:41 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "cub3D.h"
-
-void	print_data(t_data *data)
-{
-	int	i;
-
-	i = 0;
-	if (data->map->no)
-		printf("NO = %s\n", data->map->no);
-	if (data->map->so)
-		printf("SO = %s\n", data->map->so);
-	if (data->map->we)
-		printf("WE = %s\n", data->map->we);
-	if (data->map->ea)
-		printf("EA = %s\n", data->map->ea);
-	printf("Floor.red = %d\n", data->map->floor.red);
-	printf("Floor.green = %d\n", data->map->floor.green);
-	printf("Floor.blue = %d\n", data->map->floor.blue);
-	printf("Ceiling.red = %d\n", data->map->ceiling.red);
-	printf("Ceiling.green = %d\n", data->map->ceiling.green);
-	printf("Ceiling.blue = %d\n", data->map->ceiling.blue);
-	printf("Flag = %d\n", data->map->flag);
-	if (data->player.news)
-		printf("Player_news = %c\n", data->player.news);
-	if (data->player.position_x)
-		printf("Player_X = %f\n", data->player.position_x);
-	if (data->player.position_y)
-		printf("Player_Y = %f\n", data->player.position_y);
-	if (data->player.angle)
-		printf("Player_angle = %d\n", data->player.angle);
-	if (data->map->matrix)
-	{
-		while (data->map->matrix[i])
-		{
-			printf("%s\n", data->map->matrix[i]);
-			i++;
-		}
-	}
-}
-
-int	close_escape(t_data *data)
-{
-	free_data(data);
-	exit (EXIT_SUCCESS);
-}
 
 int	is_cub(char *argv)
 {
@@ -99,7 +55,6 @@ void	implementation_mlx(t_data *data, char *name)
 		data->texture_door = data->doors->sprite[3];
 }
 
-
 int	main(int argc, char **argv)
 {
 	t_data	*data;
@@ -111,8 +66,6 @@ int	main(int argc, char **argv)
 	data = initialize(data);
 	check_cub_file(data, argv[1]);
 	map_check(data, data->map->matrix);
-	map_size(data);
-	//print_data(data);
 	implementation_mlx(data, "cub3D_map");
 	find_wall(data);
 	mlx_loop_hook(data->mlx, do_hook, data);

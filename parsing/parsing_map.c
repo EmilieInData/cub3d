@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/09 19:33:29 by esellier          #+#    #+#             */
-/*   Updated: 2025/03/04 11:55:01 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 12:37:15 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	map_check(t_data *data, char **matrix)
 		exit (error_msg("map is incorrect, miss a player", data));
 }
 
-void	map_check_door(t_data *data, int i, int j, char **matrix) //bonus
+void	map_check_door(t_data *data, int i, int j, char **matrix)
 {
 	char	*m;
 
@@ -49,7 +49,7 @@ void	map_check_door(t_data *data, int i, int j, char **matrix) //bonus
 
 void	map_check_first_last_line(t_data *data, int i, int j)
 {
-	while (data->map->matrix[j][i] && data->map->matrix[j][i] == ' ') //+ char 9 a 12 ?
+	while (data->map->matrix[j][i] && data->map->matrix[j][i] == ' ')
 		i++;
 	while (data->map->matrix[j][i])
 	{

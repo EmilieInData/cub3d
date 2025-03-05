@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 18:06:09 by esellier          #+#    #+#             */
-/*   Updated: 2025/03/03 17:26:18 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 12:29:26 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,17 +41,14 @@ void	initialize_textures(t_files *texture)
 
 void	initialize_door(t_data *data)
 {
-    data->doors = malloc(sizeof (t_door));
-    if (!data->doors)
-	{
-        exit (error_msg("malloc didn't work correctly", data));
-	}
-    data->doors->x = -1;
+	data->doors = malloc(sizeof (t_door));
+	if (!data->doors)
+		exit (error_msg("malloc didn't work correctly", data));
+	data->doors->x = -1;
 	data->doors->y = -1;
 	data->doors->flag = -1;
 	data->doors->count = 0;
-	//struct tinemal timer?
-    create_struct_files(data, "./Doors/door_4.xpm", &data->doors->sprite[0]);
+	create_struct_files(data, "./Doors/door_4.xpm", &data->doors->sprite[0]);
 	create_struct_files(data, "./Doors/door_3.xpm", &data->doors->sprite[1]);
 	create_struct_files(data, "./Doors/door_2.xpm", &data->doors->sprite[2]);
 	create_struct_files(data, "./Doors/door_1.xpm", &data->doors->sprite[3]);
@@ -70,7 +67,6 @@ void	*initialize(t_data *data)
 	data->player.position_x = -1;
 	data->player.position_y = -1;
 	data->player.angle = -1;
-	//ray
 	data->image = NULL;
 	gettimeofday(&data->timer, NULL);
 	initialize_textures(&data->texture_door);

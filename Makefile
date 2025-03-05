@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/03/04 12:31:35 by esellier         ###   ########.fr        #
+#    Updated: 2025/03/05 13:22:55 by esellier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,12 +26,14 @@ SRC = main.c \
 	  utils.c \
 	  mini_map.c \
 	  events.c \
+	  events_utils.c \
 	  ray_cast.c \
 	  ray_cast_calcul.c \
 	  ray_cast_utils.c \
 	  textures.c \
 	  texture_utils.c \
 	  door.c \
+	  door_utils.c \
 	  sprite.c \
 	  initialize.c
 

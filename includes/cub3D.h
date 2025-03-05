@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/04 19:44:45 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 12:31:33 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,26 +36,25 @@
 # include <float.h>
 # include "struct.h"
 
-//# define WHITE			0xFFFFFF
-//# define BLACK			0x0000
 # define PASTEL_PURPLE  0xC3B1E1
 # define DARK_PURPLE	0x4B2C58
 # define DARK_PINK		0xF229D7
 # define BRIGHT_BLUE	0x2EBDFF
-//# define DARK_PURPLE	0x631D91
 
 //sprite
 int 	do_sprite(t_data *data);
 int     do_hook(t_data *data);
 
 //door
-//int 	door_distance_check(double door, t_data *data);
-double	door_distance_calcul(int x, int y, double tmp_x, double tmp_y);
 void	do_door(t_data *data);
+int     check_door_distance(double tmp_x, double tmp_y, int i, t_data *data);
+double	door_distance_calcul(int x, int y, double tmp_x, double tmp_y);
+int 	door_angle_check(t_data *data, double door_angle, int x, int y);
 int     close_door(t_data *data);
+
+//door_utils
 int     double_to_int(int door, double player);
- int	check_length(char **matrix, int y);
- int	door_angle_check(t_data *data, double door_angle);
+int	    check_length(char **matrix, int y);
 
 //mini_map
 void	do_mini_map(t_data *data, char **matrix);
@@ -68,7 +67,13 @@ int		do_key(int keysym, t_data *data);
 void	do_view(t_data *data, int keysym);
 void	do_move(t_data *data, int keysym, double tmp_x, double tmp_y);
 int     check_wall_distance(double tmp_x, double tmp_y, t_data *data);
-//int     wall_distance_calcul(int x, int y, double tmp_x, double tmp_y);
+int		close_escape(t_data *data);
+
+//events_utils
+void	do_move_up(t_data *data, double tmp_x, double tmp_y, double radian);
+void	do_move_down(t_data *data, double tmp_x, double tmp_y, double radian);
+void	do_move_left(t_data *data, double tmp_x, double tmp_y, double radian);
+void	do_move_right(t_data *data, double tmp_x, double tmp_y, double radian);
 
 //parsing_map
 void	map_check(t_data *data, char **matrix);
@@ -107,8 +112,6 @@ void	initialize_door(t_data *data);
 void	*initialize(t_data *data);
 
 //main
-void	print_data(t_data *data); //to borrow
-int		close_escape(t_data *data);
 int		is_cub(char *argv);
 void	implementation_mlx(t_data *data, char *name);
 int		main(int argc, char **argv);
@@ -135,15 +138,11 @@ void	find_wall(t_data *data);
 double  find_distance_v(t_data *data, double x, double y);
 double  find_distance_h(t_data *data, double x, double y);
 void	find_shortest_distance(t_data *data);
-void	print_ray(t_ray ray);
-void    map_size(t_data *data);
 void    wall_height(t_data *data, int x);
 int     ray_projected_up(int angle);
 int     ray_projected_left(int angle);
 int     check_diagonal(char **matrix, t_data *data, int x, int y);
 int     wall_in_ascending_diagonal(char **matrix, t_data *data, int x, int y);
 int     wall_in_descending_diagonal(char **matrix, t_data *data, int x, int y);
-int     length(t_data * data, int y, int x);
-int     height(t_data *data, int x, int y);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/18 14:37:45 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/03 19:40:37 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 13:11:09 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,40 +47,42 @@ t_files	*choose_wall_direction(t_data *data, double angle)
 	if ((ray_projected_up(angle) == 0) && (data->ray.wall_hit == 'h'))
 		files = &data->texture_north; // north
 	if (!files)
-		ft_putstr_fd("Failed to load textures\n", 2); //exit & free?
+		exit (error_msg("Failed to load textures", data));
 	return (files);
 }
 
-void	render_wall(int x, int *y, t_data *data, int *i)
+void    render_wall(int x, int *y, t_data *data, int *i)
 {
-	int			tex[2];
-	float		texture[2];
-	float		y_step;
-	t_files		*files;
-
-	if (data->ray.wall_hit == 'h')
-		texture[0] = fmod(data->ray.hit_x, TILE);
-	else
-		texture[0] = fmod(data->ray.hit_y, TILE);
-	if (data->ray.type == 'w')
-		files = choose_wall_direction(data, data->ray.angle_start);
-	else
-		files = &data->texture_door;
-	texture[0] = (texture[0] / TILE) * files->width;
-	texture[1] = 0.0f;
-	y_step = (float)files->height / data->ray.wall_height;
-	texture[1] = (data->ray.first_wall_pxl - HEIGHT / 2 + data->ray.wall_height / 2) * y_step;
-	if (data->ray.wall_height >= HEIGHT)
-		texture[1] = ((data->ray.wall_height - HEIGHT) / 2) * y_step;
-	while (*y >= data->ray.first_wall_pxl
-		&& *y <= data->ray.first_wall_pxl + data->ray.wall_height && *y < HEIGHT)
-	{
-		tex[1] = (int)texture[1] % files->height;
-		tex[0] = fmod(texture[0], files->width);
-		print_pixel(data, x, *y, get_pixel_texture(files,
-				tex[0], tex[1]));
-		texture[1] += y_step;
-		(*y)++;
-		(*i)--;
-	}
+    int         tex[2];
+    float       texture[2];
+    float       y_step;
+    t_files     *files;
+    if (data->ray.wall_hit == 'h')
+        texture[0] = fmod(data->ray.hit_x, TILE);
+    else
+        texture[0] = fmod(data->ray.hit_y, TILE);
+    if (data->map->matrix[(int)data->ray.hit_y / TILE][(int)data->ray.hit_x / TILE] == '1')
+        files = choose_wall_direction(data, data->ray.angle_start);
+    else if (data->map->matrix[(int)data->ray.hit_y / TILE][(int)data->ray.hit_x / TILE] == 'D')
+        files = &data->texture_door;
+    else
+        return ;
+    texture[0] = (texture[0] / TILE) * files->width;
+    texture[1] = 0.0f;
+    y_step = (float)files->height / data->ray.wall_height;
+    texture[1] = (data->ray.first_wall_pxl - HEIGHT / 2 + data->ray.wall_height / 2) * y_step;
+    if (data->ray.wall_height >= HEIGHT)
+        texture[1] = ((data->ray.wall_height - HEIGHT) / 2) * y_step;
+    while (*y >= data->ray.first_wall_pxl
+        && *y <= data->ray.first_wall_pxl + data->ray.wall_height && *y < HEIGHT)
+    {
+        tex[1] = (int)texture[1] % files->height;
+        tex[0] = fmod(texture[0], files->width);
+        print_pixel(data, x, *y, get_pixel_texture(files,
+                tex[0], tex[1]));
+        texture[1] += y_step;
+        (*y)++;
+        (*i)--;
+    }
+    data->ray.type = 'w';
 }

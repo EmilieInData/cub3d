@@ -6,12 +6,12 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/02/27 15:26:43 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 13:30:33 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef STRUCT_H
-#define STRUCT_H
+# define STRUCT_H
 
 typedef struct s_files
 {
@@ -22,9 +22,9 @@ typedef struct s_files
 	int				endian;
 	int				width;
 	int				height;
-}			   t_files;
+}				t_files;
 
-typedef	struct s_door
+typedef struct s_door
 {
 	int				x;
 	int				y;
@@ -32,14 +32,14 @@ typedef	struct s_door
 	int				count;
 	struct timeval	timer;
 	t_files			sprite[PICS];
-}			   t_door;
+}				t_door;
 
 typedef struct s_color
 {
 	int				red;
 	int				green;
 	int				blue;
-}			   t_color;
+}				t_color;
 
 typedef struct s_map
 {
@@ -51,16 +51,16 @@ typedef struct s_map
 	t_color			ceiling;
 	char			**matrix;
 	int				flag;
-}			   t_map;
+}				t_map;
 
-typedef struct s_image 
+typedef struct s_image
 {
 	void			*img_add;
 	char			*pix_add;
 	int				bit_pix;
 	int				length_line;
 	int				endian;
-}			   t_image;
+}				t_image;
 
 typedef struct s_player
 {
@@ -68,7 +68,7 @@ typedef struct s_player
 	double			position_y;
 	int				angle;
 	char			news;
-}              t_player;
+}				t_player;
 
 typedef struct s_ray
 {
@@ -76,10 +76,10 @@ typedef struct s_ray
 	double			player_y;
 	double			angle_start;
 	double			angle_end;
-	int 			FOV;
-	double 			dist_h;
-	double 			dist_v;
-	double 			dist_t_wall;
+	int				fov;
+	double			dist_h;
+	double			dist_v;
+	double			dist_t_wall;
 	char			wall_hit;
 	int				v_x;
 	int				v_y;
@@ -94,8 +94,7 @@ typedef struct s_ray
 	double			wall_height;
 	char			type;
 	int				ceiling_floor;
-}			   t_ray;
-
+}				t_ray;
 
 typedef struct s_data
 {
@@ -107,11 +106,11 @@ typedef struct s_data
 	t_image			*image;
 	struct timeval	timer;
 	t_files			texture_door;
-	t_files 		texture_north;
-	t_files 		texture_south;
-	t_files 		texture_west;
-	t_files 		texture_east;
+	t_files			texture_north;
+	t_files			texture_south;
+	t_files			texture_west;
+	t_files			texture_east;
 	t_door			*doors;
-}			   t_data;
+}				t_data;
 
 #endif

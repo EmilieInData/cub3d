@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/30 13:14:45 by esellier          #+#    #+#             */
-/*   Updated: 2025/03/04 17:52:51 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/05 13:23:27 by esellier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	do_mini_map(t_data *data, char **matrix)
 		j++;
 	}
 	put_scaled_image(data, (data->player.position_x - 0.5) * scale,
-		(data->player.position_y - 0.5) * scale, BRIGHT_BLUE); 
+		(data->player.position_y - 0.5) * scale, BRIGHT_BLUE);
 }
 
 void	put_scaled_image(t_data *data, int x, int y, int color)
