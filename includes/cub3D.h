@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   cub3D.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 11:41:39 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/05 17:46:46 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/06 12:08:21 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,11 +131,14 @@ void    free_textures(t_data *data);
 
 //ray cast
 void	init_ray(t_data *data);
-void    next_vertical(t_data *data, double x_a, double b_y, double b_x, double radians);
-void    vertical_check(t_data *data, double radians);
-void	next_checks(t_data *data, double a_x, double a_y, double radians);
-void    horizontal_check(t_data *data, double radians);
+void	init_utils(t_data *data);
+double	adjust_angle(double angle);
+void    next_vertical(t_data *data, double increment_x, double b_y, double b_x);
+void    vertical_check(t_data *data, t_ray ray);
+void	next_checks(t_data *data, double c_x, double c_y, double increment_y);
+void	horizontal_check(t_data *data, t_ray ray);
 void	find_wall(t_data *data);
+void	ray_trace(t_data *data, int x, double increment);
 double  find_distance_v(t_data *data, double x, double y);
 double  find_distance_h(t_data *data, double x, double y);
 void	find_shortest_distance(t_data *data);

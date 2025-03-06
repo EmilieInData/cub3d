@@ -6,7 +6,7 @@
 #    By: esellier <esellier@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/07 11:01:31 by ineimatu          #+#    #+#              #
-#    Updated: 2025/03/05 18:02:47 by esellier         ###   ########.fr        #
+#    Updated: 2025/03/06 10:36:10 by ineimatu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRC = src/main.c \
 	  src/mini_map.c \
 	  src/events.c \
 	  src/events_utils.c \
+	  src/ray_cast_loop.c \
 	  src/ray_cast.c \
 	  src/ray_cast_calcul.c \
 	  src/ray_cast_utils.c \

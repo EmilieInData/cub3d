@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   struct.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ineimatu <ineimatu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/07 13:26:57 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/05 17:40:13 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/06 12:18:00 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,11 +75,19 @@ typedef struct s_ray
 	double			player_x;
 	double			player_y;
 	double			angle_start;
-	double			angle_end;
 	int				fov;
 	double			dist_h;
 	double			dist_v;
 	double			dist_t_wall;
+	int				first_wall_pxl;
+	int				last_wall_pxl;
+	double			wall_height;
+	int				c_f;
+}				t_ray;
+
+typedef struct s_utils
+{
+	double			radians;
 	char			wall_hit;
 	int				v_x;
 	int				v_y;
@@ -87,14 +95,7 @@ typedef struct s_ray
 	int				h_y;
 	int				hit_x;
 	int				hit_y;
-	int				map_x;
-	int				map_y;
-	int				first_wall_pxl;
-	int				last_wall_pxl;
-	double			wall_height;
-	char			type;
-	int				ceiling_floor;
-}				t_ray;
+}				t_utils;
 
 typedef struct s_data
 {
@@ -103,6 +104,7 @@ typedef struct s_data
 	t_map			*map;
 	t_player		player;
 	t_ray			ray;
+	t_utils			utils;
 	t_image			*image;
 	struct timeval	timer;
 	t_files			texture_door;

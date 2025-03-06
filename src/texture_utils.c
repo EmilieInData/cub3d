@@ -6,7 +6,7 @@
 /*   By: esellier <esellier@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/21 11:25:23 by ineimatu          #+#    #+#             */
-/*   Updated: 2025/03/05 14:34:52 by esellier         ###   ########.fr       */
+/*   Updated: 2025/03/06 10:47:21 by ineimatu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,8 @@ int	rgb_to_int_floor(t_data *data)
 
 int	rgb_to_int_ceil(t_data *data)
 {
-	return ((data->map->ceiling.red << 16) | (data->map->ceiling.green << 8) 
-		| (data->map->ceiling.blue) | 255 << 24);
+	return ((data->map->ceiling.red << 16) | (data->map->ceiling.green << 8) \
+			| (data->map->ceiling.blue) | 255 << 24);
 }
 
 void	free_textures(t_data *data)
@@ -61,4 +61,3 @@ void	free_textures(t_data *data)
 	if (data->texture_east.img)
 		mlx_destroy_image(data->mlx, data->texture_east.img);
 }
-
