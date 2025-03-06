@@ -1,5 +1,6 @@
 # CUB3D
-Cub3D is a simple 3D engine built using C that allows the rendering of a 3D world, simulating raycasting techniques for creating 3D environments. The engine is inspired by classic games like Wolfenstein 3D and utilizes basic game physics for player interaction.
+Cub3D is a second group project in 42 Comon Core. It is a simple 3D game built using C that allows the rendering of a 3D world, using raycasting techniques for creating 3D environments. The game is inspired by classic games like Wolfenstein 3D and utilizes basic game physics for player interaction.
+
 ![Screenshot from 2025-03-06 16-26-29](https://github.com/user-attachments/assets/5292eb86-2032-435d-856c-f1d1a4bfc0b2)
 
 ## Installation
