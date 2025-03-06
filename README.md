@@ -39,3 +39,6 @@ Once the game is running, you can control the player in the 3D environment using
     D - Strafe right
     Arrow keys - Rotate the view (look around)
     Esc - Exit the game
+
+![Screenshot from 2025-03-06 15-59-17](https://github.com/user-attachments/assets/29bbc776-2711-4859-8c0f-569f60de0458)
+
