@@ -1,5 +1,6 @@
 # CUB3D
 Cub3D is a simple 3D engine built using C that allows the rendering of a 3D world, simulating raycasting techniques for creating 3D environments. The engine is inspired by classic games like Wolfenstein 3D and utilizes basic game physics for player interaction.
+
 ![Screenshot from 2025-03-06 15-59-17](https://github.com/user-attachments/assets/377aa8e6-6223-4dc3-884c-7dfbdcd23285)
 ## Installation
 
