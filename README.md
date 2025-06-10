@@ -5,6 +5,6 @@ Cub3D is a second group project in 42 Comon Core. It is a simple 3D game built u
 
 ![Screenshot from 2025-03-06 16-26-29](https://github.com/user-attachments/assets/5292eb86-2032-435d-856c-f1d1a4bfc0b2)
 
-![Screenshot from 2025-03-06 15-59-17](https://github.com/user-attachments/assets/29bbc776-2711-4859-8c0f-569f60de0458)
+![Screenshot from 2025-03-06 15-59-17](assets/Screenshot from 2025-03-12 11-46-58.png)
 
-![Aperçu du projet](assets/All_game.gif)
+![Aperçu du projet](assets/Door_opening.gif)
